@@ -1,0 +1,6 @@
+# Public evidence and vendor assets are verified by byte-level SHA-256 hashes.
+# Preserve their original line endings on every platform and keep their
+# historical whitespace outside checks for newly authored source files.
+protocol-analysis/** -text -whitespace
+app/public/** -text -whitespace
+*.zip binary

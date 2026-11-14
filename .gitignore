@@ -1,0 +1,7 @@
+node_modules/
+.npm-cache/
+dist/
+artifacts/
+app/src/vendor/original-runtime.mjs
+app/runtime-provenance.json
+*.log

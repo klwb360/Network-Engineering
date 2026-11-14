@@ -1,0 +1,28 @@
+{
+  "name": "protocol-course-studio",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A snapshot-backed course authoring workflow for Protocol Explorer",
+  "engines": {
+    "node": ">=24.11 <25"
+  },
+  "scripts": {
+    "prepare:runtime": "node scripts/prepare-runtime.mjs",
+    "assets:sync": "node scripts/sync-public-assets.mjs",
+    "courses:check": "node scripts/check-courses.mjs",
+    "baseline:check": "node scripts/check-baseline.mjs",
+    "dev": "npm run prepare:runtime && node scripts/serve.mjs --port 4173",
+    "build": "npm run baseline:check && npm run assets:check && npm run courses:check && node scripts/build.mjs",
+    "preview": "node scripts/serve.mjs --dist --port 4173",
+    "test:unit": "node --test tests/*.test.mjs",
+    "test:browser": "node scripts/test-browser.mjs",
+    "test": "npm run baseline:check && npm run assets:check && npm run courses:check && npm run test:unit && npm run test:browser",
+    "assets:check": "node scripts/check-assets.mjs",
+    "verify:build": "npm run build && node scripts/verify-build.mjs"
+  },
+  "devDependencies": {
+    "@babel/parser": "8.1.2",
+    "playwright": "1.62.1"
+  }
+}

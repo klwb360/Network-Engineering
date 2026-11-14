@@ -1,0 +1,1986 @@
+{
+  "title": "Protocol Explorer · Learn how the internet works",
+  "text": "PROTOCOL EXPLORER\n\nLEARN HOW THE INTERNET WORKS\n\nOSI LAYER\nAPPLICATION\n1\n2\n3\n4\n5\n6\n7\nSearch protocols\nCtrl K\nDESIGNED BY\nDilumSanjaya\nEN\nINTERNET PROTOCOLS\nALL\n39\nCORE\n11\nAPPLICATION\n19\nSECURITY\n9\nHTTP\nHypertext Transfer Protocol\n1\nCLIENT REQUEST\nBrowser prepares the request\n2\nDNS RESOLUTION\nFinds the server’s IP address\n3\nTCP CONNECTION\nEstablishes a reliable link\n4\nHTTP EXCHANGE\nRequest and response messages\n5\nPAGE RENDERING\nBrowser displays the content\nHTTPS\nHTTP Secure\nWebSocket\nTwo-way web messaging\nWebRTC\nBrowser video calls\nSIP\nInternet phone calls\nRTSP\nIP camera streams\nRTMP\nLive streaming upload\nQUIC\nHTTP/3 over UDP\nTCP\nTransmission Control Protocol\nUDP\nUser Datagram Protocol\nIP\nInternet Protocol\nBGP\nRouting between networks\nIPv6\nAddress setup, neighbour discovery\nDNS\nDomain Name System\nDNS over HTTPS\nPrivate DNS lookups\nDNSSEC\nSigned DNS answers\nDHCP\nDynamic Host Configuration\nICMP\nInternet Control Message\nIGMP\nMulticast and TV channels\nNTP\nNetwork Time Protocol\nEthernet\nFrames and switches\nPPPoE\nBroadband logins\nWi-Fi\nJoining a network (WPA2)\nWPA3\nWi-Fi Protected Access 3\nRADIUS\n802.1X Enterprise Wi-Fi\nCaptive Portal\nHotel and café Wi-Fi logins\nSMTP\nSimple Mail Transfer Protocol\nPOP3\nPost Office Protocol v3\nIMAP\nInternet Message Access\nFTP\nFile Transfer Protocol\nSMB\nWindows file sharing\nSSH\nSecure Shell\nTLS/SSL\nTransport Layer Security\nHTTP Proxy\nForward proxy and CONNECT\nSOCKS5\nSocket Secure proxy\nReverse Proxy\nTLS offloading\nWireGuard\nA modern VPN\nIPsec\nIKEv2 and ESP\nModbus\nIndustrial control (OT)\nInternet\nClient\n192.168.1.10\nDNS Resolver\n8.8.8.8\nWeb Server\n203.0.113.10\nRoot Server\n198.41.0.4\n.com TLD Server\n192.5.6.30\nAuthoritative Server\n198.51.100.53\nMail Server\n198.51.100.25\nProxy\n192.0.2.80\nApp Server\n10.0.0.20\nFile Server\n192.168.1.20\nISP Router\nAS 64500\nTransit Router\nAS 64510\nHosting Router\nAS 64511\nSwitch\n8 ports\nAccess Server\n198.51.100.1\nIP Camera\n192.168.1.64\nTV Box\n192.168.1.30\nTheir Laptop\n192.168.0.23\nRouter\n192.168.1.1\nTheir Router\n198.51.100.200\nNETWORK\nSEQUENCE\nPROTOCOL OVERVIEW\nHTTP\nACTIVE\n\nHypertext Transfer Protocol\n\nHTTP is the protocol of the web: a client asks for a resource, such as an HTML page, and the server answers with a status code, headers and usually a body. Every exchange is one request and one response, written as readable text in HTTP/1.1.\n\nLAYER\nApplication (Layer 7)\nDEFAULT PORT\n80 (HTTPS: 443)\nTRANSPORT\nTCP\nDATA FORMAT\nText (headers + optional body)\nCOMMON METHODS\nGET, POST, PUT, DELETE, HEAD\nDEFINED IN\nRFC 9110, RFC 9112\nPACKET FLOW\nDNS\nTCP\nRequest\nResponse\nData ACKs not shown\n1×\nPLAY\nSTEP\nRESET\nNO.\tTIME\tSOURCE\tDESTINATION\tPROTOCOL\tINFO\tSIZE\n1\t0.000s\t192.168.1.10\t8.8.8.8\tDNS\tStandard query A www.example.com\t75 B\n2\t0.012s\t8.8.8.8\t192.168.1.10\tDNS\tStandard query response A 203.0.113.10\t91 B\n3\t0.024s\t192.168.1.10\t203.0.113.10\tTCP\t52344 → 80 [SYN] Seq=0\t66 B\n4\t0.041s\t203.0.113.10\t192.168.1.10\tTCP\t80 → 52344 [SYN, ACK] Seq=0 Ack=1\t66 B\n5\t0.058s\t192.168.1.10\t203.0.113.10\tTCP\t52344 → 80 [ACK] Seq=1 Ack=1\t60 B\n6\t0.058s\t192.168.1.10\t203.0.113.10\tHTTP\tGET / HTTP/1.1\t484 B\n7\t0.076s\t203.0.113.10\t192.168.1.10\tHTTP\tHTTP/1.1 200 OK (text/html), 9 segments\t12.8 KB",
+  "buttons": [
+    {
+      "text": "PROTOCOLS",
+      "aria": "Protocols",
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "Search protocols\nCtrl K",
+      "aria": "Search protocols",
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": "Protocol list",
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": "Diagram only",
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": "Fullscreen",
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": "Keyboard shortcuts",
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "EN",
+      "aria": "Language",
+      "title": "Language",
+      "id": ""
+    },
+    {
+      "text": "\n      EN\n      EnglishEnglish\n    ",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "\n      ES\n      EspañolSpanish\n    ",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "\n      PT\n      PortuguêsPortuguese\n    ",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "\n      FR\n      FrançaisFrench\n    ",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "\n      IT\n      ItalianoItalian\n    ",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "\n      DE\n      DeutschGerman\n    ",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "\n      NL\n      NederlandsDutch\n    ",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "\n      PL\n      PolskiPolish\n    ",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "\n      TR\n      TürkçeTurkish\n    ",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "\n      ID\n      Bahasa IndonesiaIndonesian\n    ",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "\n      VI\n      Tiếng ViệtVietnamese\n    ",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "\n      EL\n      ΕλληνικάGreek\n    ",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "\n      UA\n      УкраїнськаUkrainian\n    ",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "\n      RU\n      РусскийRussian\n    ",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "\n      简\n      简体中文Chinese (Simplified)\n    ",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "\n      繁\n      繁體中文Chinese (Traditional)\n    ",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "\n      JA\n      日本語Japanese\n    ",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "\n      KO\n      한국어Korean\n    ",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "\n      HI\n      हिन्दीHindi\n    ",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "\n      AR\n      العربيةArabic\n    ",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "\n      HE\n      עבריתHebrew\n    ",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": "Light mode",
+      "title": "Light mode",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": "Dark mode",
+      "title": "Dark mode",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": "Close the protocol list",
+      "title": "Close (Esc)",
+      "id": ""
+    },
+    {
+      "text": "ALL\n39",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "CORE\n11",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "APPLICATION\n19",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "SECURITY\n9",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "HTTP\nHypertext Transfer Protocol",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "1\nCLIENT REQUEST\nBrowser prepares the request",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "2\nDNS RESOLUTION\nFinds the server’s IP address",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "3\nTCP CONNECTION\nEstablishes a reliable link",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "4\nHTTP EXCHANGE\nRequest and response messages",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "5\nPAGE RENDERING\nBrowser displays the content",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "HTTPS\nHTTP Secure",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "WebSocket\nTwo-way web messaging",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "WebRTC\nBrowser video calls",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "SIP\nInternet phone calls",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "RTSP\nIP camera streams",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "RTMP\nLive streaming upload",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "QUIC\nHTTP/3 over UDP",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "TCP\nTransmission Control Protocol",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "UDP\nUser Datagram Protocol",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "IP\nInternet Protocol",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "BGP\nRouting between networks",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "IPv6\nAddress setup, neighbour discovery",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "DNS\nDomain Name System",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "DNS over HTTPS\nPrivate DNS lookups",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "DNSSEC\nSigned DNS answers",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "DHCP\nDynamic Host Configuration",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "ICMP\nInternet Control Message",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "IGMP\nMulticast and TV channels",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "NTP\nNetwork Time Protocol",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "Ethernet\nFrames and switches",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "PPPoE\nBroadband logins",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "Wi-Fi\nJoining a network (WPA2)",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "WPA3\nWi-Fi Protected Access 3",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "RADIUS\n802.1X Enterprise Wi-Fi",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "Captive Portal\nHotel and café Wi-Fi logins",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "SMTP\nSimple Mail Transfer Protocol",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "POP3\nPost Office Protocol v3",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "IMAP\nInternet Message Access",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "FTP\nFile Transfer Protocol",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "SMB\nWindows file sharing",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "SSH\nSecure Shell",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "TLS/SSL\nTransport Layer Security",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "HTTP Proxy\nForward proxy and CONNECT",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "SOCKS5\nSocket Secure proxy",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "Reverse Proxy\nTLS offloading",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "WireGuard\nA modern VPN",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "IPsec\nIKEv2 and ESP",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "Modbus\nIndustrial control (OT)",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "NETWORK",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "SEQUENCE",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "\n        1×\n      ",
+      "aria": null,
+      "title": "Playback speed",
+      "id": ""
+    },
+    {
+      "text": "0.5×",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "1×",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "1.5×",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "2×",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "\n      \n    ",
+      "aria": "Previous step",
+      "title": "Previous step (←)",
+      "id": ""
+    },
+    {
+      "text": "\n      \n        \n        \n      \n      PLAY\n    ",
+      "aria": null,
+      "title": "Play / pause (Space)",
+      "id": ""
+    },
+    {
+      "text": "STEP",
+      "aria": null,
+      "title": "One packet at a time (S)",
+      "id": ""
+    },
+    {
+      "text": "RESET",
+      "aria": "Reset",
+      "title": "Back to the overview (Esc)",
+      "id": ""
+    },
+    {
+      "text": "‹",
+      "aria": "Previous packet",
+      "title": "Previous packet (←)",
+      "id": ""
+    },
+    {
+      "text": "›",
+      "aria": "Next packet",
+      "title": "Next packet (→)",
+      "id": ""
+    },
+    {
+      "text": "✕",
+      "aria": "Close",
+      "title": "Close (Esc)",
+      "id": ""
+    },
+    {
+      "text": "OVERVIEW",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "1×",
+      "aria": null,
+      "title": "Playback speed",
+      "id": ""
+    },
+    {
+      "text": "0.5×",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "1×",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "1.5×",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "2×",
+      "aria": null,
+      "title": "",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": "Previous step",
+      "title": "Previous step (←)",
+      "id": ""
+    },
+    {
+      "text": "PLAY",
+      "aria": null,
+      "title": "Play / pause (Space)",
+      "id": ""
+    },
+    {
+      "text": "STEP",
+      "aria": null,
+      "title": "One packet at a time (S)",
+      "id": ""
+    },
+    {
+      "text": "RESET",
+      "aria": "Reset",
+      "title": "Back to the overview (Esc)",
+      "id": ""
+    },
+    {
+      "text": "",
+      "aria": "Close",
+      "title": "",
+      "id": ""
+    }
+  ]
+}

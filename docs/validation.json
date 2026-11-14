@@ -1,0 +1,215 @@
+{
+  "recordedAt": "2026-11-13T02:31:48.960226+00:00",
+  "displayTimezone": "Asia/Shanghai",
+  "course": {
+    "id": "http-cache",
+    "steps": 6,
+    "teachingPackets": 9,
+    "totalRegisteredCourses": 40
+  },
+  "preservation": {
+    "originalCourses": 39,
+    "historicalFilesSha256Checked": 54,
+    "originalPublicAssetsSha256Checked": 54,
+    "originalCssUnchanged": true
+  },
+  "unitTests": {
+    "passed": 25,
+    "failed": 0,
+    "files": [
+      "tests/authoring.test.mjs",
+      "tests/http-cache-protocol.test.mjs"
+    ]
+  },
+  "browserTests": {
+    "baselinePassed": 24,
+    "newCoursePassed": 29,
+    "totalPassed": 53,
+    "failed": 0,
+    "baselineEvidence": "artifacts/baseline/research/browser-evidence.json",
+    "courseEvidence": "artifacts/http-cache/browser-evidence.json"
+  },
+  "staticBuild": {
+    "passed": true,
+    "checks": [
+      {
+        "name": "Static build preserves 40 registered courses",
+        "passed": true
+      },
+      {
+        "name": "Served production stylesheet is byte-identical to the original",
+        "passed": true
+      },
+      {
+        "name": "All 21 original language choices load from the static build",
+        "passed": true
+      },
+      {
+        "name": "Built application has no failed resources or JavaScript errors",
+        "passed": true
+      }
+    ],
+    "languageChoicesVerified": [
+      {
+        "code": "en",
+        "htmlLang": "en",
+        "direction": null,
+        "renderedPlay": "PLAY",
+        "passed": true
+      },
+      {
+        "code": "es",
+        "htmlLang": "es",
+        "direction": "ltr",
+        "renderedPlay": "REPRODUCIR",
+        "passed": true
+      },
+      {
+        "code": "pt",
+        "htmlLang": "pt-BR",
+        "direction": "ltr",
+        "renderedPlay": "REPRODUZIR",
+        "passed": true
+      },
+      {
+        "code": "fr",
+        "htmlLang": "fr",
+        "direction": "ltr",
+        "renderedPlay": "LECTURE",
+        "passed": true
+      },
+      {
+        "code": "it",
+        "htmlLang": "it",
+        "direction": "ltr",
+        "renderedPlay": "AVVIA",
+        "passed": true
+      },
+      {
+        "code": "de",
+        "htmlLang": "de",
+        "direction": "ltr",
+        "renderedPlay": "ABSPIELEN",
+        "passed": true
+      },
+      {
+        "code": "nl",
+        "htmlLang": "nl",
+        "direction": "ltr",
+        "renderedPlay": "AFSPELEN",
+        "passed": true
+      },
+      {
+        "code": "pl",
+        "htmlLang": "pl",
+        "direction": "ltr",
+        "renderedPlay": "ODTWÓRZ",
+        "passed": true
+      },
+      {
+        "code": "tr",
+        "htmlLang": "tr",
+        "direction": "ltr",
+        "renderedPlay": "OYNAT",
+        "passed": true
+      },
+      {
+        "code": "id",
+        "htmlLang": "id",
+        "direction": "ltr",
+        "renderedPlay": "PUTAR",
+        "passed": true
+      },
+      {
+        "code": "vi",
+        "htmlLang": "vi",
+        "direction": "ltr",
+        "renderedPlay": "PHÁT",
+        "passed": true
+      },
+      {
+        "code": "el",
+        "htmlLang": "el",
+        "direction": "ltr",
+        "renderedPlay": "ΕΝΑΡΞΗ",
+        "passed": true
+      },
+      {
+        "code": "uk",
+        "htmlLang": "uk",
+        "direction": "ltr",
+        "renderedPlay": "ПУСК",
+        "passed": true
+      },
+      {
+        "code": "ru",
+        "htmlLang": "ru",
+        "direction": "ltr",
+        "renderedPlay": "ПУСК",
+        "passed": true
+      },
+      {
+        "code": "zh",
+        "htmlLang": "zh-CN",
+        "direction": "ltr",
+        "renderedPlay": "播放",
+        "passed": true
+      },
+      {
+        "code": "zh-TW",
+        "htmlLang": "zh-TW",
+        "direction": "ltr",
+        "renderedPlay": "播放",
+        "passed": true
+      },
+      {
+        "code": "ja",
+        "htmlLang": "ja",
+        "direction": "ltr",
+        "renderedPlay": "再生",
+        "passed": true
+      },
+      {
+        "code": "ko",
+        "htmlLang": "ko",
+        "direction": "ltr",
+        "renderedPlay": "재생",
+        "passed": true
+      },
+      {
+        "code": "hi",
+        "htmlLang": "hi",
+        "direction": "ltr",
+        "renderedPlay": "चलाएँ",
+        "passed": true
+      },
+      {
+        "code": "ar",
+        "htmlLang": "ar",
+        "direction": "rtl",
+        "renderedPlay": "⁧تشغيل⁩",
+        "passed": true
+      },
+      {
+        "code": "he",
+        "htmlLang": "he",
+        "direction": "rtl",
+        "renderedPlay": "⁧הפעלה⁩",
+        "passed": true
+      }
+    ],
+    "failedResponses": [],
+    "evidence": "artifacts/build/build-evidence.json"
+  },
+  "protocolChecks": {
+    "rfc": [
+      "RFC 9110 §§8.6,13.1.2,15.4.5",
+      "RFC 9111 §§4.2,4.3.4,5.2.2"
+    ],
+    "uiEncodedFramesChecked": 9,
+    "httpPayloadsChecked": 6,
+    "ipv4AndTcpChecksumsValid": true,
+    "notModifiedResponseHasNoBody": true
+  },
+  "deployment": "Deferred; dist is a local static build and has not been published."
+}

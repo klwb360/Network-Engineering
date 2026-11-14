@@ -1,0 +1,20 @@
+{
+  "recordedAt": "2026-11-13T01:35:57.371Z",
+  "desktop": {
+    "title": "Protocol Explorer · 公开前端实现分析",
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "images": [
+      "screenshots/original-http-initial.png",
+      "screenshots/original-http-sequence.png",
+      "screenshots/original-http-inspector.png",
+      "screenshots/original-zh.png",
+      "screenshots/original-phone.png"
+    ]
+  },
+  "mobile": {
+    "scrollWidth": 390,
+    "innerWidth": 390
+  },
+  "passed": true
+}

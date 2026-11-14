@@ -1,0 +1,551 @@
+{
+  "checked_at": "2026-11-13T01:23:44.665027+00:00",
+  "github": [
+    {
+      "full_name": "j4k0xb/webcrack",
+      "html_url": "https://github.com/j4k0xb/webcrack",
+      "description": "Deobfuscate obfuscator.io, unminify and unpack bundled javascript",
+      "stargazers_count": 3052,
+      "forks_count": 352,
+      "archived": false,
+      "disabled": false,
+      "created_at": "2023-01-30T22:04:53Z",
+      "updated_at": "2026-11-12T20:49:14Z",
+      "pushed_at": "2026-07-26T22:22:19Z",
+      "default_branch": "master",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "api_url": "https://api.github.com/repos/j4k0xb/webcrack"
+    },
+    {
+      "repo": "wakarujs/wakaru",
+      "error": "HTTP Error 404: Not Found",
+      "source": "https://api.github.com/repos/wakarujs/wakaru"
+    },
+    {
+      "full_name": "beautifier/js-beautify",
+      "html_url": "https://github.com/beautifier/js-beautify",
+      "description": "Beautifier for javascript ",
+      "stargazers_count": 9010,
+      "forks_count": 1430,
+      "archived": false,
+      "disabled": false,
+      "created_at": "2008-12-04T06:35:54Z",
+      "updated_at": "2026-11-12T14:42:13Z",
+      "pushed_at": "2026-10-19T23:33:00Z",
+      "default_branch": "main",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "api_url": "https://api.github.com/repos/beautifier/js-beautify"
+    },
+    {
+      "full_name": "babel/babel",
+      "html_url": "https://github.com/babel/babel",
+      "description": "🐠 Babel is a compiler for writing next generation JavaScript.",
+      "stargazers_count": 44056,
+      "forks_count": 5977,
+      "archived": false,
+      "disabled": false,
+      "created_at": "2014-09-28T13:38:23Z",
+      "updated_at": "2026-11-13T01:04:13Z",
+      "pushed_at": "2026-11-13T00:08:02Z",
+      "default_branch": "main",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "api_url": "https://api.github.com/repos/babel/babel"
+    },
+    {
+      "full_name": "microsoft/playwright",
+      "html_url": "https://github.com/microsoft/playwright",
+      "description": "Playwright is a framework for Web Testing and Automation. It allows testing Chromium, Firefox and WebKit with a single API. ",
+      "stargazers_count": 100014,
+      "forks_count": 6860,
+      "archived": false,
+      "disabled": false,
+      "created_at": "2019-11-15T18:32:42Z",
+      "updated_at": "2026-11-13T01:08:05Z",
+      "pushed_at": "2026-11-13T00:54:11Z",
+      "default_branch": "main",
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "api_url": "https://api.github.com/repos/microsoft/playwright"
+    },
+    {
+      "full_name": "danvk/source-map-explorer",
+      "html_url": "https://github.com/danvk/source-map-explorer",
+      "description": "Analyze and debug space usage through source maps",
+      "stargazers_count": 3930,
+      "forks_count": 115,
+      "archived": false,
+      "disabled": false,
+      "created_at": "2015-10-15T22:40:17Z",
+      "updated_at": "2026-11-11T13:31:27Z",
+      "pushed_at": "2023-03-14T16:39:24Z",
+      "default_branch": "master",
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "api_url": "https://api.github.com/repos/danvk/source-map-explorer"
+    },
+    {
+      "full_name": "pionxzh/wakaru",
+      "html_url": "https://github.com/pionxzh/wakaru",
+      "description": "🔪📦 Javascript decompiler for modern frontend",
+      "stargazers_count": 1087,
+      "forks_count": 80,
+      "archived": false,
+      "disabled": false,
+      "created_at": "2023-01-28T03:12:28Z",
+      "updated_at": "2026-11-12T13:17:28Z",
+      "pushed_at": "2026-11-12T18:11:18Z",
+      "default_branch": "main",
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "api_url": "https://api.github.com/repos/pionxzh/wakaru"
+    }
+  ],
+  "npm": [
+    {
+      "name": "webcrack",
+      "version": "2.16.0",
+      "published": "2026-04-25T16:35:05.635Z",
+      "repository": {
+        "url": "git+https://github.com/j4k0xb/webcrack.git",
+        "type": "git"
+      },
+      "homepage": "https://webcrack.netlify.app",
+      "description": "Deobfuscate, unminify and unpack bundled javascript",
+      "license": "MIT",
+      "bin": {
+        "webcrack": "src/cli-wrapper.js"
+      },
+      "engines": {
+        "node": ">=22.0.0 <23 || >=24.0.0 <25"
+      },
+      "dist": {
+        "shasum": "c74604528754e2167d291e7291a1309f8a052e42",
+        "tarball": "https://registry.npmjs.org/webcrack/-/webcrack-2.16.0.tgz",
+        "fileCount": 168,
+        "integrity": "sha512-sQx0otp+7W8MgOWjdpc+5dqGna1GRK4tx55SyRohtq4g4A1aXbqu0TLfqvIsY/PllBZgSfvV5h0nDE0iwC8gbA==",
+        "signatures": [
+          {
+            "sig": "MEQCIEkvO19KvD1n6lOq0ykSJVo3+zR05qiVKrJaerjum5sLAiAjzkEkC7m44UEtej74IuWr5iqo+ir/sxasjA6hSXMs+g==",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/webcrack@2.16.0",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 530324
+      },
+      "source": "https://registry.npmjs.org/webcrack"
+    },
+    {
+      "name": "@wakaru/cli",
+      "version": "1.16.0",
+      "published": "2026-11-02T19:06:25.508Z",
+      "repository": {
+        "url": "git+https://github.com/pionxzh/wakaru.git",
+        "type": "git",
+        "directory": "npm"
+      },
+      "homepage": "https://github.com/pionxzh/wakaru",
+      "description": "JavaScript decompiler — unpack bundles and turn minified, transpiled production code back into readable modules. Written in Rust.",
+      "license": "Apache-2.0",
+      "bin": {
+        "wakaru": "bin/wakaru"
+      },
+      "engines": {
+        "node": ">=16.0.0"
+      },
+      "dist": {
+        "shasum": "fe126d49cafcb01b45749a1be43086df1a13cd33",
+        "tarball": "https://registry.npmjs.org/@wakaru/cli/-/cli-1.16.0.tgz",
+        "fileCount": 3,
+        "integrity": "sha512-dEmVMeWa1Q9TXDk9AYZYR3ImyBxYLR1ooOKl/AxqoPr8JtQef3M/VuVtCNsXSRrWVBLD3UU0XNeGQCJw47UcWw==",
+        "signatures": [
+          {
+            "sig": "MEYCIQDqgzzDzBncK8wSk02MXzs5vNzZBxZo1aKpscEt1H7NOQIhAPsRREtlqgYC4ArlWO3vn3uwdrdehC0dn7WMsH6OqoDO",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          },
+          {
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U",
+            "sig": "MEYCIQCPHJLp6a8pC4pbHdQiTYO91zBJPnpmWD0zTNVTq/Gj3AIhAKgnsmWTWMgf1xREDGKILmBOuAOynFKpepHfLIFYwp9g"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/@wakaru%2fcli@1.16.0",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 7347
+      },
+      "source": "https://registry.npmjs.org/@wakaru%2fcli"
+    },
+    {
+      "name": "js-beautify",
+      "version": "2.0.3",
+      "published": "2026-06-30T15:41:24.318Z",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/beautifier/js-beautify.git"
+      },
+      "homepage": "https://beautifier.io/",
+      "description": "beautifier.io for node",
+      "license": "MIT",
+      "bin": {
+        "css-beautify": "js/bin/css-beautify.js",
+        "html-beautify": "js/bin/html-beautify.js",
+        "js-beautify": "js/bin/js-beautify.js"
+      },
+      "engines": {
+        "node": ">=14"
+      },
+      "dist": {
+        "integrity": "sha512-cyFbh3tkPhknnTD/0bLf0T0yy2ZIbqL05mttzbt4y1Zfr7NxqXQZ62dkBLKs3oHH/lpjmDRAnciJiSUyOy8XwQ==",
+        "shasum": "773c6a3cf51e72ce99df0458a9573e06a562fed1",
+        "tarball": "https://registry.npmjs.org/js-beautify/-/js-beautify-2.0.3.tgz",
+        "fileCount": 46,
+        "unpackedSize": 982229,
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/js-beautify@2.0.3",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "signatures": [
+          {
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U",
+            "sig": "MEUCIQDu3CZP26cpQ3KOo3XuNHprJ6sCX161dMn1NINTjRhOAgIgDNbuynhBhuSsYKPXMBF/zb3vZrtaeeTXpzm+tRdcJMQ="
+          }
+        ]
+      },
+      "source": "https://registry.npmjs.org/js-beautify"
+    },
+    {
+      "name": "@babel/parser",
+      "version": "8.1.2",
+      "published": "2026-11-11T19:55:24.020Z",
+      "repository": {
+        "url": "https://github.com/babel/babel.git",
+        "type": "git",
+        "directory": "packages/babel-parser"
+      },
+      "homepage": "https://babel.dev/docs/en/next/babel-parser",
+      "description": "A JavaScript parser",
+      "license": "MIT",
+      "bin": "./bin/babel-parser.js",
+      "engines": {
+        "node": "^22.18.0 || >=24.11.0"
+      },
+      "dist": {
+        "shasum": "c620e25c6f137e27e745442a69331747e3658a7e",
+        "tarball": "https://registry.npmjs.org/@babel/parser/-/parser-8.1.2.tgz",
+        "fileCount": 8,
+        "integrity": "sha512-ZDKU7vaX0VORd2BhaO+3FKr/30TKjbUy3SMZcydiPngnAb+MesgUoh5SJcE5EwEyBj14M5J6fK56GuBqvYmOpw==",
+        "signatures": [
+          {
+            "sig": "MEQCIFMoiHjTe4O5eMAQ5OpVbrrxcSOdmnDzA6yE5YG0wzKEAiB2miqzMypNI8qzZTleEaJtF9UV0+XN7VzA+ulucZiIfA==",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          },
+          {
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U",
+            "sig": "MEQCIFynDYgn7JnLIE8t+mtqd/b/0IfPXcWUPt68lOahnVohAiB4gjcfR0BervSi6g6tiLKq8N62nuKE6iaIh8MCFBHxvQ=="
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/@babel%2fparser@8.1.2",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 606491
+      },
+      "source": "https://registry.npmjs.org/@babel%2fparser"
+    },
+    {
+      "name": "@babel/traverse",
+      "version": "8.1.2",
+      "published": "2026-11-11T19:54:29.507Z",
+      "repository": {
+        "url": "https://github.com/babel/babel.git",
+        "type": "git",
+        "directory": "packages/babel-traverse"
+      },
+      "homepage": "https://babel.dev/docs/en/next/babel-traverse",
+      "description": "The Babel Traverse module maintains the overall tree state, and is responsible for replacing, removing, and adding nodes",
+      "license": "MIT",
+      "bin": null,
+      "engines": {
+        "node": "^22.18.0 || >=24.11.0"
+      },
+      "dist": {
+        "shasum": "30b73946e7d4623bc493dfbfd1b99e43e8a6172b",
+        "tarball": "https://registry.npmjs.org/@babel/traverse/-/traverse-8.1.2.tgz",
+        "fileCount": 5,
+        "integrity": "sha512-J8OoydypQO6HGgRYiiHPMj0iBfz2XpSm5hkmd0+OEHWgQFzYL8TEvYq2y4Gu8vxRCa7g06BilFZ0Imiye5jzzg==",
+        "signatures": [
+          {
+            "sig": "MEQCIGuuxeIDoyp3Gu+clglKL6/wPkkau560XNLrFeAfHt9hAiBwN/n9YvKoSGUppa/cTq+r33770A9x5f45YE+spNEBiQ==",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          },
+          {
+            "sig": "MEQCIDpPSA/9Jg8OAQ7hEY7TH8UvRhY2MhVktNDiJe/R2OKFAiBDAS9HfPzK35PVVdfCBA9SMhRE540svucH13QY4eU3qA==",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/@babel%2ftraverse@8.1.2",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 809558
+      },
+      "source": "https://registry.npmjs.org/@babel%2ftraverse"
+    },
+    {
+      "name": "@babel/generator",
+      "version": "8.1.2",
+      "published": "2026-11-11T19:54:06.079Z",
+      "repository": {
+        "url": "https://github.com/babel/babel.git",
+        "type": "git",
+        "directory": "packages/babel-generator"
+      },
+      "homepage": "https://babel.dev/docs/en/next/babel-generator",
+      "description": "Turns an AST into code.",
+      "license": "MIT",
+      "bin": null,
+      "engines": {
+        "node": "^22.18.0 || >=24.11.0"
+      },
+      "dist": {
+        "shasum": "61a9311840d6565b747984d69bea9887bb6a7de6",
+        "tarball": "https://registry.npmjs.org/@babel/generator/-/generator-8.1.2.tgz",
+        "fileCount": 5,
+        "integrity": "sha512-tAjURz1NaCZGtdG3hB6gjaIeTVo4XFD4TnbqIEneADVJ1Jpt2NxhPBAjbhius8ulUG5b/P2b56ec1ClJZa2aBQ==",
+        "signatures": [
+          {
+            "sig": "MEYCIQDRQVhiLlaNxSWvQ8ZpYTHRsHC020yzi5Hc57/H7DOK4AIhAKHeSIEOCQbtNgUZENJ9jWjC3mGdkpZgv6mqnQXTatdL",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          },
+          {
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U",
+            "sig": "MEUCIHgitEW1qvPHZBP6DqYWKksqIYhwxsgVRdpgWFUN84uNAiEAvVSWlZbcSAD+yXN4VM5bns94GHNbRUAFrnj5RgH8nbs="
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/@babel%2fgenerator@8.1.2",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 138778
+      },
+      "source": "https://registry.npmjs.org/@babel%2fgenerator"
+    },
+    {
+      "name": "playwright",
+      "version": "1.65.0",
+      "published": "2026-11-05T18:28:14.786Z",
+      "repository": {
+        "url": "git+https://github.com/microsoft/playwright.git",
+        "type": "git"
+      },
+      "homepage": "https://playwright.dev",
+      "description": "A high-level API to automate web browsers",
+      "license": "Apache-2.0",
+      "bin": {
+        "playwright": "cli.js"
+      },
+      "engines": {
+        "node": ">=20"
+      },
+      "dist": {
+        "shasum": "d890f700bf7a04b42cbdc4baab8d0e16b1d73f41",
+        "tarball": "https://registry.npmjs.org/playwright/-/playwright-1.65.0.tgz",
+        "fileCount": 60,
+        "integrity": "sha512-F3AMWcR44qMBt4kq+6Kb6mX7bjGXshktKFOPULd7reED6ZJWevjbNRqysP7q+AATE9kdPEZBibex1BYsvpVoeA==",
+        "signatures": [
+          {
+            "sig": "MEUCIFDcs5QMbwDBes0ymwf4PsFaWzWzGjmZRYQVtCm25ndsAiEAsfqIYeMdg4pKdCrp7qpcHaCd/bmp7LlmO/GqBD4XFko=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          },
+          {
+            "sig": "MEUCIQDHbyJej5r+LiXGDKm+3VTiYWZT/l2RtU12ntv0DLYZZAIgLnAm+wyQ9Yac5JleIhawOBAuAQaVJsYHNkV8ejuIJF8=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/playwright@1.65.0",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 5063827
+      },
+      "source": "https://registry.npmjs.org/playwright"
+    },
+    {
+      "name": "source-map-explorer",
+      "version": "2.5.3",
+      "published": "2022-09-26T16:01:59.711Z",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/danvk/source-map-explorer.git"
+      },
+      "homepage": "https://github.com/danvk/source-map-explorer#readme",
+      "description": "Analyze and debug space usage through source maps",
+      "license": "Apache-2.0",
+      "bin": {
+        "source-map-explorer": "bin/cli.js",
+        "sme": "bin/cli.js"
+      },
+      "engines": {
+        "node": ">=12"
+      },
+      "dist": {
+        "integrity": "sha512-qfUGs7UHsOBE5p/lGfQdaAj/5U/GWYBw2imEpD6UQNkqElYonkow8t+HBL1qqIl3CuGZx7n8/CQo4x1HwSHhsg==",
+        "shasum": "33551b51e33b70f56d15e79083cdd4c43e583b69",
+        "tarball": "https://registry.npmjs.org/source-map-explorer/-/source-map-explorer-2.5.3.tgz",
+        "fileCount": 35,
+        "unpackedSize": 352429,
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEUCIGPCodlkqqjYCQSr0eB7M3DpyqEqErjKskYGpedTAT+7AiEAtELOjpNXb9A455LYHNu+AKxBd27DxUwDkCoBgN4aeeU="
+          }
+        ],
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJjMcz3ACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmpZ3g//Wf2dKJ+2Dcb1aPh1QapjS4MGlzjCVqxLBWto9yQ57YweNzf3\r\nd0w0ns0dj/yP98xDhzoY7FK1BuR7LtHtyWuyr45KGSxUvvHTPGoz9pfDN/QM\r\ngQt/lkLIGRuot7ind3mISSCLbrBJMMiUSXrUwPApUlO3ugjsfgr8oaPKZk3C\r\npSjQesgL8n3Rp7QOYD0CKiU5PFfAkrKBJ/gFN8ukZgYB/WEJJ6xubvIHc0XZ\r\nwAfxvUYaqSrSsFrzxeQ+8kiv5h+G27EOrRuSP0iFM5GVkgaukk4Om48fMnG6\r\nNuaUemcm/hH7lhKjnpdlL/LoLKrhSpieBU2FwcuVPu0KwszKbG1hyOWGnSRG\r\nEyS3z7bqIJuppDq+Sa4QScSrMcn3L6aMmDm66UlZoR8+5xqN8KSt+jZ9zxj/\r\nsWscagMsYA00i+IlhRZ/2f5Gzl+2Tbme8FC3xGa2bpdqYoFAcy9z6T8lmS2Q\r\n/vPM0I/VdY71Xf94cL2YrLgPOKo0zh0IkogHeqIPSt+drlOwsoH7QvUxUDV5\r\n5H5ncKpuFDrUd4ByH3LkGYB5uRXIHODFHuGmfHlqxsinoCzPDTZ7hCKztlqM\r\nq21dLWSbxli3FspryVGbUayYAAY4SBi0dAmR4JkKIGMlxXhrrh8Q9goBSkeM\r\ngMVUlzmWRmARvJD7oCbuZv+4rn/li52V0Xc=\r\n=EqEW\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "source": "https://registry.npmjs.org/source-map-explorer"
+    },
+    {
+      "name": "wakaru",
+      "version": "1.16.0",
+      "published": "2026-11-02T19:07:51.482Z",
+      "repository": {
+        "url": "git+https://github.com/pionxzh/wakaru.git",
+        "type": "git",
+        "directory": "npm/alias"
+      },
+      "homepage": "https://wakarujs.com",
+      "description": "JavaScript decompiler — unpack bundles and turn minified, transpiled production code back into readable modules. Written in Rust.",
+      "license": "Apache-2.0",
+      "bin": {
+        "wakaru": "bin/wakaru"
+      },
+      "engines": {
+        "node": ">=16.0.0"
+      },
+      "dist": {
+        "shasum": "9aa1bf2119885a204ffa1b08729ca93f905a60ee",
+        "tarball": "https://registry.npmjs.org/wakaru/-/wakaru-1.16.0.tgz",
+        "fileCount": 3,
+        "integrity": "sha512-N30/I5Bw1r2PQUSDthn40Cb4n+ITiW16Tykd/W4S8+wotHM/2WKULeSMNoRL6U3i4E2j3m/+8DWiQnaZ/YDOyw==",
+        "signatures": [
+          {
+            "sig": "MEUCIQCKI5bJHLfV9OZ0javeDFrLNyVFYPurnO/0qmqK2tC9sgIgMboy1F/MkI7CB3m9AuqYhEpsy6cpm+kS23JPgi5gzXM=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          },
+          {
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U",
+            "sig": "MEUCIDcU1Mg1gT+Dg12+suJjH7sWSCm01BjlVux0Kshu/NWKAiEAkPAyD5Z3vqRF9rYhAoMb6c/vFnBMilZH2jvr4b9JY8Q="
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/wakaru@1.16.0",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 6858
+      },
+      "dependencies": {
+        "@wakaru/cli": "1.16.0"
+      },
+      "optionalDependencies": null,
+      "source": "https://registry.npmjs.org/wakaru"
+    }
+  ],
+  "readmes": [
+    {
+      "repo": "j4k0xb/webcrack",
+      "url": "https://raw.githubusercontent.com/j4k0xb/webcrack/master/README.md",
+      "path": "research/j4k0xb-webcrack-README.md"
+    },
+    {
+      "repo": "pionxzh/wakaru",
+      "url": "https://raw.githubusercontent.com/pionxzh/wakaru/main/README.md",
+      "path": "research/pionxzh-wakaru-README.md"
+    },
+    {
+      "repo": "beautifier/js-beautify",
+      "url": "https://raw.githubusercontent.com/beautifier/js-beautify/main/README.md",
+      "path": "research/beautifier-js-beautify-README.md"
+    },
+    {
+      "repo": "danvk/source-map-explorer",
+      "url": "https://raw.githubusercontent.com/danvk/source-map-explorer/master/README.md",
+      "path": "research/danvk-source-map-explorer-README.md"
+    }
+  ],
+  "recommended_install": [
+    "webcrack@2.16.0",
+    "js-beautify@2.0.3",
+    "@babel/parser@8.1.2",
+    "@babel/traverse@8.1.2",
+    "@babel/generator@8.1.2"
+  ],
+  "optional_install": [
+    "wakaru@1.16.0"
+  ],
+  "official_documents": [
+    {
+      "url": "https://webcrack.netlify.app/docs/guide/cli.html",
+      "local": "webcrack-cli-doc.html"
+    },
+    {
+      "url": "https://webcrack.netlify.app/docs/guide/api.html",
+      "local": "webcrack-api-doc.html"
+    },
+    {
+      "url": "https://wakarujs.com/docs/reference/supported-inputs",
+      "local": "wakaru-supported-inputs.html"
+    }
+  ]
+}

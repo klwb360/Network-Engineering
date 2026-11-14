@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-4J6qRxUH3EE6EttPQcVNF3iYSz+NRqcAwKdQbCjQK5w='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Protocol Explorer · Course Studio</title>
+    <meta
+      name="description"
+      content="Watch the internet work, packet by packet. Interactive lessons on HTTP, HTTPS, WebSocket, WebRTC, SIP, RTSP, RTMP, QUIC, TCP, UDP, IP, BGP, IPv6, DNS, DNS over HTTPS, DNSSEC, DHCP, ICMP, IGMP and multicast, NTP, Ethernet and switches, PPPoE, Wi-Fi, WPA3, RADIUS and 802.1X, captive portals, SMTP, POP3, IMAP, FTP, SMB, SSH, TLS, proxies, SOCKS5, WireGuard, IPsec and Modbus, with every packet decoded byte by byte. In English, Spanish, Portuguese, French, German, Italian, Dutch, Polish, Turkish, Greek, Russian, Ukrainian, Indonesian, Vietnamese, Japanese, Chinese (Simplified and Traditional), Korean, Hindi, Arabic and Hebrew."
+    />
+    <meta name="author" content="Dilum Sanjaya" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#fdfdfe" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0b1020" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <script>
+      // the theme, before anything is drawn: the one chosen last time, or the system's
+      try {
+        const saved = localStorage.getItem('protocol-explorer:theme')
+        const dark = saved ? saved === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches
+        document.documentElement.dataset.theme = dark ? 'dark' : 'light'
+        if (saved) for (const meta of document.querySelectorAll('meta[name="theme-color"]')) meta.content = dark ? '#0b1020' : '#fdfdfe'
+      } catch {
+        document.documentElement.dataset.theme = 'light'
+      }
+    </script>
+    <script type="module" crossorigin src="/src/main.mjs"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CwjpA-vk.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    <noscript>
+      <p style="margin: 40px; font: 16px/1.5 ui-monospace, monospace; color: #00238a">
+        Protocol Explorer animates packets as they travel the network, so it needs JavaScript. Please turn it on to start the lessons.
+      </p>
+    </noscript>
+  </body>
+</html>

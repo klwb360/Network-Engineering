@@ -1,0 +1,247 @@
+{
+  "language": "zh-CN",
+  "snapshot": {
+    "target": "https://protocol-explorer-alpha.vercel.app/",
+    "bundle": "https://protocol-explorer-alpha.vercel.app/assets/index-CNPseYOQ.js",
+    "evidenceFile": "derived/index.pretty.js",
+    "lineConvention": "1-based lines in js-beautify 2.0.3 output; generated names are minified identifiers, not recovered original names"
+  },
+  "verified": [
+    {
+      "claim": "全部 39 课英文课程对象直接存在主 bundle 内，以 _s[id] 注册；导航 Ts 提供排序、分组、短说明。",
+      "evidence": [
+        {
+          "symbol": "_s",
+          "line": 9378
+        },
+        {
+          "symbol": "Ts",
+          "line": 9419
+        },
+        {
+          "symbol": "ic",
+          "line": 15802
+        }
+      ],
+      "reuse": "将 lesson 注册表与导航目录分离；课程切换按稳定 id 查对象，课程内容不耦合 DOM。"
+    },
+    {
+      "claim": "课程对象包含拓扑、内容、事件脚本三部分；不是每课一套渲染器。",
+      "evidence": [
+        {
+          "symbol": "O0",
+          "line": 245
+        },
+        {
+          "symbol": "l",
+          "line": 42
+        },
+        {
+          "symbol": "VS",
+          "line": 15566
+        }
+      ],
+      "reuse": "先写结构化 Lesson，再由共用的网络图、时序图和检查器解释；新课程主要增加数据与 wire 编码支持。"
+    },
+    {
+      "claim": "packet 事件和表格 row/wire 是同一对象中的关联结构。",
+      "evidence": [
+        {
+          "symbol": "l",
+          "line": 42
+        },
+        {
+          "symbol": "Vr",
+          "line": 12126
+        }
+      ],
+      "reuse": "保持动画包、报文行、详情检查器使用同一稳定索引；避免三份重复数据不同步。"
+    },
+    {
+      "claim": "TCP 握手、端口方向与 TCP wire 包装通过共用构造器生成。",
+      "evidence": [
+        {
+          "symbol": "q",
+          "line": 53
+        },
+        {
+          "symbol": "P",
+          "line": 66
+        },
+        {
+          "symbol": "he",
+          "line": 76
+        }
+      ],
+      "reuse": "为 DNS 查询、TCP 握手等重复教学情节建立小型工厂函数，并显式传入地址、端口、模拟时间和 quick 标记。"
+    },
+    {
+      "claim": "展示时间与教学播放节奏分离。row.time 是字符串化模拟时刻；GS 按 network/sequence 设置演示事件和步骤间停顿。",
+      "evidence": [
+        {
+          "symbol": "x",
+          "line": 35
+        },
+        {
+          "symbol": "GS",
+          "line": 15549
+        },
+        {
+          "symbol": "WS",
+          "line": 15562
+        },
+        {
+          "symbol": "VS",
+          "line": 15566
+        }
+      ],
+      "reuse": "不要按微秒级网络时延直接播放；保留模拟时间用于时序图/报文表，另设可调教学节奏。"
+    },
+    {
+      "claim": "进度存储在 localStorage 的 protocol-explorer:progress:v1；每课 seen[] 和 done 标志。",
+      "evidence": [
+        {
+          "symbol": "gu",
+          "line": 9639
+        },
+        {
+          "symbol": "Ym",
+          "line": 9657
+        }
+      ],
+      "reuse": "记录学习步骤与完成状态即可；状态字段做版本号并容错 JSON/不可写存储。"
+    },
+    {
+      "claim": "HTTP 响应把 9 个 TCP 分段作为一个教学事件/表格条目展示，557 条是展平后的教学报文条目口径。",
+      "evidence": [
+        {
+          "symbol": "O0 HTTP response",
+          "line": 385
+        },
+        {
+          "symbol": "Vr",
+          "line": 12126
+        }
+      ],
+      "reuse": "将物理分段数和演示对象数分开定义，并向学习者说明省略、合并与加密占位。"
+    }
+  ],
+  "aggregate": {
+    "courseCount": 39,
+    "groups": {
+      "application": 19,
+      "security": 9,
+      "core": 11
+    },
+    "totalSteps": 231,
+    "totalEvents": 671,
+    "totalPackets": 557,
+    "eventTypes": {
+      "type-url": 5,
+      "show": 60,
+      "packet": 520,
+      "camera": 8,
+      "render": 3,
+      "note": 57,
+      "stream": 14,
+      "label": 4
+    }
+  },
+  "schemas": {
+    "lesson": {
+      "required": [
+        "id",
+        "latency",
+        "layer",
+        "legend",
+        "name",
+        "nodes",
+        "outro",
+        "overview",
+        "start",
+        "steps",
+        "title"
+      ],
+      "optional": [
+        "labels",
+        "lifelines",
+        "links",
+        "seenOn"
+      ],
+      "overview": {
+        "full": "full name",
+        "description": "explanatory prose",
+        "facts": "[label,value][]"
+      },
+      "outro": {
+        "title": "completion title",
+        "desc": "short description",
+        "text": "completion explanation",
+        "facts": "[label,value][]"
+      },
+      "start": {
+        "nodes": "initial visible nodes",
+        "frame": "named camera frame"
+      },
+      "step": {
+        "title": "sidebar title",
+        "desc": "short caption",
+        "detail": "long explanatory text",
+        "facts": "[label,value][]",
+        "events": "ordered event[]"
+      }
+    },
+    "packet": {
+      "required": [
+        "type",
+        "from",
+        "to",
+        "color",
+        "label",
+        "payload",
+        "row"
+      ],
+      "optional": [
+        "quick",
+        "lost",
+        "locked"
+      ],
+      "row": [
+        "time",
+        "src",
+        "dst",
+        "proto",
+        "info",
+        "len",
+        "wire"
+      ]
+    },
+    "eventTypes": {
+      "type-url": "模拟客户端输入 URL",
+      "show": "显现一批节点，并可调整 frame",
+      "packet": "from → to 报文动画，关联 row/wire",
+      "stream": "以 packets[] 展示多包序列，检查器按包展开",
+      "camera": "镜头移至预设 frame",
+      "render": "显示客户端页面内容",
+      "note": "节点附近或链路之间的解释标注",
+      "label": "改变节点标签"
+    }
+  },
+  "recommendedAuthoringOrder": [
+    "确定教学边界、参与节点、网络地址/端口、抓包观察位置。",
+    "写 overview 与每步要回答的问题，再划分 start 与 steps。",
+    "按有序 events[] 编写剧本，以 show/camera 控制场景，以 packet/stream 表达通讯。",
+    "用构造器同时生成 row 摘要与 wire 元数据；先保证两者协议、端口、长度、方向一致。",
+    "让网络图、时序图、表格、检查器共用同一展平后的包索引。",
+    "补充丢包、重传、加密等状态与每课 outro；验证正向、跳步、重置和模式切换。",
+    "将本地化文案与协议数值分开，测试长文本是否破坏 SVG 排版。"
+  ],
+  "extraction": {
+    "script": "scripts/extract-courses.mjs",
+    "output": "derived/course-catalog.json",
+    "command": "node scripts/extract-courses.mjs",
+    "method": "Babel AST 选择从 h 到 Ts 的数据前缀，跳过 Vite modulepreload IIFE 与所有 DOM 初始化；包含两条对 un/Ss 做分段长度填充的有限循环；禁用字符串/WASM 动态生成、设置 5 秒超时，不提供文件/网络能力。",
+    "caveat": "仅用于当前已检查公开快照，node:vm 不被当作恶意代码安全边界；本脚本不是通用任意 bundle 执行器，也没有恢复作者原始文件名、类型或注释。",
+    "coverage": "全部课程数量、分组、每课步骤/事件/包数量、字段并集、wire 顶层键；不复制完整教学文案。"
+  }
+}

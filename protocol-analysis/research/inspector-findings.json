@@ -1,0 +1,228 @@
+{
+  "subject": "Original Protocol Explorer public packet inspector",
+  "source": {
+    "url": "https://protocol-explorer-alpha.vercel.app/assets/index-CNPseYOQ.js",
+    "formatted_path": "derived/index.pretty.js",
+    "css_path": "derived/styles.pretty.css",
+    "line_basis": "js-beautify 2.0.3; original minified symbol names preserved; these are analysis-file lines, not recovered source lines"
+  },
+  "core_conclusion": {
+    "confidence": "direct static evidence",
+    "text_zh": "检查器读取课程事件自带的 row.wire 描述，在浏览器内生成教学用协议字节与字段；不是接收真实抓包再解码。序号、MAC、IP ID、时间戳等部分值为稳定的示例值。字节缺失以 null 表达，界面显示为 ··。"
+  },
+  "call_chain": [
+    {
+      "symbol": "Vr",
+      "line": 12126,
+      "role_zh": "展平 lesson.steps[].events：packet 保留，stream 展开 packets，其余动画事件排除。"
+    },
+    {
+      "symbol": "PS",
+      "line": 14845,
+      "role_zh": "从 Vr(lesson) 渲染 packet-table 行，data-packet 使用展平后的0基索引，显示1基序号；行可用 tabindex=0 聚焦。"
+    },
+    {
+      "symbol": "ES",
+      "line": 14886,
+      "role_zh": "表格事件委托 click / Enter，从最近 tr[data-packet] 取索引，跳过 hidden 行。"
+    },
+    {
+      "symbol": "a0",
+      "line": 15783,
+      "role_zh": "若播放器 playing/running 则先 pause，再 kt.open(vt,index)；时序图 .seq-arrow.is-shown 的 click 也用同入口。"
+    },
+    {
+      "symbol": "iS",
+      "line": 14483,
+      "role_zh": "封装检查器 open/close/step/isOpen/index；控制开关动画和当前课程引用。"
+    },
+    {
+      "symbol": "aS -> Wu / Vu",
+      "line": 14428,
+      "role_zh": "Wu更新编号/标题/观察位置/分段说明/协议色条；Vu生成字段树和hex两栏，回到各自滚动起点。"
+    },
+    {
+      "symbol": "Gu -> Xg.frame",
+      "line": 14288,
+      "role_zh": "第一次按课程构建全部报文，WeakMap按lesson对象缓存；后续只取对应索引。Xg.frame 位于14054行。"
+    },
+    {
+      "symbol": "kt onChange",
+      "line": 15765,
+      "role_zh": "给报文表行与时序图箭头同时加 is-inspected，并滚动报文表到所选行。"
+    },
+    {
+      "symbol": "o0 / r0",
+      "line": 15764,
+      "role_zh": "上一包/下一包只遍历当前已显示报文；状态变化使所选报文不可见时自动关闭检查器，避免检查未来报文。"
+    }
+  ],
+  "schemas": {
+    "event_row_wire": {
+      "source_line": 14054,
+      "shape": {
+        "row": "{time,src,dst,proto,info,len,wire}",
+        "wire": "{tcp?|udp?|arp?|icmp?|ipv6?|wifi?|pppoe?|igmp?,link?,ttl?,natOf?,copyOf?,alias?,at?}",
+        "tcp": "{sport,dport,flags,data?,seq?,ack?,mss?,segments?,opened?,sack?}",
+        "udp": "{sport,dport,data,noChecksum?}",
+        "data_dispatch": "{ascii?|text?|http?|opaque?|tls?|dns?|dhcp?|ssh?|rtp?|mpegts?|rtmp?|ws?|socks?|wg?|ike?|esp?|quic?|ntp?|radius?|smb?|modbus?|bgp?|stun?|dtls?|srtp?, take?}"
+      }
+    },
+    "layer_builder_R": {
+      "source_line": 8779,
+      "shape": {
+        "id": "protocol layer id",
+        "name": "display name",
+        "bytes": "Array<number|null>",
+        "fields": "Array<{name,value,from,to,note?,example?,depth?,heading?,hidden?,inside?,mono?}>"
+      },
+      "notes_zh": "field(name,value,writer,options) 先记录字节起点，调用writer写入字节，再记录终点；不用独立维护字段偏移。u8/u16/u24/u32及little-endian、u64、raw、TextEncoder ascii 方法均返回this可链式调用。unknown(n)写入n个null。"
+    },
+    "assembled_frame": {
+      "source_line": 8864,
+      "shape": {
+        "bytes": "all layer bytes concatenated",
+        "layers": "[{id,name,summary,from,to}]",
+        "fields": "[{...localField,layer,from:globalOffset,to:globalOffset}]",
+        "index": "packet index",
+        "at": "capture viewpoint description",
+        "segments": "number of represented TCP segments",
+        "messageLength": "full application-message length or null",
+        "tcp": "{seq,ack,hlen,mss} or null",
+        "ipId": "synthetic per-source incrementing id",
+        "ipLength": "IPv4 packet length when applicable"
+      },
+      "notes_zh": "Rr(layerBuilders) 将各层局部偏移统一成全报文偏移，是字段树、hex和色条共用的基础。"
+    }
+  },
+  "byte_generation": [
+    {
+      "symbol": "Xg.link / Xg.endpointMac",
+      "line": 13851,
+      "text_zh": "按私网、本地广播、路由器出口或远端发送者选择观察位置和下一跳MAC；同一IP路径的不同课程观察点可不同。保留教学中的链路层/网络层区别。"
+    },
+    {
+      "symbol": "kr / Xg.ipId / Xg.conn",
+      "line": 12162,
+      "text_zh": "kr为确定性FNV风格哈希；IP ID、TCP ISN、初始时间戳由固定字符串派生，连接以端点排序键跟踪。conn支持alias，从而连接NAT前后状态。"
+    },
+    {
+      "symbol": "Xg.deliver / Xg.tcp",
+      "line": 13930,
+      "text_zh": "维护收到的连续字节got和乱序区间ooo，在推定传播时间之后交付；SYN/FIN占一个序号。支持SACK、MSS、窗口扩大、TCP时间戳等选项，不只是渲染文字。"
+    },
+    {
+      "symbol": "Xg.frame IPv4/Ethernet branch",
+      "line": 14054,
+      "text_zh": "先构建Ethernet，再按wire分派ARP、PPP/PPPoE、IPv4+TCP/UDP/ICMP/IGMP；a.wifi走Wg、a.ipv6走jg。IPv4头长度/总长度/ID/DF/TTL/协议号及校验和来自生成结构。"
+    },
+    {
+      "symbol": "zw / $h",
+      "line": 12189,
+      "text_zh": "应用层按声明式data对象分派专用编码器；$h支持take范围，对切片后的字段重新计算偏移。文本头显式补CRLF。HTTP正文/加密数据/随机数据调用unknown。"
+    },
+    {
+      "symbol": "Xg.tcp first segment",
+      "line": 13980,
+      "text_zh": "应用层长度超过编码器载荷上限时，报文行可代表多个TCP段；检查器只展示第一段。固定载荷上限 1460，启用12字节TCP时间戳时数据上限1448。Wu明确显示分段数和完整消息长度。"
+    },
+    {
+      "symbol": "Ethernet padding",
+      "line": 14246,
+      "text_zh": "不足60字节的以太帧补零，注释解释网卡附加FCS后为64字节；实际字节数组没有生成4字节Ethernet FCS。"
+    }
+  ],
+  "checksums": {
+    "algorithm": {
+      "symbol": "pn",
+      "line": 8852,
+      "text_zh": "对相邻字节组成16位网络序字累加，奇数字节补0，折叠进位，取反；遇任何null直接返回null。"
+    },
+    "ipv4": {
+      "line": 14240,
+      "text_zh": "填零校验和字段后对IPv4头调用pn，再回填两个字节和显示值。"
+    },
+    "tcp": {
+      "line": 14041,
+      "text_zh": "Qh构造IPv4伪首部；对伪首部+TCP头+第一段数据计算。数据未知则字节和显示元信息都标成未知，不伪造checksum。"
+    },
+    "udp": {
+      "line": 14129,
+      "text_zh": "对伪首部+UDP头+数据计算；零结果写65535；指定udp.noChecksum时写0并说明不用。"
+    },
+    "icmp_igmp": {
+      "line": 14200,
+      "text_zh": "ICMP与IGMP消息按各自完整字节计算。ICMP error引用前报文并在调整TTL后重算被引用IPv4头校验和。"
+    },
+    "ipv6_icmpv6": {
+      "line": 13810,
+      "text_zh": "jg使用IPv6源/目的地址、长度与next-header组成伪首部，再计算ICMPv6校验和。"
+    },
+    "limits_zh": "这里校验的是教学编码器产生的字节，不能据此声称来自真实网络或已被Wireshark全协议验证；含null的帧不能直接序列化为可信真实抓包。"
+  },
+  "ui": [
+    {
+      "symbol": "eS",
+      "line": 14363,
+      "text_zh": "检查器是simulation区域的absolute覆盖层，不是新路由；头部编号/标题/prev-next-close，观察位置，协议条，字段树，hex/ascii，底部示例与未知字节图例。"
+    },
+    {
+      "symbol": "sS / tS",
+      "line": 14395,
+      "text_zh": "按layers生成section，再筛选对应fields；以depth/heading/hidden/inside/mono类控制说明层次。渲染前M转义文本。"
+    },
+    {
+      "symbol": "nS",
+      "line": 14408,
+      "text_zh": "每行16字节，左侧4位hex偏移、中间hex、右侧ASCII；null显示··/·，不可打印ASCII显示点。字节span具有data-i并按layer着色。"
+    },
+    {
+      "symbol": "oS",
+      "line": 14420,
+      "text_zh": "协议条flex权重为max(layerByteCount,totalByteCount*0.045)，保证短层可点击；因此视觉宽度不是严格字节占比。"
+    },
+    {
+      "symbol": "rS / fr",
+      "line": 14458,
+      "text_zh": "字段mouseover高亮from..to范围内的hex和ASCII；字节mouseover查找覆盖它的字段，取最小范围字段并滚动到该字段。点击协议条滚到相应层。mouseleave清除高亮。"
+    },
+    {
+      "symbol": "iS.step",
+      "line": 14523,
+      "text_zh": "上一包/下一包来自visible()索引列表，更新头部后对ins-body做切换动画；不循环到另一端。"
+    },
+    {
+      "symbol": "CSS .ins-body",
+      "css_line": 3595,
+      "text_zh": "宽屏grid为1fr + 398px，两栏独立纵向滚动；is-single布局改为一列，字段树与hex顺序排列、共享纵向滚动。CSS 4632行。"
+    }
+  ],
+  "observed_absence": {
+    "scope": "Entire downloaded public main bundle static text/API scan plus inspector DOM template and delegated handlers",
+    "text_zh": "未找到PCAP导入/导出、Clipboard API、Blob下载、createObjectURL、download属性或FileReader实现；检查器按钮只有上一包、下一包、关闭。协议课程文案中download/copy等词不代表UI功能。此结论限于本次版本的公开前端。",
+    "negative_search_patterns": [
+      "pcap",
+      "clipboard",
+      "writeText",
+      "createObjectURL",
+      "Blob",
+      "download=",
+      "FileReader"
+    ]
+  },
+  "reusable_method_zh": [
+    "先定义稳定的教学事件与row.wire；同一个packet索引驱动表格、时序图与检查器。",
+    "实现LayerBuilder：写字段时同时写字节和记录半开区间[from,to)，为编码器减少两份偏移维护。",
+    "用null表示未知数据，分别处理示例值与无法展示的真实值；在UI明确标注，checksum覆盖未知字节时保持未知。",
+    "构建Assembler一次性把局部偏移转换成全局偏移，供字段树、16字节hex、ASCII与协议条共享。",
+    "连接级状态负责SEQ/ACK/TS/SACK，协议编码器负责层内字段，UI只渲染统一frame结构；以WeakMap按课程缓存。",
+    "所有入口统一到inspect(index)，暂停播放器，同步表格/时序图选中状态；prev/next限定在可见报文集合。",
+    "复用交互时保留最小覆盖字段策略、转义输出、键盘Enter入口、窄屏单列与reduced-motion分支。",
+    "若要升级成真实PCAP工具，需要另加文件格式、链路类型、分段/重组、协议解码和完整数据验证；原版未实现这些功能。"
+  ],
+  "uncertainties": [
+    "No original TypeScript/JavaScript module names recovered. All symbols above are identifiers in the deployed bundle.",
+    "Browser behavior will be verified separately by parent agent.",
+    "No real capture files or network-protocol interoperability suite were supplied, so packet encoders have not been validated as general-purpose serializers."
+  ]
+}

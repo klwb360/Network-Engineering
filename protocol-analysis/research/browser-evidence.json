@@ -1,0 +1,389 @@
+{
+  "origin": "https://protocol-explorer-alpha.vercel.app",
+  "recordedAt": "2026-11-13T01:29:20.047Z",
+  "browser": "155.0.8059.79",
+  "transport": "Unchanged original HTTPS responses via Playwright APIRequestContext; proxy CA verification enabled.",
+  "requests": [
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/",
+      "status": 200,
+      "type": "document",
+      "bytes": 6249,
+      "sha256": "70603dbf7192ff889e4f5230229bc5d73e4c26c4056b010d3b39a52089b08d72"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/index-CwjpA-vk.css",
+      "status": 200,
+      "type": "stylesheet",
+      "bytes": 75991,
+      "sha256": "330dfe72889cf6fc9b048e50bca6a40f2a5858dfcc24fb76f32f67971e88cd3d"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/index-CNPseYOQ.js",
+      "status": 200,
+      "type": "script",
+      "bytes": 506093,
+      "sha256": "19e285d11f5fa0b1411ec94aaea6cd04531872e8322bb8a46c80e4f92e262834"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/iosevka-800-Ctjohn3a.woff2",
+      "status": 200,
+      "type": "font",
+      "bytes": 75492,
+      "sha256": "29f9603e5adda955490e9007913dbae76fe8892409ce1e8b460144e3c0d260bc"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/iosevka-700-BxdwZZnN.woff2",
+      "status": 200,
+      "type": "font",
+      "bytes": 75672,
+      "sha256": "0e4f1ad1048d745e2b0d9bddcb71bffc4796923ea2eb70c825cb9ff210e2b155"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/iosevka-800-italic-D0Mo0HIB.woff2",
+      "status": 200,
+      "type": "font",
+      "bytes": 84244,
+      "sha256": "96c0912e56099dc4889458fd2218ac60ccedc60f98beaf448b47974a44780f30"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/iosevka-500-C4FA_zML.woff2",
+      "status": 200,
+      "type": "font",
+      "bytes": 76056,
+      "sha256": "e6ab7223714d87352a3b5601dc6974ef0515c069cb1f1c57f5f3ad7503cee11d"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/iosevka-400-DnzhOSIo.woff2",
+      "status": 200,
+      "type": "font",
+      "bytes": 75928,
+      "sha256": "702dd65ac2b6c475ed3e5dbf9a3db637ba121e18cb36e1c4dc763d849d0fe0a2"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/iosevka-600-Dj5n5yBL.woff2",
+      "status": 200,
+      "type": "font",
+      "bytes": 75844,
+      "sha256": "30d93b6c22d1ff507f66738b526c6c8ca5b90bcb997f8943819ee6787ddf99d3"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/favicon.svg",
+      "status": 200,
+      "type": "other",
+      "bytes": 601,
+      "sha256": "a83a2c063ba4a1f26cdabc96a50074496ab80d77aa1c34fda71d143138f3a705"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/iosevka-greek-800-CVVc1U8B.woff2",
+      "status": 200,
+      "type": "font",
+      "bytes": 10448,
+      "sha256": "f06238ab7d03a867ed53d93013b214e788571b1769904687d3547a9ac969de16"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/iosevka-cyrillic-800-D3C0C3o1.woff2",
+      "status": 200,
+      "type": "font",
+      "bytes": 10500,
+      "sha256": "fc6f7cfab3cb61a4cc536e46328704f9935278b9be15dda2c75452e139b086c6"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/iosevka-vietnamese-800-LtTfXbIA.woff2",
+      "status": 200,
+      "type": "font",
+      "bytes": 5116,
+      "sha256": "d81b07fa77ba57ed4007cd620cdf42da4f4bd0873d3a15e9bf824ec717c7faed"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/zh-AH-lIMHP.js",
+      "status": 200,
+      "type": "script",
+      "bytes": 357488,
+      "sha256": "c961c224d1a0c4cb838e8b74a1e12eea6ebc02ccd37f37350f1b1dfa1b19801f"
+    }
+  ],
+  "checks": [
+    {
+      "name": "HTTP overview exposes seven packet rows",
+      "passed": true
+    },
+    {
+      "name": "Packet inspector contains Ethernet IPv4 UDP DNS",
+      "passed": true
+    },
+    {
+      "name": "Hover field highlights matching hex and ASCII byte range",
+      "passed": true,
+      "detail": {
+        "from": 0,
+        "to": 6
+      }
+    },
+    {
+      "name": "Inspector next packet updates shared selection",
+      "passed": true
+    },
+    {
+      "name": "Sequence overview has one arrow per HTTP packet row",
+      "passed": true
+    },
+    {
+      "name": "Sequence arrow opens same packet inspector",
+      "passed": true
+    },
+    {
+      "name": "Step enters lesson playback",
+      "passed": true
+    },
+    {
+      "name": "Reset restores all HTTP packet rows",
+      "passed": true
+    },
+    {
+      "name": "https course renders packet rows",
+      "passed": true,
+      "detail": {
+        "count": 11
+      }
+    },
+    {
+      "name": "https last packet serializes into inspector bytes",
+      "passed": true,
+      "detail": {
+        "hexBytes": 1514
+      }
+    },
+    {
+      "name": "tcp course renders packet rows",
+      "passed": true,
+      "detail": {
+        "count": 14
+      }
+    },
+    {
+      "name": "tcp last packet serializes into inspector bytes",
+      "passed": true,
+      "detail": {
+        "hexBytes": 60
+      }
+    },
+    {
+      "name": "dnssec course renders packet rows",
+      "passed": true,
+      "detail": {
+        "count": 8
+      }
+    },
+    {
+      "name": "dnssec last packet serializes into inspector bytes",
+      "passed": true,
+      "detail": {
+        "hexBytes": 91
+      }
+    },
+    {
+      "name": "quic course renders packet rows",
+      "passed": true,
+      "detail": {
+        "count": 10
+      }
+    },
+    {
+      "name": "quic last packet serializes into inspector bytes",
+      "passed": true,
+      "detail": {
+        "hexBytes": 73
+      }
+    },
+    {
+      "name": "ipv6 course renders packet rows",
+      "passed": true,
+      "detail": {
+        "count": 6
+      }
+    },
+    {
+      "name": "ipv6 last packet serializes into inspector bytes",
+      "passed": true,
+      "detail": {
+        "hexBytes": 86
+      }
+    },
+    {
+      "name": "wifi course renders packet rows",
+      "passed": true,
+      "detail": {
+        "count": 12
+      }
+    },
+    {
+      "name": "wifi last packet serializes into inspector bytes",
+      "passed": true,
+      "detail": {
+        "hexBytes": 378
+      }
+    },
+    {
+      "name": "Simplified Chinese loads on demand",
+      "passed": true
+    },
+    {
+      "name": "Mobile uses phone layout",
+      "passed": true
+    },
+    {
+      "name": "Observed traffic contains no fetch/XHR course API",
+      "passed": true,
+      "detail": [
+        {
+          "type": "document",
+          "url": "https://protocol-explorer-alpha.vercel.app/"
+        },
+        {
+          "type": "stylesheet",
+          "url": "https://protocol-explorer-alpha.vercel.app/assets/index-CwjpA-vk.css"
+        },
+        {
+          "type": "script",
+          "url": "https://protocol-explorer-alpha.vercel.app/assets/index-CNPseYOQ.js"
+        },
+        {
+          "type": "font",
+          "url": "https://protocol-explorer-alpha.vercel.app/assets/iosevka-800-Ctjohn3a.woff2"
+        },
+        {
+          "type": "font",
+          "url": "https://protocol-explorer-alpha.vercel.app/assets/iosevka-700-BxdwZZnN.woff2"
+        },
+        {
+          "type": "font",
+          "url": "https://protocol-explorer-alpha.vercel.app/assets/iosevka-800-italic-D0Mo0HIB.woff2"
+        },
+        {
+          "type": "font",
+          "url": "https://protocol-explorer-alpha.vercel.app/assets/iosevka-500-C4FA_zML.woff2"
+        },
+        {
+          "type": "font",
+          "url": "https://protocol-explorer-alpha.vercel.app/assets/iosevka-400-DnzhOSIo.woff2"
+        },
+        {
+          "type": "font",
+          "url": "https://protocol-explorer-alpha.vercel.app/assets/iosevka-600-Dj5n5yBL.woff2"
+        },
+        {
+          "type": "other",
+          "url": "https://protocol-explorer-alpha.vercel.app/favicon.svg"
+        },
+        {
+          "type": "font",
+          "url": "https://protocol-explorer-alpha.vercel.app/assets/iosevka-greek-800-CVVc1U8B.woff2"
+        },
+        {
+          "type": "font",
+          "url": "https://protocol-explorer-alpha.vercel.app/assets/iosevka-cyrillic-800-D3C0C3o1.woff2"
+        },
+        {
+          "type": "font",
+          "url": "https://protocol-explorer-alpha.vercel.app/assets/iosevka-vietnamese-800-LtTfXbIA.woff2"
+        },
+        {
+          "type": "script",
+          "url": "https://protocol-explorer-alpha.vercel.app/assets/zh-AH-lIMHP.js"
+        }
+      ]
+    },
+    {
+      "name": "No browser JavaScript errors",
+      "passed": true
+    }
+  ],
+  "samples": [
+    {
+      "view": "HTTP packet 1 inspector",
+      "text": "1\nDNS QUERY\n0.000s · 192.168.1.10 → 8.8.8.8 · DNS · 75 B\n‹\n›\n✕\nSeen on the laptop’s home network\nEthernet\n14\nIPv4\n20\nUDP\n8\nDNS\n33\nEthernet II · 14 bytes\n00:00:5e:00:53:10 → 00:00:5e:00:53:01\nDestination\n00:00:5e:00:53:01 E.G.\n\nThe router: anything beyond the home network goes to it first.\n\nSource\n00:00:5e:00:53:10 E.G.\n\nThe laptop’s network card.\n\nType\n0x0800 (IPv4)\n\nWhat the frame carries.\n\nIPv4 · 20 bytes\n192.168.1.10 → 8.8.8.8\nVersion, header length\n4, 20 bytes\n\nIPv4, with no options.\n\nDSCP, ECN\n0, 0\n\nPriority and congestion marks; 0 means ordinary traffic.\n\nTotal length\n61 bytes\n\nThis header and everything inside it.\n\nIdentification\n0xd825 E.G.\n\nLets the receiver reassemble the pieces if the packet gets split.\n\nFlags\nnone E.G.\n\nRouters may split it if a link is too small.\n\nTime to live\n128\n\nWindows starts at 128.\n\nProtocol\n17 (UDP)\nHeader checksum\n0x90c8\n\nCovers this header only; every router recomputes it after lowering the TTL.\n\nSource\n192.168.1.10\nDestination\n8.8.8.8\nUDP · 8 bytes\n59321 → 53\nSource port\n59321\nDestination port\n53\nLength\n41 bytes\n\nUDP header and data. That is all of UDP: no numbering, no acknowledgements.\n\nChecksum\n0xbe74\n\nCovers the header, the data and the IP addresses.\n\nDNS\nTransaction ID\n0x3d1a E.G.\n\nPicked at random; the answer must carry the same one.\n\nFlags\n0x0100: query, RD (recursion desired)\nQuestions\n1\nAnswers\n0\nAuthority records\n0\nAdditional records\n0\nQuestion\nwww.example.com, type A, class IN\nBYTES 75 in this frame\n0000\n00\n00\n5e\n00\n53\n01\n00\n00\n5e\n00\n53\n10\n08\n00\n45\n00\n.\n.\n^\n.\nS\n.\n.\n.\n^\n.\nS\n.\n.\n.\nE\n.\n0010\n00\n3d\nd8\n25\n00\n00\n80\n11\n90\nc8\nc0\na8\n01\n0a\n08\n08\n.\n=\n.\n%\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n0020\n08\n08\ne7\nb9\n00\n35\n00\n29\nbe\n74\n3d\n1a\n01\n00\n00\n01\n.\n.\n.\n.\n.\n5\n.\n)\n.\nt\n=\n.\n.\n.\n.\n.\n0030\n00\n00\n00\n00\n00\n00\n03\n77\n77\n77\n07\n65\n78\n61\n6d\n70\n.\n.\n.\n.\n.\n.\n.\nw\nw\nw\n.\ne\nx\na\nm\np\n0040\n6c\n65\n03\n63\n6f\n6d\n00\n00\n01\n00\n01\nl\ne\n.\nc\no\nm\n.\n.\n.\n.\n.\nE.G. an example value: it differs in every real capture\n·· bytes the lesson can’t show: encrypted, random, or a file’s contents",
+      "fields": 24,
+      "hexBytes": 75
+    },
+    {
+      "view": "HTTP first event",
+      "text": "STEP DETAILS\nOVERVIEW\nSTEP 1 OF 5\nCLIENT REQUEST\n\nBrowser prepares the request\n\nYou open http://www.example.com. The browser will send a GET request, but packets travel to IP addresses, not names, so first it needs the server’s address. (Browsers now try https:// first; this is the plain version.)\n\nURL\nhttp://www.example.com/\nMETHOD\nGET\nNEXT HOP\nRouter 192.168.1.1",
+      "visibleRows": 0
+    },
+    {
+      "view": "https last packet",
+      "packetRows": 11,
+      "hexBytes": 1514,
+      "unknownBytes": 1457,
+      "layers": [
+        "Ethernet II · 14 bytes00:00:5e:00:53:01 → 00:00:5e:00:53:10",
+        "IPv4 · 20 bytes203.0.113.10 → 192.168.1.10",
+        "TCP · 20 bytes443 → 52411, PSH, ACK",
+        "TLS 1.3 · 1 record"
+      ]
+    },
+    {
+      "view": "tcp last packet",
+      "packetRows": 14,
+      "hexBytes": 60,
+      "unknownBytes": 0,
+      "layers": [
+        "Ethernet II · 14 bytes00:00:5e:00:53:10 → 00:00:5e:00:53:01",
+        "IPv4 · 20 bytes192.168.1.10 → 203.0.113.10",
+        "TCP · 20 bytes49152 → 80, ACK",
+        "Ethernet padding · 6 bytes"
+      ]
+    },
+    {
+      "view": "dnssec last packet",
+      "packetRows": 8,
+      "hexBytes": 91,
+      "unknownBytes": 0,
+      "layers": [
+        "Ethernet II · 14 bytes00:00:5e:00:53:01 → 00:00:5e:00:53:10",
+        "IPv4 · 20 bytes8.8.8.8 → 192.168.1.10",
+        "UDP · 8 bytes53 → 61302",
+        "DNS"
+      ]
+    },
+    {
+      "view": "quic last packet",
+      "packetRows": 10,
+      "hexBytes": 73,
+      "unknownBytes": 24,
+      "layers": [
+        "Ethernet II · 14 bytes00:00:5e:00:53:10 → 00:00:5e:00:53:01",
+        "IPv4 · 20 bytes192.168.1.10 → 203.0.113.10",
+        "UDP · 8 bytes59214 → 443",
+        "QUIC · 1-RTT"
+      ]
+    },
+    {
+      "view": "ipv6 last packet",
+      "packetRows": 6,
+      "hexBytes": 86,
+      "unknownBytes": 0,
+      "layers": [
+        "Ethernet II · 14 bytes00:00:5e:00:53:10 → 00:00:5e:00:53:01",
+        "IPv6 · 40 bytesfe80::8d2e:4f61:a9b0:7c13 → fe80::1",
+        "ICMPv6 · Neighbor Advertisement"
+      ]
+    },
+    {
+      "view": "wifi last packet",
+      "packetRows": 12,
+      "hexBytes": 378,
+      "unknownBytes": 344,
+      "layers": [
+        "802.11 · 26 bytes00:00:5e:00:53:10 → 00:00:5e:00:53:01",
+        "CCMP · encrypted"
+      ]
+    },
+    {
+      "view": "Chinese localization",
+      "text": "协议概览\nHTTP\n学习中\n\n超文本传输\n\nHTTP 是 Web 的协议：客户端请求某个资源（比如一个 HTML 页面），服务器用状态码、头部，通常还有正文来回应。每次交换都由一个请求和一个响应组成，在 HTTP/1.1 中写成可读的文本。\n\n层\n应用层（第 7 层）\n默认端口\n80 (HTTPS: 443)\n传输层\nTCP\n数据格式\n文本（头部 + 可选正文）\n常用方法\nGET, POST, PUT, DELETE, HEAD\n定义于\nRFC 9110, RFC 9112"
+    }
+  ],
+  "errors": []
+}

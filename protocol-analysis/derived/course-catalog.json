@@ -1,0 +1,5296 @@
+{
+  "source": "https://protocol-explorer-alpha.vercel.app/assets/index-CNPseYOQ.js",
+  "method": "SHA-256-bound, manually reviewed declaration-prefix replay selected with Babel AST, including initializers and two finite segmentation loops; DOM/IIFE excluded; only TextEncoder explicitly injected; string/Wasm code generation disabled; 5 s limit; node:vm is not a security boundary",
+  "registry": {
+    "symbol": "_s",
+    "line": 9378,
+    "endLine": 9418
+  },
+  "navigation": {
+    "symbol": "Ts",
+    "line": 9419,
+    "endLine": 9614
+  },
+  "courseCount": 39,
+  "groups": {
+    "application": 19,
+    "security": 9,
+    "core": 11
+  },
+  "totalSteps": 231,
+  "totalEvents": 671,
+  "totalPackets": 557,
+  "eventTypes": {
+    "type-url": 5,
+    "show": 60,
+    "packet": 520,
+    "camera": 8,
+    "render": 3,
+    "note": 57,
+    "stream": 14,
+    "label": 4
+  },
+  "courses": [
+    {
+      "id": "http",
+      "name": "HTTP",
+      "group": "application",
+      "layer": 7,
+      "sourceSymbol": "O0",
+      "source": {
+        "line": 245,
+        "endLine": 414
+      },
+      "lessonFields": [
+        "id",
+        "name",
+        "title",
+        "layer",
+        "nodes",
+        "latency",
+        "legend",
+        "overview",
+        "outro",
+        "start",
+        "steps"
+      ],
+      "nodes": [
+        "client",
+        "router",
+        "dns",
+        "internet",
+        "web"
+      ],
+      "start": {
+        "nodes": [
+          "client"
+        ],
+        "frame": "client"
+      },
+      "stepCount": 5,
+      "eventCount": 13,
+      "packetCount": 7,
+      "eventTypes": {
+        "type-url": 1,
+        "show": 3,
+        "packet": 7,
+        "camera": 1,
+        "render": 1
+      },
+      "packetProtocols": {
+        "DNS": 2,
+        "TCP": 3,
+        "HTTP": 2
+      },
+      "packetOptionalFieldPresence": {
+        "quick": 3
+      },
+      "steps": [
+        {
+          "index": 0,
+          "title": "Client Request",
+          "eventCount": 2,
+          "eventTypes": {
+            "type-url": 1,
+            "show": 1
+          },
+          "packetCount": 0
+        },
+        {
+          "index": 1,
+          "title": "DNS Resolution",
+          "eventCount": 3,
+          "eventTypes": {
+            "show": 1,
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 2,
+          "title": "TCP Connection",
+          "eventCount": 4,
+          "eventTypes": {
+            "show": 1,
+            "packet": 3
+          },
+          "packetCount": 3
+        },
+        {
+          "index": 3,
+          "title": "HTTP Exchange",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 4,
+          "title": "Page Rendering",
+          "eventCount": 2,
+          "eventTypes": {
+            "camera": 1,
+            "render": 1
+          },
+          "packetCount": 0
+        }
+      ],
+      "packetFields": [
+        "color",
+        "from",
+        "label",
+        "payload",
+        "quick",
+        "row",
+        "to",
+        "type"
+      ],
+      "rowFields": [
+        "dst",
+        "info",
+        "len",
+        "proto",
+        "src",
+        "time",
+        "wire"
+      ],
+      "wireKeys": [
+        "tcp",
+        "udp"
+      ]
+    },
+    {
+      "id": "https",
+      "name": "HTTPS",
+      "group": "security",
+      "layer": 7,
+      "sourceSymbol": "M0",
+      "source": {
+        "line": 511,
+        "endLine": 744
+      },
+      "lessonFields": [
+        "id",
+        "name",
+        "title",
+        "layer",
+        "nodes",
+        "latency",
+        "legend",
+        "overview",
+        "outro",
+        "start",
+        "steps"
+      ],
+      "nodes": [
+        "client",
+        "router",
+        "dns",
+        "internet",
+        "web"
+      ],
+      "start": {
+        "nodes": [
+          "client"
+        ],
+        "frame": "client"
+      },
+      "stepCount": 6,
+      "eventCount": 18,
+      "packetCount": 11,
+      "eventTypes": {
+        "type-url": 1,
+        "show": 3,
+        "packet": 11,
+        "note": 1,
+        "camera": 1,
+        "render": 1
+      },
+      "packetProtocols": {
+        "DNS": 2,
+        "TCP": 3,
+        "TLSv1.3": 6
+      },
+      "packetOptionalFieldPresence": {
+        "quick": 4,
+        "locked": 3
+      },
+      "steps": [
+        {
+          "index": 0,
+          "title": "Secure Request",
+          "eventCount": 2,
+          "eventTypes": {
+            "type-url": 1,
+            "show": 1
+          },
+          "packetCount": 0
+        },
+        {
+          "index": 1,
+          "title": "DNS Lookup",
+          "eventCount": 3,
+          "eventTypes": {
+            "show": 1,
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 2,
+          "title": "TCP Handshake",
+          "eventCount": 4,
+          "eventTypes": {
+            "show": 1,
+            "packet": 3
+          },
+          "packetCount": 3
+        },
+        {
+          "index": 3,
+          "title": "TLS Handshake",
+          "eventCount": 4,
+          "eventTypes": {
+            "packet": 3,
+            "note": 1
+          },
+          "packetCount": 3
+        },
+        {
+          "index": 4,
+          "title": "Encrypted Exchange",
+          "eventCount": 3,
+          "eventTypes": {
+            "packet": 3
+          },
+          "packetCount": 3
+        },
+        {
+          "index": 5,
+          "title": "Page Rendering",
+          "eventCount": 2,
+          "eventTypes": {
+            "camera": 1,
+            "render": 1
+          },
+          "packetCount": 0
+        }
+      ],
+      "packetFields": [
+        "color",
+        "from",
+        "label",
+        "locked",
+        "payload",
+        "quick",
+        "row",
+        "to",
+        "type"
+      ],
+      "rowFields": [
+        "dst",
+        "info",
+        "len",
+        "proto",
+        "src",
+        "time",
+        "wire"
+      ],
+      "wireKeys": [
+        "tcp",
+        "udp"
+      ]
+    },
+    {
+      "id": "websocket",
+      "name": "WebSocket",
+      "group": "application",
+      "layer": 7,
+      "sourceSymbol": "Wf",
+      "source": {
+        "line": 3182,
+        "endLine": 3342
+      },
+      "lessonFields": [
+        "id",
+        "name",
+        "title",
+        "layer",
+        "nodes",
+        "latency",
+        "labels",
+        "legend",
+        "overview",
+        "outro",
+        "start",
+        "steps"
+      ],
+      "nodes": [
+        "client",
+        "router",
+        "internet",
+        "web"
+      ],
+      "start": {
+        "nodes": [
+          "client"
+        ],
+        "frame": "client"
+      },
+      "stepCount": 6,
+      "eventCount": 13,
+      "packetCount": 11,
+      "eventTypes": {
+        "show": 1,
+        "packet": 11,
+        "note": 1
+      },
+      "packetProtocols": {
+        "TCP": 3,
+        "HTTP": 2,
+        "WebSocket": 6
+      },
+      "packetOptionalFieldPresence": {
+        "quick": 3
+      },
+      "steps": [
+        {
+          "index": 0,
+          "title": "TCP Connection",
+          "eventCount": 4,
+          "eventTypes": {
+            "show": 1,
+            "packet": 3
+          },
+          "packetCount": 3
+        },
+        {
+          "index": 1,
+          "title": "Ask to Upgrade",
+          "eventCount": 1,
+          "eventTypes": {
+            "packet": 1
+          },
+          "packetCount": 1
+        },
+        {
+          "index": 2,
+          "title": "Switch Protocols",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 1,
+            "note": 1
+          },
+          "packetCount": 1
+        },
+        {
+          "index": 3,
+          "title": "Live Updates",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 4,
+          "title": "Keeping It Alive",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 5,
+          "title": "Closing",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        }
+      ],
+      "packetFields": [
+        "color",
+        "from",
+        "label",
+        "payload",
+        "quick",
+        "row",
+        "to",
+        "type"
+      ],
+      "rowFields": [
+        "dst",
+        "info",
+        "len",
+        "proto",
+        "src",
+        "time",
+        "wire"
+      ],
+      "wireKeys": [
+        "tcp"
+      ]
+    },
+    {
+      "id": "webrtc",
+      "name": "WebRTC",
+      "group": "application",
+      "layer": 7,
+      "sourceSymbol": "rm",
+      "source": {
+        "line": 7225,
+        "endLine": 7546
+      },
+      "lessonFields": [
+        "id",
+        "name",
+        "title",
+        "layer",
+        "nodes",
+        "latency",
+        "labels",
+        "legend",
+        "overview",
+        "outro",
+        "start",
+        "steps"
+      ],
+      "nodes": [
+        "client",
+        "router",
+        "internet",
+        "relay",
+        "web",
+        "remote",
+        "peer"
+      ],
+      "start": {
+        "nodes": [
+          "client"
+        ],
+        "frame": "client"
+      },
+      "stepCount": 8,
+      "eventCount": 19,
+      "packetCount": 20,
+      "eventTypes": {
+        "show": 1,
+        "packet": 14,
+        "note": 2,
+        "stream": 2
+      },
+      "packetProtocols": {
+        "TLSv1.3": 6,
+        "STUN": 4,
+        "DTLSv1.2": 4,
+        "SRTP": 6
+      },
+      "packetOptionalFieldPresence": {
+        "locked": 7,
+        "quick": 4
+      },
+      "steps": [
+        {
+          "index": 0,
+          "title": "Join the Call",
+          "eventCount": 3,
+          "eventTypes": {
+            "show": 1,
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 1,
+          "title": "Public Address?",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 2,
+          "title": "The Offer",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 3,
+          "title": "The Answer",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 4,
+          "title": "Punch Through",
+          "eventCount": 3,
+          "eventTypes": {
+            "packet": 2,
+            "note": 1
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 5,
+          "title": "DTLS Handshake",
+          "eventCount": 4,
+          "eventTypes": {
+            "packet": 4
+          },
+          "packetCount": 4
+        },
+        {
+          "index": 6,
+          "title": "Media Flows",
+          "eventCount": 2,
+          "eventTypes": {
+            "stream": 2
+          },
+          "packetCount": 6
+        },
+        {
+          "index": 7,
+          "title": "Peer to Peer",
+          "eventCount": 1,
+          "eventTypes": {
+            "note": 1
+          },
+          "packetCount": 0
+        }
+      ],
+      "packetFields": [
+        "color",
+        "from",
+        "label",
+        "locked",
+        "payload",
+        "quick",
+        "row",
+        "to",
+        "type"
+      ],
+      "rowFields": [
+        "dst",
+        "info",
+        "len",
+        "proto",
+        "src",
+        "time",
+        "wire"
+      ],
+      "wireKeys": [
+        "tcp",
+        "ttl",
+        "udp"
+      ]
+    },
+    {
+      "id": "sip",
+      "name": "SIP",
+      "group": "application",
+      "layer": 7,
+      "sourceSymbol": "Am",
+      "source": {
+        "line": 8221,
+        "endLine": 8353
+      },
+      "lessonFields": [
+        "id",
+        "name",
+        "title",
+        "layer",
+        "nodes",
+        "lifelines",
+        "latency",
+        "labels",
+        "legend",
+        "overview",
+        "outro",
+        "start",
+        "steps"
+      ],
+      "nodes": [
+        "client",
+        "router",
+        "internet",
+        "relay",
+        "remote",
+        "peer"
+      ],
+      "start": {
+        "nodes": [
+          "client"
+        ],
+        "frame": "client"
+      },
+      "stepCount": 6,
+      "eventCount": 23,
+      "packetCount": 21,
+      "eventTypes": {
+        "show": 2,
+        "packet": 21
+      },
+      "packetProtocols": {
+        "SIP": 13,
+        "SIP/SDP": 4,
+        "RTP": 4
+      },
+      "packetOptionalFieldPresence": {
+        "quick": 7
+      },
+      "steps": [
+        {
+          "index": 0,
+          "title": "Sign In",
+          "eventCount": 5,
+          "eventTypes": {
+            "show": 1,
+            "packet": 4
+          },
+          "packetCount": 4
+        },
+        {
+          "index": 1,
+          "title": "Call Bob",
+          "eventCount": 4,
+          "eventTypes": {
+            "show": 1,
+            "packet": 3
+          },
+          "packetCount": 3
+        },
+        {
+          "index": 2,
+          "title": "Ringing",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 3,
+          "title": "Answered",
+          "eventCount": 4,
+          "eventTypes": {
+            "packet": 4
+          },
+          "packetCount": 4
+        },
+        {
+          "index": 4,
+          "title": "Talking",
+          "eventCount": 4,
+          "eventTypes": {
+            "packet": 4
+          },
+          "packetCount": 4
+        },
+        {
+          "index": 5,
+          "title": "Hang Up",
+          "eventCount": 4,
+          "eventTypes": {
+            "packet": 4
+          },
+          "packetCount": 4
+        }
+      ],
+      "packetFields": [
+        "color",
+        "from",
+        "label",
+        "payload",
+        "quick",
+        "row",
+        "to",
+        "type"
+      ],
+      "rowFields": [
+        "dst",
+        "info",
+        "len",
+        "proto",
+        "src",
+        "time",
+        "wire"
+      ],
+      "wireKeys": [
+        "udp"
+      ]
+    },
+    {
+      "id": "rtsp",
+      "name": "RTSP",
+      "group": "application",
+      "layer": 7,
+      "sourceSymbol": "Lm",
+      "source": {
+        "line": 8409,
+        "endLine": 8531
+      },
+      "lessonFields": [
+        "id",
+        "name",
+        "title",
+        "layer",
+        "nodes",
+        "latency",
+        "legend",
+        "overview",
+        "outro",
+        "start",
+        "steps"
+      ],
+      "nodes": [
+        "client",
+        "router",
+        "cam"
+      ],
+      "start": {
+        "nodes": [
+          "client"
+        ],
+        "frame": "client"
+      },
+      "stepCount": 6,
+      "eventCount": 17,
+      "packetCount": 18,
+      "eventTypes": {
+        "show": 1,
+        "packet": 15,
+        "stream": 1
+      },
+      "packetProtocols": {
+        "TCP": 3,
+        "RTSP": 11,
+        "RTSP/SDP": 1,
+        "RTP": 3
+      },
+      "packetOptionalFieldPresence": {
+        "quick": 3
+      },
+      "steps": [
+        {
+          "index": 0,
+          "title": "What Can You Do?",
+          "eventCount": 6,
+          "eventTypes": {
+            "show": 1,
+            "packet": 5
+          },
+          "packetCount": 5
+        },
+        {
+          "index": 1,
+          "title": "Describe the Stream",
+          "eventCount": 4,
+          "eventTypes": {
+            "packet": 4
+          },
+          "packetCount": 4
+        },
+        {
+          "index": 2,
+          "title": "Set Up",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 3,
+          "title": "Play",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 4,
+          "title": "Video Arrives",
+          "eventCount": 1,
+          "eventTypes": {
+            "stream": 1
+          },
+          "packetCount": 3
+        },
+        {
+          "index": 5,
+          "title": "Stop",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        }
+      ],
+      "packetFields": [
+        "color",
+        "from",
+        "label",
+        "payload",
+        "quick",
+        "row",
+        "to",
+        "type"
+      ],
+      "rowFields": [
+        "dst",
+        "info",
+        "len",
+        "proto",
+        "src",
+        "time",
+        "wire"
+      ],
+      "wireKeys": [
+        "tcp",
+        "udp"
+      ]
+    },
+    {
+      "id": "rtmp",
+      "name": "RTMP",
+      "group": "application",
+      "layer": 7,
+      "sourceSymbol": "Gm",
+      "source": {
+        "line": 9075,
+        "endLine": 9377
+      },
+      "lessonFields": [
+        "id",
+        "name",
+        "title",
+        "layer",
+        "nodes",
+        "latency",
+        "labels",
+        "legend",
+        "overview",
+        "outro",
+        "start",
+        "steps"
+      ],
+      "nodes": [
+        "client",
+        "router",
+        "internet",
+        "web"
+      ],
+      "start": {
+        "nodes": [
+          "client"
+        ],
+        "frame": "client"
+      },
+      "stepCount": 6,
+      "eventCount": 17,
+      "packetCount": 16,
+      "eventTypes": {
+        "show": 1,
+        "packet": 16
+      },
+      "packetProtocols": {
+        "TCP": 3,
+        "RTMP": 13
+      },
+      "packetOptionalFieldPresence": {
+        "quick": 3
+      },
+      "steps": [
+        {
+          "index": 0,
+          "title": "Handshake",
+          "eventCount": 7,
+          "eventTypes": {
+            "show": 1,
+            "packet": 6
+          },
+          "packetCount": 6
+        },
+        {
+          "index": 1,
+          "title": "Connect",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 2,
+          "title": "Make a Stream",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 3,
+          "title": "Publish",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 4,
+          "title": "Video and Sound",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 5,
+          "title": "Stop Streaming",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        }
+      ],
+      "packetFields": [
+        "color",
+        "from",
+        "label",
+        "payload",
+        "quick",
+        "row",
+        "to",
+        "type"
+      ],
+      "rowFields": [
+        "dst",
+        "info",
+        "len",
+        "proto",
+        "src",
+        "time",
+        "wire"
+      ],
+      "wireKeys": [
+        "tcp"
+      ]
+    },
+    {
+      "id": "quic",
+      "name": "QUIC",
+      "group": "core",
+      "layer": 4,
+      "sourceSymbol": "P1",
+      "source": {
+        "line": 5126,
+        "endLine": 5267
+      },
+      "lessonFields": [
+        "id",
+        "name",
+        "title",
+        "layer",
+        "nodes",
+        "latency",
+        "labels",
+        "legend",
+        "overview",
+        "outro",
+        "start",
+        "steps"
+      ],
+      "nodes": [
+        "client",
+        "router",
+        "internet",
+        "web"
+      ],
+      "start": {
+        "nodes": [
+          "client"
+        ],
+        "frame": "client"
+      },
+      "stepCount": 6,
+      "eventCount": 12,
+      "packetCount": 10,
+      "eventTypes": {
+        "type-url": 1,
+        "show": 1,
+        "packet": 7,
+        "stream": 1,
+        "render": 1,
+        "note": 1
+      },
+      "packetProtocols": {
+        "QUIC": 10
+      },
+      "packetOptionalFieldPresence": {
+        "quick": 3,
+        "locked": 4
+      },
+      "steps": [
+        {
+          "index": 0,
+          "title": "Choosing HTTP/3",
+          "eventCount": 2,
+          "eventTypes": {
+            "type-url": 1,
+            "show": 1
+          },
+          "packetCount": 0
+        },
+        {
+          "index": 1,
+          "title": "Initial Packets",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 2,
+          "title": "Server Hello",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 1,
+            "stream": 1
+          },
+          "packetCount": 4
+        },
+        {
+          "index": 3,
+          "title": "Finished + GET",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 4,
+          "title": "The Response",
+          "eventCount": 3,
+          "eventTypes": {
+            "packet": 2,
+            "render": 1
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 5,
+          "title": "New Network",
+          "eventCount": 1,
+          "eventTypes": {
+            "note": 1
+          },
+          "packetCount": 0
+        }
+      ],
+      "packetFields": [
+        "color",
+        "from",
+        "label",
+        "locked",
+        "payload",
+        "quick",
+        "row",
+        "to",
+        "type"
+      ],
+      "rowFields": [
+        "dst",
+        "info",
+        "len",
+        "proto",
+        "src",
+        "time",
+        "wire"
+      ],
+      "wireKeys": [
+        "udp"
+      ]
+    },
+    {
+      "id": "tcp",
+      "name": "TCP",
+      "group": "core",
+      "layer": 4,
+      "sourceSymbol": "q0",
+      "source": {
+        "line": 767,
+        "endLine": 902
+      },
+      "lessonFields": [
+        "id",
+        "name",
+        "title",
+        "layer",
+        "nodes",
+        "latency",
+        "legend",
+        "overview",
+        "outro",
+        "start",
+        "steps"
+      ],
+      "nodes": [
+        "client",
+        "router",
+        "internet",
+        "web"
+      ],
+      "start": {
+        "nodes": [
+          "client"
+        ],
+        "frame": "client"
+      },
+      "stepCount": 6,
+      "eventCount": 15,
+      "packetCount": 14,
+      "eventTypes": {
+        "show": 1,
+        "packet": 12,
+        "stream": 1,
+        "note": 1
+      },
+      "packetProtocols": {
+        "TCP": 14
+      },
+      "packetOptionalFieldPresence": {
+        "quick": 3,
+        "lost": 1
+      },
+      "steps": [
+        {
+          "index": 0,
+          "title": "Open Connection",
+          "eventCount": 4,
+          "eventTypes": {
+            "show": 1,
+            "packet": 3
+          },
+          "packetCount": 3
+        },
+        {
+          "index": 1,
+          "title": "Send Data",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 2,
+          "title": "Two Segments Back",
+          "eventCount": 2,
+          "eventTypes": {
+            "stream": 1,
+            "note": 1
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 3,
+          "title": "A Gap Is Noticed",
+          "eventCount": 1,
+          "eventTypes": {
+            "packet": 1
+          },
+          "packetCount": 1
+        },
+        {
+          "index": 4,
+          "title": "Resend the Gap",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 5,
+          "title": "Close Connection",
+          "eventCount": 4,
+          "eventTypes": {
+            "packet": 4
+          },
+          "packetCount": 4
+        }
+      ],
+      "packetFields": [
+        "color",
+        "from",
+        "label",
+        "lost",
+        "payload",
+        "quick",
+        "row",
+        "to",
+        "type"
+      ],
+      "rowFields": [
+        "dst",
+        "info",
+        "len",
+        "proto",
+        "src",
+        "time",
+        "wire"
+      ],
+      "wireKeys": [
+        "tcp"
+      ]
+    },
+    {
+      "id": "udp",
+      "name": "UDP",
+      "group": "core",
+      "layer": 4,
+      "sourceSymbol": "H0",
+      "source": {
+        "line": 954,
+        "endLine": 1096
+      },
+      "lessonFields": [
+        "id",
+        "name",
+        "title",
+        "layer",
+        "nodes",
+        "latency",
+        "labels",
+        "legend",
+        "overview",
+        "outro",
+        "start",
+        "steps"
+      ],
+      "nodes": [
+        "client",
+        "router",
+        "internet",
+        "web"
+      ],
+      "start": {
+        "nodes": [
+          "client"
+        ],
+        "frame": "client"
+      },
+      "stepCount": 5,
+      "eventCount": 7,
+      "packetCount": 11,
+      "eventTypes": {
+        "show": 1,
+        "packet": 1,
+        "stream": 3,
+        "note": 2
+      },
+      "packetProtocols": {
+        "UDP": 11
+      },
+      "packetOptionalFieldPresence": {
+        "lost": 1
+      },
+      "steps": [
+        {
+          "index": 0,
+          "title": "Send Right Away",
+          "eventCount": 2,
+          "eventTypes": {
+            "show": 1,
+            "packet": 1
+          },
+          "packetCount": 1
+        },
+        {
+          "index": 1,
+          "title": "A Stream of Datagrams",
+          "eventCount": 1,
+          "eventTypes": {
+            "stream": 1
+          },
+          "packetCount": 4
+        },
+        {
+          "index": 2,
+          "title": "Lost on the Way",
+          "eventCount": 2,
+          "eventTypes": {
+            "stream": 1,
+            "note": 1
+          },
+          "packetCount": 3
+        },
+        {
+          "index": 3,
+          "title": "Replies Come Back",
+          "eventCount": 1,
+          "eventTypes": {
+            "stream": 1
+          },
+          "packetCount": 3
+        },
+        {
+          "index": 4,
+          "title": "The App Decides",
+          "eventCount": 1,
+          "eventTypes": {
+            "note": 1
+          },
+          "packetCount": 0
+        }
+      ],
+      "packetFields": [
+        "color",
+        "from",
+        "label",
+        "lost",
+        "payload",
+        "row",
+        "to",
+        "type"
+      ],
+      "rowFields": [
+        "dst",
+        "info",
+        "len",
+        "proto",
+        "src",
+        "time",
+        "wire"
+      ],
+      "wireKeys": [
+        "udp"
+      ]
+    },
+    {
+      "id": "ip",
+      "name": "IP",
+      "group": "core",
+      "layer": 3,
+      "sourceSymbol": "F0",
+      "source": {
+        "line": 1102,
+        "endLine": 1291
+      },
+      "lessonFields": [
+        "id",
+        "name",
+        "title",
+        "layer",
+        "nodes",
+        "latency",
+        "legend",
+        "overview",
+        "outro",
+        "start",
+        "steps"
+      ],
+      "nodes": [
+        "client",
+        "router",
+        "internet",
+        "web"
+      ],
+      "start": {
+        "nodes": [
+          "client"
+        ],
+        "frame": "client"
+      },
+      "stepCount": 5,
+      "eventCount": 11,
+      "packetCount": 6,
+      "eventTypes": {
+        "note": 3,
+        "show": 2,
+        "packet": 6
+      },
+      "packetProtocols": {
+        "ARP": 2,
+        "TCP": 4
+      },
+      "packetOptionalFieldPresence": {},
+      "steps": [
+        {
+          "index": 0,
+          "title": "Local or Not?",
+          "eventCount": 2,
+          "eventTypes": {
+            "note": 1,
+            "show": 1
+          },
+          "packetCount": 0
+        },
+        {
+          "index": 1,
+          "title": "Find the Router",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 2,
+          "title": "Send the Packet",
+          "eventCount": 1,
+          "eventTypes": {
+            "packet": 1
+          },
+          "packetCount": 1
+        },
+        {
+          "index": 3,
+          "title": "NAT, Then Hop by Hop",
+          "eventCount": 3,
+          "eventTypes": {
+            "show": 1,
+            "packet": 1,
+            "note": 1
+          },
+          "packetCount": 1
+        },
+        {
+          "index": 4,
+          "title": "The Reply Comes Back",
+          "eventCount": 3,
+          "eventTypes": {
+            "packet": 2,
+            "note": 1
+          },
+          "packetCount": 2
+        }
+      ],
+      "packetFields": [
+        "color",
+        "from",
+        "label",
+        "payload",
+        "row",
+        "to",
+        "type"
+      ],
+      "rowFields": [
+        "dst",
+        "info",
+        "len",
+        "proto",
+        "src",
+        "time",
+        "wire"
+      ],
+      "wireKeys": [
+        "alias",
+        "arp",
+        "natOf",
+        "tcp",
+        "ttl",
+        "ttlNote"
+      ]
+    },
+    {
+      "id": "bgp",
+      "name": "BGP",
+      "group": "core",
+      "layer": 7,
+      "sourceSymbol": "tm",
+      "source": {
+        "line": 6921,
+        "endLine": 7133
+      },
+      "lessonFields": [
+        "id",
+        "name",
+        "title",
+        "layer",
+        "nodes",
+        "latency",
+        "labels",
+        "legend",
+        "overview",
+        "outro",
+        "start",
+        "steps"
+      ],
+      "nodes": [
+        "client",
+        "router",
+        "isp",
+        "transit",
+        "hosting",
+        "app"
+      ],
+      "start": {
+        "nodes": [
+          "isp"
+        ],
+        "frame": "bgp"
+      },
+      "stepCount": 8,
+      "eventCount": 19,
+      "packetCount": 13,
+      "eventTypes": {
+        "show": 2,
+        "packet": 13,
+        "note": 3,
+        "camera": 1
+      },
+      "packetProtocols": {
+        "TCP": 5,
+        "BGP": 8
+      },
+      "packetOptionalFieldPresence": {
+        "quick": 5
+      },
+      "steps": [
+        {
+          "index": 0,
+          "title": "Many Networks",
+          "eventCount": 1,
+          "eventTypes": {
+            "show": 1
+          },
+          "packetCount": 0
+        },
+        {
+          "index": 1,
+          "title": "Open a Session",
+          "eventCount": 3,
+          "eventTypes": {
+            "packet": 3
+          },
+          "packetCount": 3
+        },
+        {
+          "index": 2,
+          "title": "Say Hello",
+          "eventCount": 5,
+          "eventTypes": {
+            "packet": 4,
+            "note": 1
+          },
+          "packetCount": 4
+        },
+        {
+          "index": 3,
+          "title": "Announce a Route",
+          "eventCount": 1,
+          "eventTypes": {
+            "packet": 1
+          },
+          "packetCount": 1
+        },
+        {
+          "index": 4,
+          "title": "Passed On",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 1,
+            "note": 1
+          },
+          "packetCount": 1
+        },
+        {
+          "index": 5,
+          "title": "Follow the Route",
+          "eventCount": 3,
+          "eventTypes": {
+            "show": 1,
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 6,
+          "title": "Withdrawn",
+          "eventCount": 3,
+          "eventTypes": {
+            "camera": 1,
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 7,
+          "title": "Trust Problems",
+          "eventCount": 1,
+          "eventTypes": {
+            "note": 1
+          },
+          "packetCount": 0
+        }
+      ],
+      "packetFields": [
+        "color",
+        "from",
+        "label",
+        "payload",
+        "quick",
+        "row",
+        "to",
+        "type"
+      ],
+      "rowFields": [
+        "dst",
+        "info",
+        "len",
+        "proto",
+        "src",
+        "time",
+        "wire"
+      ],
+      "wireKeys": [
+        "tcp",
+        "ttl"
+      ]
+    },
+    {
+      "id": "ipv6",
+      "name": "IPv6",
+      "group": "core",
+      "layer": 3,
+      "sourceSymbol": "A1",
+      "source": {
+        "line": 5299,
+        "endLine": 5501
+      },
+      "lessonFields": [
+        "id",
+        "name",
+        "title",
+        "layer",
+        "nodes",
+        "latency",
+        "labels",
+        "legend",
+        "overview",
+        "outro",
+        "start",
+        "steps"
+      ],
+      "nodes": [
+        "client",
+        "router"
+      ],
+      "start": {
+        "nodes": [
+          "client"
+        ],
+        "frame": "client"
+      },
+      "stepCount": 6,
+      "eventCount": 12,
+      "packetCount": 6,
+      "eventTypes": {
+        "show": 1,
+        "packet": 6,
+        "note": 3,
+        "label": 2
+      },
+      "packetProtocols": {
+        "ICMPv6": 6
+      },
+      "packetOptionalFieldPresence": {},
+      "steps": [
+        {
+          "index": 0,
+          "title": "Link-Local First",
+          "eventCount": 4,
+          "eventTypes": {
+            "show": 1,
+            "packet": 1,
+            "note": 1,
+            "label": 1
+          },
+          "packetCount": 1
+        },
+        {
+          "index": 1,
+          "title": "Any Routers?",
+          "eventCount": 1,
+          "eventTypes": {
+            "packet": 1
+          },
+          "packetCount": 1
+        },
+        {
+          "index": 2,
+          "title": "Router Answers",
+          "eventCount": 1,
+          "eventTypes": {
+            "packet": 1
+          },
+          "packetCount": 1
+        },
+        {
+          "index": 3,
+          "title": "A Global Address",
+          "eventCount": 3,
+          "eventTypes": {
+            "packet": 1,
+            "note": 1,
+            "label": 1
+          },
+          "packetCount": 1
+        },
+        {
+          "index": 4,
+          "title": "Neighbour Lookup",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 5,
+          "title": "Ready, No DHCP",
+          "eventCount": 1,
+          "eventTypes": {
+            "note": 1
+          },
+          "packetCount": 0
+        }
+      ],
+      "packetFields": [
+        "color",
+        "from",
+        "label",
+        "payload",
+        "row",
+        "to",
+        "type"
+      ],
+      "rowFields": [
+        "dst",
+        "info",
+        "len",
+        "proto",
+        "src",
+        "time",
+        "wire"
+      ],
+      "wireKeys": [
+        "ipv6"
+      ]
+    },
+    {
+      "id": "dns",
+      "name": "DNS",
+      "group": "application",
+      "layer": 7,
+      "sourceSymbol": "B0",
+      "source": {
+        "line": 1331,
+        "endLine": 1574
+      },
+      "lessonFields": [
+        "id",
+        "name",
+        "title",
+        "layer",
+        "nodes",
+        "latency",
+        "legend",
+        "overview",
+        "outro",
+        "start",
+        "steps"
+      ],
+      "nodes": [
+        "client",
+        "router",
+        "internet",
+        "dns",
+        "root",
+        "tld",
+        "auth"
+      ],
+      "start": {
+        "nodes": [
+          "client"
+        ],
+        "frame": "client"
+      },
+      "stepCount": 5,
+      "eventCount": 15,
+      "packetCount": 8,
+      "eventTypes": {
+        "type-url": 1,
+        "show": 4,
+        "packet": 8,
+        "note": 2
+      },
+      "packetProtocols": {
+        "DNS": 8
+      },
+      "packetOptionalFieldPresence": {},
+      "steps": [
+        {
+          "index": 0,
+          "title": "Ask the Resolver",
+          "eventCount": 3,
+          "eventTypes": {
+            "type-url": 1,
+            "show": 1,
+            "packet": 1
+          },
+          "packetCount": 1
+        },
+        {
+          "index": 1,
+          "title": "Root Server",
+          "eventCount": 4,
+          "eventTypes": {
+            "note": 1,
+            "show": 1,
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 2,
+          "title": ".com TLD Server",
+          "eventCount": 3,
+          "eventTypes": {
+            "show": 1,
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 3,
+          "title": "Authoritative Server",
+          "eventCount": 3,
+          "eventTypes": {
+            "show": 1,
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 4,
+          "title": "Answer & Cache",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 1,
+            "note": 1
+          },
+          "packetCount": 1
+        }
+      ],
+      "packetFields": [
+        "color",
+        "from",
+        "label",
+        "payload",
+        "row",
+        "to",
+        "type"
+      ],
+      "rowFields": [
+        "dst",
+        "info",
+        "len",
+        "proto",
+        "src",
+        "time",
+        "wire"
+      ],
+      "wireKeys": [
+        "udp"
+      ]
+    },
+    {
+      "id": "doh",
+      "name": "DNS over HTTPS",
+      "group": "security",
+      "layer": 7,
+      "sourceSymbol": "N1",
+      "source": {
+        "line": 5706,
+        "endLine": 5849
+      },
+      "lessonFields": [
+        "id",
+        "name",
+        "title",
+        "layer",
+        "nodes",
+        "latency",
+        "labels",
+        "legend",
+        "overview",
+        "outro",
+        "start",
+        "steps"
+      ],
+      "nodes": [
+        "client",
+        "router",
+        "internet",
+        "dns"
+      ],
+      "start": {
+        "nodes": [
+          "client"
+        ],
+        "frame": "client"
+      },
+      "stepCount": 5,
+      "eventCount": 13,
+      "packetCount": 10,
+      "eventTypes": {
+        "show": 1,
+        "packet": 10,
+        "note": 2
+      },
+      "packetProtocols": {
+        "DNS": 2,
+        "TCP": 3,
+        "TLSv1.3": 5
+      },
+      "packetOptionalFieldPresence": {
+        "quick": 6,
+        "locked": 2
+      },
+      "steps": [
+        {
+          "index": 0,
+          "title": "Plain DNS",
+          "eventCount": 4,
+          "eventTypes": {
+            "show": 1,
+            "packet": 2,
+            "note": 1
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 1,
+          "title": "An HTTPS Link",
+          "eventCount": 6,
+          "eventTypes": {
+            "packet": 6
+          },
+          "packetCount": 6
+        },
+        {
+          "index": 2,
+          "title": "Sealed Question",
+          "eventCount": 1,
+          "eventTypes": {
+            "packet": 1
+          },
+          "packetCount": 1
+        },
+        {
+          "index": 3,
+          "title": "Sealed Answer",
+          "eventCount": 1,
+          "eventTypes": {
+            "packet": 1
+          },
+          "packetCount": 1
+        },
+        {
+          "index": 4,
+          "title": "What Still Shows",
+          "eventCount": 1,
+          "eventTypes": {
+            "note": 1
+          },
+          "packetCount": 0
+        }
+      ],
+      "packetFields": [
+        "color",
+        "from",
+        "label",
+        "locked",
+        "payload",
+        "quick",
+        "row",
+        "to",
+        "type"
+      ],
+      "rowFields": [
+        "dst",
+        "info",
+        "len",
+        "proto",
+        "src",
+        "time",
+        "wire"
+      ],
+      "wireKeys": [
+        "tcp",
+        "udp"
+      ]
+    },
+    {
+      "id": "dnssec",
+      "name": "DNSSEC",
+      "group": "security",
+      "layer": 7,
+      "sourceSymbol": "B1",
+      "source": {
+        "line": 5958,
+        "endLine": 6078
+      },
+      "lessonFields": [
+        "id",
+        "name",
+        "title",
+        "layer",
+        "nodes",
+        "latency",
+        "legend",
+        "overview",
+        "outro",
+        "start",
+        "steps"
+      ],
+      "nodes": [
+        "client",
+        "router",
+        "internet",
+        "dns",
+        "tld",
+        "auth"
+      ],
+      "start": {
+        "nodes": [
+          "client"
+        ],
+        "frame": "client"
+      },
+      "stepCount": 6,
+      "eventCount": 12,
+      "packetCount": 8,
+      "eventTypes": {
+        "show": 2,
+        "packet": 8,
+        "note": 1,
+        "camera": 1
+      },
+      "packetProtocols": {
+        "DNS": 8
+      },
+      "packetOptionalFieldPresence": {},
+      "steps": [
+        {
+          "index": 0,
+          "title": "Ask as Usual",
+          "eventCount": 2,
+          "eventTypes": {
+            "show": 1,
+            "packet": 1
+          },
+          "packetCount": 1
+        },
+        {
+          "index": 1,
+          "title": "Signed Answer",
+          "eventCount": 3,
+          "eventTypes": {
+            "show": 1,
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 2,
+          "title": "The Zone’s Keys",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 3,
+          "title": "Vouched by .com",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 4,
+          "title": "Up to the Root",
+          "eventCount": 1,
+          "eventTypes": {
+            "note": 1
+          },
+          "packetCount": 0
+        },
+        {
+          "index": 5,
+          "title": "A Checked Answer",
+          "eventCount": 2,
+          "eventTypes": {
+            "camera": 1,
+            "packet": 1
+          },
+          "packetCount": 1
+        }
+      ],
+      "packetFields": [
+        "color",
+        "from",
+        "label",
+        "payload",
+        "row",
+        "to",
+        "type"
+      ],
+      "rowFields": [
+        "dst",
+        "info",
+        "len",
+        "proto",
+        "src",
+        "time",
+        "wire"
+      ],
+      "wireKeys": [
+        "udp"
+      ]
+    },
+    {
+      "id": "dhcp",
+      "name": "DHCP",
+      "group": "application",
+      "layer": 7,
+      "sourceSymbol": "_0",
+      "source": {
+        "line": 1622,
+        "endLine": 1796
+      },
+      "lessonFields": [
+        "id",
+        "name",
+        "title",
+        "layer",
+        "nodes",
+        "latency",
+        "labels",
+        "legend",
+        "overview",
+        "outro",
+        "start",
+        "steps"
+      ],
+      "nodes": [
+        "client",
+        "router"
+      ],
+      "start": {
+        "nodes": [
+          "client"
+        ],
+        "frame": "client"
+      },
+      "stepCount": 6,
+      "eventCount": 10,
+      "packetCount": 6,
+      "eventTypes": {
+        "note": 2,
+        "show": 1,
+        "packet": 6,
+        "label": 1
+      },
+      "packetProtocols": {
+        "DHCP": 6
+      },
+      "packetOptionalFieldPresence": {},
+      "steps": [
+        {
+          "index": 0,
+          "title": "No Address Yet",
+          "eventCount": 2,
+          "eventTypes": {
+            "note": 1,
+            "show": 1
+          },
+          "packetCount": 0
+        },
+        {
+          "index": 1,
+          "title": "Discover",
+          "eventCount": 1,
+          "eventTypes": {
+            "packet": 1
+          },
+          "packetCount": 1
+        },
+        {
+          "index": 2,
+          "title": "Offer",
+          "eventCount": 1,
+          "eventTypes": {
+            "packet": 1
+          },
+          "packetCount": 1
+        },
+        {
+          "index": 3,
+          "title": "Request",
+          "eventCount": 1,
+          "eventTypes": {
+            "packet": 1
+          },
+          "packetCount": 1
+        },
+        {
+          "index": 4,
+          "title": "Acknowledge",
+          "eventCount": 3,
+          "eventTypes": {
+            "packet": 1,
+            "label": 1,
+            "note": 1
+          },
+          "packetCount": 1
+        },
+        {
+          "index": 5,
+          "title": "Renew",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        }
+      ],
+      "packetFields": [
+        "color",
+        "from",
+        "label",
+        "payload",
+        "row",
+        "to",
+        "type"
+      ],
+      "rowFields": [
+        "dst",
+        "info",
+        "len",
+        "proto",
+        "src",
+        "time",
+        "wire"
+      ],
+      "wireKeys": [
+        "udp"
+      ]
+    },
+    {
+      "id": "icmp",
+      "name": "ICMP",
+      "group": "core",
+      "layer": 3,
+      "sourceSymbol": "V0",
+      "source": {
+        "line": 1830,
+        "endLine": 1966
+      },
+      "lessonFields": [
+        "id",
+        "name",
+        "title",
+        "layer",
+        "nodes",
+        "latency",
+        "legend",
+        "overview",
+        "outro",
+        "start",
+        "steps"
+      ],
+      "nodes": [
+        "client",
+        "router",
+        "internet",
+        "web"
+      ],
+      "start": {
+        "nodes": [
+          "client"
+        ],
+        "frame": "client"
+      },
+      "stepCount": 6,
+      "eventCount": 13,
+      "packetCount": 10,
+      "eventTypes": {
+        "show": 1,
+        "packet": 10,
+        "note": 2
+      },
+      "packetProtocols": {
+        "ICMP": 9,
+        "UDP": 1
+      },
+      "packetOptionalFieldPresence": {},
+      "steps": [
+        {
+          "index": 0,
+          "title": "Ping",
+          "eventCount": 2,
+          "eventTypes": {
+            "show": 1,
+            "packet": 1
+          },
+          "packetCount": 1
+        },
+        {
+          "index": 1,
+          "title": "Echo Reply",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 1,
+            "note": 1
+          },
+          "packetCount": 1
+        },
+        {
+          "index": 2,
+          "title": "TTL 1",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 3,
+          "title": "TTL 2",
+          "eventCount": 3,
+          "eventTypes": {
+            "packet": 2,
+            "note": 1
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 4,
+          "title": "That’s Traceroute",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 5,
+          "title": "Unreachable",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        }
+      ],
+      "packetFields": [
+        "color",
+        "from",
+        "label",
+        "payload",
+        "row",
+        "to",
+        "type"
+      ],
+      "rowFields": [
+        "dst",
+        "info",
+        "len",
+        "proto",
+        "src",
+        "time",
+        "wire"
+      ],
+      "wireKeys": [
+        "icmp",
+        "ttl",
+        "udp"
+      ]
+    },
+    {
+      "id": "igmp",
+      "name": "IGMP",
+      "group": "core",
+      "layer": 3,
+      "sourceSymbol": "qm",
+      "source": {
+        "line": 8627,
+        "endLine": 8778
+      },
+      "lessonFields": [
+        "id",
+        "name",
+        "title",
+        "layer",
+        "nodes",
+        "links",
+        "lifelines",
+        "latency",
+        "labels",
+        "legend",
+        "overview",
+        "outro",
+        "start",
+        "steps"
+      ],
+      "nodes": [
+        "client",
+        "switch",
+        "stb",
+        "router",
+        "isp"
+      ],
+      "start": {
+        "nodes": [
+          "client",
+          "switch",
+          "stb",
+          "router"
+        ],
+        "frame": "tvbox"
+      },
+      "stepCount": 6,
+      "eventCount": 24,
+      "packetCount": 26,
+      "eventTypes": {
+        "packet": 20,
+        "show": 1,
+        "stream": 3
+      },
+      "packetProtocols": {
+        "IGMPv2": 19,
+        "MPEG TS": 7
+      },
+      "packetOptionalFieldPresence": {},
+      "steps": [
+        {
+          "index": 0,
+          "title": "Pick a Channel",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 1,
+          "title": "Ask the Provider",
+          "eventCount": 2,
+          "eventTypes": {
+            "show": 1,
+            "packet": 1
+          },
+          "packetCount": 1
+        },
+        {
+          "index": 2,
+          "title": "The Channel Flows",
+          "eventCount": 3,
+          "eventTypes": {
+            "packet": 3
+          },
+          "packetCount": 3
+        },
+        {
+          "index": 3,
+          "title": "A Second Screen",
+          "eventCount": 5,
+          "eventTypes": {
+            "packet": 4,
+            "stream": 1
+          },
+          "packetCount": 6
+        },
+        {
+          "index": 4,
+          "title": "Still Watching?",
+          "eventCount": 6,
+          "eventTypes": {
+            "packet": 5,
+            "stream": 1
+          },
+          "packetCount": 7
+        },
+        {
+          "index": 5,
+          "title": "Leave",
+          "eventCount": 6,
+          "eventTypes": {
+            "packet": 5,
+            "stream": 1
+          },
+          "packetCount": 7
+        }
+      ],
+      "packetFields": [
+        "color",
+        "from",
+        "label",
+        "payload",
+        "row",
+        "to",
+        "type"
+      ],
+      "rowFields": [
+        "dst",
+        "info",
+        "len",
+        "proto",
+        "src",
+        "time",
+        "wire"
+      ],
+      "wireKeys": [
+        "at",
+        "copyOf",
+        "df",
+        "igmp",
+        "link",
+        "natOf",
+        "routerAlert",
+        "tos",
+        "ttl",
+        "ttlNote",
+        "udp"
+      ]
+    },
+    {
+      "id": "ntp",
+      "name": "NTP",
+      "group": "application",
+      "layer": 7,
+      "sourceSymbol": "x1",
+      "source": {
+        "line": 5530,
+        "endLine": 5653
+      },
+      "lessonFields": [
+        "id",
+        "name",
+        "title",
+        "layer",
+        "nodes",
+        "latency",
+        "labels",
+        "legend",
+        "overview",
+        "outro",
+        "start",
+        "steps"
+      ],
+      "nodes": [
+        "client",
+        "router",
+        "internet",
+        "web"
+      ],
+      "start": {
+        "nodes": [
+          "client"
+        ],
+        "frame": "client"
+      },
+      "stepCount": 5,
+      "eventCount": 6,
+      "packetCount": 2,
+      "eventTypes": {
+        "show": 1,
+        "note": 3,
+        "packet": 2
+      },
+      "packetProtocols": {
+        "NTP": 2
+      },
+      "packetOptionalFieldPresence": {},
+      "steps": [
+        {
+          "index": 0,
+          "title": "Clocks Drift",
+          "eventCount": 2,
+          "eventTypes": {
+            "show": 1,
+            "note": 1
+          },
+          "packetCount": 0
+        },
+        {
+          "index": 1,
+          "title": "Ask for the Time",
+          "eventCount": 1,
+          "eventTypes": {
+            "packet": 1
+          },
+          "packetCount": 1
+        },
+        {
+          "index": 2,
+          "title": "The Answer",
+          "eventCount": 1,
+          "eventTypes": {
+            "packet": 1
+          },
+          "packetCount": 1
+        },
+        {
+          "index": 3,
+          "title": "The Offset",
+          "eventCount": 1,
+          "eventTypes": {
+            "note": 1
+          },
+          "packetCount": 0
+        },
+        {
+          "index": 4,
+          "title": "Ease It In",
+          "eventCount": 1,
+          "eventTypes": {
+            "note": 1
+          },
+          "packetCount": 0
+        }
+      ],
+      "packetFields": [
+        "color",
+        "from",
+        "label",
+        "payload",
+        "row",
+        "to",
+        "type"
+      ],
+      "rowFields": [
+        "dst",
+        "info",
+        "len",
+        "proto",
+        "src",
+        "time",
+        "wire"
+      ],
+      "wireKeys": [
+        "udp"
+      ]
+    },
+    {
+      "id": "ethernet",
+      "name": "Ethernet",
+      "group": "core",
+      "layer": 2,
+      "sourceSymbol": "hm",
+      "source": {
+        "line": 7562,
+        "endLine": 7833
+      },
+      "lessonFields": [
+        "id",
+        "name",
+        "title",
+        "layer",
+        "nodes",
+        "links",
+        "lifelines",
+        "latency",
+        "labels",
+        "legend",
+        "overview",
+        "outro",
+        "start",
+        "steps"
+      ],
+      "nodes": [
+        "client",
+        "switch",
+        "lan",
+        "router",
+        "isp"
+      ],
+      "start": {
+        "nodes": [
+          "client"
+        ],
+        "frame": "client"
+      },
+      "stepCount": 6,
+      "eventCount": 15,
+      "packetCount": 12,
+      "eventTypes": {
+        "show": 2,
+        "packet": 10,
+        "note": 2,
+        "stream": 1
+      },
+      "packetProtocols": {
+        "ARP": 5,
+        "TCP": 7
+      },
+      "packetOptionalFieldPresence": {
+        "quick": 2
+      },
+      "steps": [
+        {
+          "index": 0,
+          "title": "Who Has the NAS?",
+          "eventCount": 2,
+          "eventTypes": {
+            "show": 1,
+            "packet": 1
+          },
+          "packetCount": 1
+        },
+        {
+          "index": 1,
+          "title": "Learn, Then Flood",
+          "eventCount": 2,
+          "eventTypes": {
+            "note": 1,
+            "stream": 1
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 2,
+          "title": "Only the NAS Answers",
+          "eventCount": 3,
+          "eventTypes": {
+            "packet": 2,
+            "note": 1
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 3,
+          "title": "Port to Port",
+          "eventCount": 4,
+          "eventTypes": {
+            "packet": 4
+          },
+          "packetCount": 4
+        },
+        {
+          "index": 4,
+          "title": "Off the Network",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 5,
+          "title": "A New Frame",
+          "eventCount": 2,
+          "eventTypes": {
+            "show": 1,
+            "packet": 1
+          },
+          "packetCount": 1
+        }
+      ],
+      "packetFields": [
+        "color",
+        "from",
+        "label",
+        "payload",
+        "quick",
+        "row",
+        "to",
+        "type"
+      ],
+      "rowFields": [
+        "dst",
+        "info",
+        "len",
+        "proto",
+        "src",
+        "time",
+        "wire"
+      ],
+      "wireKeys": [
+        "alias",
+        "arp",
+        "at",
+        "copyOf",
+        "natOf",
+        "tcp",
+        "ttl",
+        "ttlNote"
+      ]
+    },
+    {
+      "id": "pppoe",
+      "name": "PPPoE",
+      "group": "core",
+      "layer": 2,
+      "sourceSymbol": "mm",
+      "source": {
+        "line": 7888,
+        "endLine": 8118
+      },
+      "lessonFields": [
+        "id",
+        "name",
+        "title",
+        "layer",
+        "nodes",
+        "latency",
+        "labels",
+        "legend",
+        "overview",
+        "outro",
+        "start",
+        "steps"
+      ],
+      "nodes": [
+        "client",
+        "router",
+        "bng"
+      ],
+      "start": {
+        "nodes": [
+          "client",
+          "router"
+        ],
+        "frame": "local"
+      },
+      "stepCount": 6,
+      "eventCount": 24,
+      "packetCount": 19,
+      "eventTypes": {
+        "show": 1,
+        "packet": 19,
+        "note": 2,
+        "label": 1,
+        "camera": 1
+      },
+      "packetProtocols": {
+        "PPPoED": 4,
+        "PPP LCP": 4,
+        "PPP CHAP": 3,
+        "PPP IPCP": 6,
+        "TCP": 2
+      },
+      "packetOptionalFieldPresence": {
+        "quick": 4
+      },
+      "steps": [
+        {
+          "index": 0,
+          "title": "Anyone There?",
+          "eventCount": 3,
+          "eventTypes": {
+            "show": 1,
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 1,
+          "title": "Pick a Server",
+          "eventCount": 3,
+          "eventTypes": {
+            "packet": 2,
+            "note": 1
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 2,
+          "title": "Link Settings",
+          "eventCount": 4,
+          "eventTypes": {
+            "packet": 4
+          },
+          "packetCount": 4
+        },
+        {
+          "index": 3,
+          "title": "Log In",
+          "eventCount": 4,
+          "eventTypes": {
+            "packet": 3,
+            "note": 1
+          },
+          "packetCount": 3
+        },
+        {
+          "index": 4,
+          "title": "Get an Address",
+          "eventCount": 7,
+          "eventTypes": {
+            "packet": 6,
+            "label": 1
+          },
+          "packetCount": 6
+        },
+        {
+          "index": 5,
+          "title": "Online",
+          "eventCount": 3,
+          "eventTypes": {
+            "camera": 1,
+            "packet": 2
+          },
+          "packetCount": 2
+        }
+      ],
+      "packetFields": [
+        "color",
+        "from",
+        "label",
+        "payload",
+        "quick",
+        "row",
+        "to",
+        "type"
+      ],
+      "rowFields": [
+        "dst",
+        "info",
+        "len",
+        "proto",
+        "src",
+        "time",
+        "wire"
+      ],
+      "wireKeys": [
+        "alias",
+        "natOf",
+        "pppoe",
+        "tcp",
+        "ttl",
+        "ttlNote"
+      ]
+    },
+    {
+      "id": "wifi",
+      "name": "Wi-Fi",
+      "group": "core",
+      "layer": 2,
+      "sourceSymbol": "Zf",
+      "source": {
+        "line": 3374,
+        "endLine": 3558
+      },
+      "lessonFields": [
+        "id",
+        "name",
+        "title",
+        "layer",
+        "nodes",
+        "latency",
+        "labels",
+        "legend",
+        "overview",
+        "outro",
+        "start",
+        "steps"
+      ],
+      "nodes": [
+        "client",
+        "router"
+      ],
+      "start": {
+        "nodes": [
+          "client"
+        ],
+        "frame": "client"
+      },
+      "stepCount": 5,
+      "eventCount": 14,
+      "packetCount": 12,
+      "eventTypes": {
+        "show": 1,
+        "packet": 12,
+        "note": 1
+      },
+      "packetProtocols": {
+        "802.11": 8,
+        "EAPOL": 4
+      },
+      "packetOptionalFieldPresence": {
+        "quick": 2,
+        "locked": 1
+      },
+      "steps": [
+        {
+          "index": 0,
+          "title": "Find the Network",
+          "eventCount": 4,
+          "eventTypes": {
+            "show": 1,
+            "packet": 3
+          },
+          "packetCount": 3
+        },
+        {
+          "index": 1,
+          "title": "Join the Network",
+          "eventCount": 4,
+          "eventTypes": {
+            "packet": 4
+          },
+          "packetCount": 4
+        },
+        {
+          "index": 2,
+          "title": "Messages 1 and 2",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 3,
+          "title": "Messages 3 and 4",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 4,
+          "title": "Encrypted Now",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 1,
+            "note": 1
+          },
+          "packetCount": 1
+        }
+      ],
+      "packetFields": [
+        "color",
+        "from",
+        "label",
+        "locked",
+        "payload",
+        "quick",
+        "row",
+        "to",
+        "type"
+      ],
+      "rowFields": [
+        "dst",
+        "info",
+        "len",
+        "proto",
+        "src",
+        "time",
+        "wire"
+      ],
+      "wireKeys": [
+        "wifi"
+      ]
+    },
+    {
+      "id": "wpa3",
+      "name": "WPA3",
+      "group": "security",
+      "layer": 2,
+      "sourceSymbol": "s1",
+      "source": {
+        "line": 3589,
+        "endLine": 3769
+      },
+      "lessonFields": [
+        "id",
+        "name",
+        "title",
+        "layer",
+        "nodes",
+        "latency",
+        "labels",
+        "legend",
+        "overview",
+        "outro",
+        "start",
+        "steps"
+      ],
+      "nodes": [
+        "client",
+        "router"
+      ],
+      "start": {
+        "nodes": [
+          "client"
+        ],
+        "frame": "client"
+      },
+      "stepCount": 5,
+      "eventCount": 13,
+      "packetCount": 11,
+      "eventTypes": {
+        "show": 1,
+        "packet": 11,
+        "note": 1
+      },
+      "packetProtocols": {
+        "802.11": 7,
+        "EAPOL": 4
+      },
+      "packetOptionalFieldPresence": {
+        "quick": 6
+      },
+      "steps": [
+        {
+          "index": 0,
+          "title": "A WPA3 Network",
+          "eventCount": 2,
+          "eventTypes": {
+            "show": 1,
+            "packet": 1
+          },
+          "packetCount": 1
+        },
+        {
+          "index": 1,
+          "title": "SAE Commit",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 2,
+          "title": "SAE Confirm",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 3,
+          "title": "Join, Handshake",
+          "eventCount": 6,
+          "eventTypes": {
+            "packet": 6
+          },
+          "packetCount": 6
+        },
+        {
+          "index": 4,
+          "title": "Why It’s Safer",
+          "eventCount": 1,
+          "eventTypes": {
+            "note": 1
+          },
+          "packetCount": 0
+        }
+      ],
+      "packetFields": [
+        "color",
+        "from",
+        "label",
+        "payload",
+        "quick",
+        "row",
+        "to",
+        "type"
+      ],
+      "rowFields": [
+        "dst",
+        "info",
+        "len",
+        "proto",
+        "src",
+        "time",
+        "wire"
+      ],
+      "wireKeys": [
+        "wifi"
+      ]
+    },
+    {
+      "id": "radius",
+      "name": "RADIUS",
+      "group": "security",
+      "layer": 2,
+      "sourceSymbol": "Y1",
+      "source": {
+        "line": 6233,
+        "endLine": 6440
+      },
+      "lessonFields": [
+        "id",
+        "name",
+        "title",
+        "layer",
+        "nodes",
+        "seenOn",
+        "latency",
+        "labels",
+        "legend",
+        "overview",
+        "outro",
+        "start",
+        "steps"
+      ],
+      "nodes": [
+        "client",
+        "router",
+        "lan"
+      ],
+      "start": {
+        "nodes": [
+          "client"
+        ],
+        "frame": "client"
+      },
+      "stepCount": 8,
+      "eventCount": 23,
+      "packetCount": 21,
+      "eventTypes": {
+        "show": 1,
+        "packet": 21,
+        "note": 1
+      },
+      "packetProtocols": {
+        "EAP": 9,
+        "RADIUS": 8,
+        "EAPOL": 4
+      },
+      "packetOptionalFieldPresence": {
+        "quick": 11,
+        "locked": 4
+      },
+      "steps": [
+        {
+          "index": 0,
+          "title": "Who Are You?",
+          "eventCount": 3,
+          "eventTypes": {
+            "show": 1,
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 1,
+          "title": "Ask RADIUS",
+          "eventCount": 3,
+          "eventTypes": {
+            "packet": 3
+          },
+          "packetCount": 3
+        },
+        {
+          "index": 2,
+          "title": "TLS Inside EAP",
+          "eventCount": 4,
+          "eventTypes": {
+            "packet": 4
+          },
+          "packetCount": 4
+        },
+        {
+          "index": 3,
+          "title": "Laptop’s Proof",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 4,
+          "title": "Handshake Done",
+          "eventCount": 4,
+          "eventTypes": {
+            "packet": 4
+          },
+          "packetCount": 4
+        },
+        {
+          "index": 5,
+          "title": "Access-Accept",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 6,
+          "title": "4-Way Handshake",
+          "eventCount": 4,
+          "eventTypes": {
+            "packet": 4
+          },
+          "packetCount": 4
+        },
+        {
+          "index": 7,
+          "title": "Why Enterprise",
+          "eventCount": 1,
+          "eventTypes": {
+            "note": 1
+          },
+          "packetCount": 0
+        }
+      ],
+      "packetFields": [
+        "color",
+        "from",
+        "label",
+        "locked",
+        "payload",
+        "quick",
+        "row",
+        "to",
+        "type"
+      ],
+      "rowFields": [
+        "dst",
+        "info",
+        "len",
+        "proto",
+        "src",
+        "time",
+        "wire"
+      ],
+      "wireKeys": [
+        "udp",
+        "wifi"
+      ]
+    },
+    {
+      "id": "portal",
+      "name": "Captive Portal",
+      "group": "application",
+      "layer": 7,
+      "sourceSymbol": "o1",
+      "source": {
+        "line": 3846,
+        "endLine": 4038
+      },
+      "lessonFields": [
+        "id",
+        "name",
+        "title",
+        "layer",
+        "nodes",
+        "latency",
+        "labels",
+        "legend",
+        "overview",
+        "outro",
+        "start",
+        "steps"
+      ],
+      "nodes": [
+        "client",
+        "router",
+        "internet",
+        "web"
+      ],
+      "start": {
+        "nodes": [
+          "client"
+        ],
+        "frame": "client"
+      },
+      "stepCount": 6,
+      "eventCount": 25,
+      "packetCount": 19,
+      "eventTypes": {
+        "show": 2,
+        "note": 4,
+        "packet": 19
+      },
+      "packetProtocols": {
+        "DNS": 2,
+        "TCP": 9,
+        "HTTP": 8
+      },
+      "packetOptionalFieldPresence": {
+        "quick": 11
+      },
+      "steps": [
+        {
+          "index": 0,
+          "title": "Joined, Offline",
+          "eventCount": 2,
+          "eventTypes": {
+            "show": 1,
+            "note": 1
+          },
+          "packetCount": 0
+        },
+        {
+          "index": 1,
+          "title": "Internet Check",
+          "eventCount": 6,
+          "eventTypes": {
+            "packet": 6
+          },
+          "packetCount": 6
+        },
+        {
+          "index": 2,
+          "title": "Redirected",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 1,
+            "note": 1
+          },
+          "packetCount": 1
+        },
+        {
+          "index": 3,
+          "title": "The Login Page",
+          "eventCount": 5,
+          "eventTypes": {
+            "packet": 5
+          },
+          "packetCount": 5
+        },
+        {
+          "index": 4,
+          "title": "Accept the Terms",
+          "eventCount": 3,
+          "eventTypes": {
+            "packet": 2,
+            "note": 1
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 5,
+          "title": "Online",
+          "eventCount": 7,
+          "eventTypes": {
+            "show": 1,
+            "packet": 5,
+            "note": 1
+          },
+          "packetCount": 5
+        }
+      ],
+      "packetFields": [
+        "color",
+        "from",
+        "label",
+        "payload",
+        "quick",
+        "row",
+        "to",
+        "type"
+      ],
+      "rowFields": [
+        "dst",
+        "info",
+        "len",
+        "proto",
+        "src",
+        "time",
+        "wire"
+      ],
+      "wireKeys": [
+        "tcp",
+        "ttl",
+        "ttlNote",
+        "udp"
+      ]
+    },
+    {
+      "id": "smtp",
+      "name": "SMTP",
+      "group": "application",
+      "layer": 7,
+      "sourceSymbol": "df",
+      "source": {
+        "line": 2054,
+        "endLine": 2236
+      },
+      "lessonFields": [
+        "id",
+        "name",
+        "title",
+        "layer",
+        "nodes",
+        "latency",
+        "lifelines",
+        "labels",
+        "legend",
+        "overview",
+        "outro",
+        "start",
+        "steps"
+      ],
+      "nodes": [
+        "client",
+        "router",
+        "internet",
+        "dns",
+        "web",
+        "mx"
+      ],
+      "start": {
+        "nodes": [
+          "client"
+        ],
+        "frame": "client"
+      },
+      "stepCount": 6,
+      "eventCount": 40,
+      "packetCount": 36,
+      "eventTypes": {
+        "show": 3,
+        "packet": 36,
+        "note": 1
+      },
+      "packetProtocols": {
+        "TCP": 6,
+        "TLSv1.3": 6,
+        "SMTP (TLS)": 15,
+        "DNS": 4,
+        "SMTP": 5
+      },
+      "packetOptionalFieldPresence": {
+        "quick": 12,
+        "locked": 15
+      },
+      "steps": [
+        {
+          "index": 0,
+          "title": "Connect Securely",
+          "eventCount": 7,
+          "eventTypes": {
+            "show": 1,
+            "packet": 6
+          },
+          "packetCount": 6
+        },
+        {
+          "index": 1,
+          "title": "Greeting & Login",
+          "eventCount": 5,
+          "eventTypes": {
+            "packet": 5
+          },
+          "packetCount": 5
+        },
+        {
+          "index": 2,
+          "title": "Send the Message",
+          "eventCount": 4,
+          "eventTypes": {
+            "packet": 4
+          },
+          "packetCount": 4
+        },
+        {
+          "index": 3,
+          "title": "Find Bob’s Server",
+          "eventCount": 5,
+          "eventTypes": {
+            "show": 1,
+            "packet": 4
+          },
+          "packetCount": 4
+        },
+        {
+          "index": 4,
+          "title": "Server to Server",
+          "eventCount": 12,
+          "eventTypes": {
+            "show": 1,
+            "packet": 11
+          },
+          "packetCount": 11
+        },
+        {
+          "index": 5,
+          "title": "Deliver",
+          "eventCount": 7,
+          "eventTypes": {
+            "packet": 6,
+            "note": 1
+          },
+          "packetCount": 6
+        }
+      ],
+      "packetFields": [
+        "color",
+        "from",
+        "label",
+        "locked",
+        "payload",
+        "quick",
+        "row",
+        "to",
+        "type"
+      ],
+      "rowFields": [
+        "dst",
+        "info",
+        "len",
+        "proto",
+        "src",
+        "time",
+        "wire"
+      ],
+      "wireKeys": [
+        "tcp",
+        "udp"
+      ]
+    },
+    {
+      "id": "pop3",
+      "name": "POP3",
+      "group": "application",
+      "layer": 7,
+      "sourceSymbol": "pf",
+      "source": {
+        "line": 2254,
+        "endLine": 2387
+      },
+      "lessonFields": [
+        "id",
+        "name",
+        "title",
+        "layer",
+        "nodes",
+        "latency",
+        "labels",
+        "legend",
+        "overview",
+        "outro",
+        "start",
+        "steps"
+      ],
+      "nodes": [
+        "client",
+        "router",
+        "internet",
+        "web"
+      ],
+      "start": {
+        "nodes": [
+          "client"
+        ],
+        "frame": "client"
+      },
+      "stepCount": 5,
+      "eventCount": 23,
+      "packetCount": 21,
+      "eventTypes": {
+        "show": 1,
+        "packet": 21,
+        "note": 1
+      },
+      "packetProtocols": {
+        "TCP": 3,
+        "TLSv1.3": 3,
+        "POP (TLS)": 15
+      },
+      "packetOptionalFieldPresence": {
+        "quick": 6,
+        "locked": 15
+      },
+      "steps": [
+        {
+          "index": 0,
+          "title": "Connect Securely",
+          "eventCount": 8,
+          "eventTypes": {
+            "show": 1,
+            "packet": 7
+          },
+          "packetCount": 7
+        },
+        {
+          "index": 1,
+          "title": "Log In",
+          "eventCount": 4,
+          "eventTypes": {
+            "packet": 4
+          },
+          "packetCount": 4
+        },
+        {
+          "index": 2,
+          "title": "Check the Mailbox",
+          "eventCount": 4,
+          "eventTypes": {
+            "packet": 4
+          },
+          "packetCount": 4
+        },
+        {
+          "index": 3,
+          "title": "Download",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 4,
+          "title": "Delete & Quit",
+          "eventCount": 5,
+          "eventTypes": {
+            "packet": 4,
+            "note": 1
+          },
+          "packetCount": 4
+        }
+      ],
+      "packetFields": [
+        "color",
+        "from",
+        "label",
+        "locked",
+        "payload",
+        "quick",
+        "row",
+        "to",
+        "type"
+      ],
+      "rowFields": [
+        "dst",
+        "info",
+        "len",
+        "proto",
+        "src",
+        "time",
+        "wire"
+      ],
+      "wireKeys": [
+        "tcp"
+      ]
+    },
+    {
+      "id": "imap",
+      "name": "IMAP",
+      "group": "application",
+      "layer": 7,
+      "sourceSymbol": "Tf",
+      "source": {
+        "line": 2411,
+        "endLine": 2549
+      },
+      "lessonFields": [
+        "id",
+        "name",
+        "title",
+        "layer",
+        "nodes",
+        "latency",
+        "labels",
+        "legend",
+        "overview",
+        "outro",
+        "start",
+        "steps"
+      ],
+      "nodes": [
+        "client",
+        "router",
+        "internet",
+        "web"
+      ],
+      "start": {
+        "nodes": [
+          "client"
+        ],
+        "frame": "client"
+      },
+      "stepCount": 5,
+      "eventCount": 21,
+      "packetCount": 18,
+      "eventTypes": {
+        "show": 1,
+        "packet": 18,
+        "note": 2
+      },
+      "packetProtocols": {
+        "TCP": 3,
+        "TLSv1.3": 3,
+        "IMAP (TLS)": 12
+      },
+      "packetOptionalFieldPresence": {
+        "quick": 6,
+        "locked": 12
+      },
+      "steps": [
+        {
+          "index": 0,
+          "title": "Connect Securely",
+          "eventCount": 8,
+          "eventTypes": {
+            "show": 1,
+            "packet": 7
+          },
+          "packetCount": 7
+        },
+        {
+          "index": 1,
+          "title": "Log In",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 2,
+          "title": "Open the Inbox",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 3,
+          "title": "Read a Message",
+          "eventCount": 3,
+          "eventTypes": {
+            "packet": 2,
+            "note": 1
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 4,
+          "title": "Wait for New Mail",
+          "eventCount": 6,
+          "eventTypes": {
+            "packet": 5,
+            "note": 1
+          },
+          "packetCount": 5
+        }
+      ],
+      "packetFields": [
+        "color",
+        "from",
+        "label",
+        "locked",
+        "payload",
+        "quick",
+        "row",
+        "to",
+        "type"
+      ],
+      "rowFields": [
+        "dst",
+        "info",
+        "len",
+        "proto",
+        "src",
+        "time",
+        "wire"
+      ],
+      "wireKeys": [
+        "tcp"
+      ]
+    },
+    {
+      "id": "ftp",
+      "name": "FTP",
+      "group": "application",
+      "layer": 7,
+      "sourceSymbol": "kf",
+      "source": {
+        "line": 2588,
+        "endLine": 2730
+      },
+      "lessonFields": [
+        "id",
+        "name",
+        "title",
+        "layer",
+        "nodes",
+        "latency",
+        "labels",
+        "legend",
+        "overview",
+        "outro",
+        "start",
+        "steps"
+      ],
+      "nodes": [
+        "client",
+        "router",
+        "internet",
+        "web"
+      ],
+      "start": {
+        "nodes": [
+          "client"
+        ],
+        "frame": "client"
+      },
+      "stepCount": 6,
+      "eventCount": 24,
+      "packetCount": 24,
+      "eventTypes": {
+        "show": 1,
+        "packet": 21,
+        "note": 1,
+        "stream": 1
+      },
+      "packetProtocols": {
+        "TCP": 7,
+        "FTP": 14,
+        "FTP-DATA": 3
+      },
+      "packetOptionalFieldPresence": {
+        "quick": 6
+      },
+      "steps": [
+        {
+          "index": 0,
+          "title": "Control Connection",
+          "eventCount": 5,
+          "eventTypes": {
+            "show": 1,
+            "packet": 4
+          },
+          "packetCount": 4
+        },
+        {
+          "index": 1,
+          "title": "Log In",
+          "eventCount": 5,
+          "eventTypes": {
+            "packet": 4,
+            "note": 1
+          },
+          "packetCount": 4
+        },
+        {
+          "index": 2,
+          "title": "Passive Mode",
+          "eventCount": 4,
+          "eventTypes": {
+            "packet": 4
+          },
+          "packetCount": 4
+        },
+        {
+          "index": 3,
+          "title": "Data Connection",
+          "eventCount": 5,
+          "eventTypes": {
+            "packet": 5
+          },
+          "packetCount": 5
+        },
+        {
+          "index": 4,
+          "title": "The File Arrives",
+          "eventCount": 3,
+          "eventTypes": {
+            "stream": 1,
+            "packet": 2
+          },
+          "packetCount": 5
+        },
+        {
+          "index": 5,
+          "title": "Quit",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        }
+      ],
+      "packetFields": [
+        "color",
+        "from",
+        "label",
+        "payload",
+        "quick",
+        "row",
+        "to",
+        "type"
+      ],
+      "rowFields": [
+        "dst",
+        "info",
+        "len",
+        "proto",
+        "src",
+        "time",
+        "wire"
+      ],
+      "wireKeys": [
+        "tcp"
+      ]
+    },
+    {
+      "id": "smb",
+      "name": "SMB",
+      "group": "application",
+      "layer": 7,
+      "sourceSymbol": "Q1",
+      "source": {
+        "line": 6472,
+        "endLine": 6693
+      },
+      "lessonFields": [
+        "id",
+        "name",
+        "title",
+        "layer",
+        "nodes",
+        "latency",
+        "labels",
+        "legend",
+        "overview",
+        "outro",
+        "start",
+        "steps"
+      ],
+      "nodes": [
+        "client",
+        "router",
+        "lan"
+      ],
+      "start": {
+        "nodes": [
+          "client"
+        ],
+        "frame": "client"
+      },
+      "stepCount": 8,
+      "eventCount": 19,
+      "packetCount": 17,
+      "eventTypes": {
+        "show": 1,
+        "packet": 17,
+        "note": 1
+      },
+      "packetProtocols": {
+        "TCP": 3,
+        "SMB2": 14
+      },
+      "packetOptionalFieldPresence": {
+        "quick": 3
+      },
+      "steps": [
+        {
+          "index": 0,
+          "title": "Port 445",
+          "eventCount": 4,
+          "eventTypes": {
+            "show": 1,
+            "packet": 3
+          },
+          "packetCount": 3
+        },
+        {
+          "index": 1,
+          "title": "Negotiate",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 2,
+          "title": "NTLM Challenge",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 3,
+          "title": "NTLM Response",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 4,
+          "title": "Connect a Share",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 5,
+          "title": "Open the File",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 6,
+          "title": "Read It",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 7,
+          "title": "Close the File",
+          "eventCount": 3,
+          "eventTypes": {
+            "packet": 2,
+            "note": 1
+          },
+          "packetCount": 2
+        }
+      ],
+      "packetFields": [
+        "color",
+        "from",
+        "label",
+        "payload",
+        "quick",
+        "row",
+        "to",
+        "type"
+      ],
+      "rowFields": [
+        "dst",
+        "info",
+        "len",
+        "proto",
+        "src",
+        "time",
+        "wire"
+      ],
+      "wireKeys": [
+        "tcp"
+      ]
+    },
+    {
+      "id": "ssh",
+      "name": "SSH",
+      "group": "security",
+      "layer": 7,
+      "sourceSymbol": "Hf",
+      "source": {
+        "line": 2817,
+        "endLine": 2964
+      },
+      "lessonFields": [
+        "id",
+        "name",
+        "title",
+        "layer",
+        "nodes",
+        "latency",
+        "labels",
+        "legend",
+        "overview",
+        "outro",
+        "start",
+        "steps"
+      ],
+      "nodes": [
+        "client",
+        "router",
+        "internet",
+        "web"
+      ],
+      "start": {
+        "nodes": [
+          "client"
+        ],
+        "frame": "client"
+      },
+      "stepCount": 6,
+      "eventCount": 32,
+      "packetCount": 29,
+      "eventTypes": {
+        "show": 1,
+        "packet": 29,
+        "note": 2
+      },
+      "packetProtocols": {
+        "TCP": 3,
+        "SSH": 26
+      },
+      "packetOptionalFieldPresence": {
+        "quick": 15,
+        "locked": 18
+      },
+      "steps": [
+        {
+          "index": 0,
+          "title": "Say Hello",
+          "eventCount": 6,
+          "eventTypes": {
+            "show": 1,
+            "packet": 5
+          },
+          "packetCount": 5
+        },
+        {
+          "index": 1,
+          "title": "Agree on Algorithms",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 2,
+          "title": "Key Exchange",
+          "eventCount": 5,
+          "eventTypes": {
+            "packet": 4,
+            "note": 1
+          },
+          "packetCount": 4
+        },
+        {
+          "index": 3,
+          "title": "Log In with a Key",
+          "eventCount": 8,
+          "eventTypes": {
+            "packet": 8
+          },
+          "packetCount": 8
+        },
+        {
+          "index": 4,
+          "title": "Open a Session",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 5,
+          "title": "Type a Command",
+          "eventCount": 9,
+          "eventTypes": {
+            "packet": 8,
+            "note": 1
+          },
+          "packetCount": 8
+        }
+      ],
+      "packetFields": [
+        "color",
+        "from",
+        "label",
+        "locked",
+        "payload",
+        "quick",
+        "row",
+        "to",
+        "type"
+      ],
+      "rowFields": [
+        "dst",
+        "info",
+        "len",
+        "proto",
+        "src",
+        "time",
+        "wire"
+      ],
+      "wireKeys": [
+        "tcp"
+      ]
+    },
+    {
+      "id": "tls",
+      "name": "TLS/SSL",
+      "group": "security",
+      "layer": 6,
+      "sourceSymbol": "_f",
+      "source": {
+        "line": 2991,
+        "endLine": 3164
+      },
+      "lessonFields": [
+        "id",
+        "name",
+        "title",
+        "layer",
+        "nodes",
+        "latency",
+        "labels",
+        "legend",
+        "overview",
+        "outro",
+        "start",
+        "steps"
+      ],
+      "nodes": [
+        "client",
+        "router",
+        "internet",
+        "web"
+      ],
+      "start": {
+        "nodes": [
+          "client"
+        ],
+        "frame": "client"
+      },
+      "stepCount": 6,
+      "eventCount": 16,
+      "packetCount": 14,
+      "eventTypes": {
+        "show": 1,
+        "packet": 12,
+        "note": 2,
+        "stream": 1
+      },
+      "packetProtocols": {
+        "TCP": 5,
+        "TLSv1.3": 9
+      },
+      "packetOptionalFieldPresence": {
+        "quick": 5,
+        "locked": 7
+      },
+      "steps": [
+        {
+          "index": 0,
+          "title": "Client Hello",
+          "eventCount": 5,
+          "eventTypes": {
+            "show": 1,
+            "packet": 4
+          },
+          "packetCount": 4
+        },
+        {
+          "index": 1,
+          "title": "Server Hello",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 1,
+            "note": 1
+          },
+          "packetCount": 1
+        },
+        {
+          "index": 2,
+          "title": "Certificate",
+          "eventCount": 2,
+          "eventTypes": {
+            "stream": 1,
+            "note": 1
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 3,
+          "title": "Finished",
+          "eventCount": 1,
+          "eventTypes": {
+            "packet": 1
+          },
+          "packetCount": 1
+        },
+        {
+          "index": 4,
+          "title": "Encrypted Data",
+          "eventCount": 3,
+          "eventTypes": {
+            "packet": 3
+          },
+          "packetCount": 3
+        },
+        {
+          "index": 5,
+          "title": "Closing",
+          "eventCount": 3,
+          "eventTypes": {
+            "packet": 3
+          },
+          "packetCount": 3
+        }
+      ],
+      "packetFields": [
+        "color",
+        "from",
+        "label",
+        "locked",
+        "payload",
+        "quick",
+        "row",
+        "to",
+        "type"
+      ],
+      "rowFields": [
+        "dst",
+        "info",
+        "len",
+        "proto",
+        "src",
+        "time",
+        "wire"
+      ],
+      "wireKeys": [
+        "tcp"
+      ]
+    },
+    {
+      "id": "proxy",
+      "name": "HTTP Proxy",
+      "group": "application",
+      "layer": 7,
+      "sourceSymbol": "i1",
+      "source": {
+        "line": 4073,
+        "endLine": 4257
+      },
+      "lessonFields": [
+        "id",
+        "name",
+        "title",
+        "layer",
+        "nodes",
+        "latency",
+        "labels",
+        "legend",
+        "overview",
+        "outro",
+        "start",
+        "steps"
+      ],
+      "nodes": [
+        "client",
+        "router",
+        "internet",
+        "relay",
+        "web"
+      ],
+      "start": {
+        "nodes": [
+          "client"
+        ],
+        "frame": "client"
+      },
+      "stepCount": 7,
+      "eventCount": 22,
+      "packetCount": 17,
+      "eventTypes": {
+        "type-url": 1,
+        "show": 3,
+        "packet": 17,
+        "note": 1
+      },
+      "packetProtocols": {
+        "TCP": 9,
+        "HTTP": 6,
+        "TLSv1.3": 2
+      },
+      "packetOptionalFieldPresence": {
+        "quick": 9
+      },
+      "steps": [
+        {
+          "index": 0,
+          "title": "Proxy Settings",
+          "eventCount": 2,
+          "eventTypes": {
+            "type-url": 1,
+            "show": 1
+          },
+          "packetCount": 0
+        },
+        {
+          "index": 1,
+          "title": "To the Proxy",
+          "eventCount": 4,
+          "eventTypes": {
+            "show": 1,
+            "packet": 3
+          },
+          "packetCount": 3
+        },
+        {
+          "index": 2,
+          "title": "The Whole URL",
+          "eventCount": 1,
+          "eventTypes": {
+            "packet": 1
+          },
+          "packetCount": 1
+        },
+        {
+          "index": 3,
+          "title": "Proxy Fetches It",
+          "eventCount": 5,
+          "eventTypes": {
+            "show": 1,
+            "packet": 4
+          },
+          "packetCount": 4
+        },
+        {
+          "index": 4,
+          "title": "Page Passed On",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 5,
+          "title": "HTTPS: CONNECT",
+          "eventCount": 5,
+          "eventTypes": {
+            "packet": 5
+          },
+          "packetCount": 5
+        },
+        {
+          "index": 6,
+          "title": "In the Tunnel",
+          "eventCount": 3,
+          "eventTypes": {
+            "packet": 2,
+            "note": 1
+          },
+          "packetCount": 2
+        }
+      ],
+      "packetFields": [
+        "color",
+        "from",
+        "label",
+        "payload",
+        "quick",
+        "row",
+        "to",
+        "type"
+      ],
+      "rowFields": [
+        "dst",
+        "info",
+        "len",
+        "proto",
+        "src",
+        "time",
+        "wire"
+      ],
+      "wireKeys": [
+        "tcp"
+      ]
+    },
+    {
+      "id": "socks",
+      "name": "SOCKS5",
+      "group": "application",
+      "layer": 5,
+      "sourceSymbol": "l1",
+      "source": {
+        "line": 4283,
+        "endLine": 4408
+      },
+      "lessonFields": [
+        "id",
+        "name",
+        "title",
+        "layer",
+        "nodes",
+        "latency",
+        "labels",
+        "legend",
+        "overview",
+        "outro",
+        "start",
+        "steps"
+      ],
+      "nodes": [
+        "client",
+        "router",
+        "internet",
+        "relay",
+        "web"
+      ],
+      "start": {
+        "nodes": [
+          "client"
+        ],
+        "frame": "client"
+      },
+      "stepCount": 4,
+      "eventCount": 16,
+      "packetCount": 14,
+      "eventTypes": {
+        "show": 2,
+        "packet": 14
+      },
+      "packetProtocols": {
+        "TCP": 6,
+        "SOCKS5": 4,
+        "TLSv1.3": 4
+      },
+      "packetOptionalFieldPresence": {
+        "quick": 6
+      },
+      "steps": [
+        {
+          "index": 0,
+          "title": "To the Proxy",
+          "eventCount": 4,
+          "eventTypes": {
+            "show": 1,
+            "packet": 3
+          },
+          "packetCount": 3
+        },
+        {
+          "index": 1,
+          "title": "Greeting",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 2,
+          "title": "Where To?",
+          "eventCount": 6,
+          "eventTypes": {
+            "packet": 5,
+            "show": 1
+          },
+          "packetCount": 5
+        },
+        {
+          "index": 3,
+          "title": "In the Tunnel",
+          "eventCount": 4,
+          "eventTypes": {
+            "packet": 4
+          },
+          "packetCount": 4
+        }
+      ],
+      "packetFields": [
+        "color",
+        "from",
+        "label",
+        "payload",
+        "quick",
+        "row",
+        "to",
+        "type"
+      ],
+      "rowFields": [
+        "dst",
+        "info",
+        "len",
+        "proto",
+        "src",
+        "time",
+        "wire"
+      ],
+      "wireKeys": [
+        "tcp"
+      ]
+    },
+    {
+      "id": "reverse",
+      "name": "Reverse Proxy",
+      "group": "application",
+      "layer": 7,
+      "sourceSymbol": "c1",
+      "source": {
+        "line": 4433,
+        "endLine": 4604
+      },
+      "lessonFields": [
+        "id",
+        "name",
+        "title",
+        "layer",
+        "nodes",
+        "latency",
+        "labels",
+        "legend",
+        "overview",
+        "outro",
+        "start",
+        "steps"
+      ],
+      "nodes": [
+        "client",
+        "router",
+        "internet",
+        "web",
+        "app"
+      ],
+      "start": {
+        "nodes": [
+          "client"
+        ],
+        "frame": "client"
+      },
+      "stepCount": 6,
+      "eventCount": 18,
+      "packetCount": 13,
+      "eventTypes": {
+        "show": 2,
+        "packet": 13,
+        "note": 2,
+        "camera": 1
+      },
+      "packetProtocols": {
+        "TCP": 6,
+        "TLSv1.3": 5,
+        "HTTP": 2
+      },
+      "packetOptionalFieldPresence": {
+        "quick": 9,
+        "locked": 2
+      },
+      "steps": [
+        {
+          "index": 0,
+          "title": "The Front Door",
+          "eventCount": 7,
+          "eventTypes": {
+            "show": 1,
+            "packet": 6
+          },
+          "packetCount": 6
+        },
+        {
+          "index": 1,
+          "title": "TLS Ends Here",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 1,
+            "note": 1
+          },
+          "packetCount": 1
+        },
+        {
+          "index": 2,
+          "title": "In the Clear",
+          "eventCount": 5,
+          "eventTypes": {
+            "show": 1,
+            "packet": 4
+          },
+          "packetCount": 4
+        },
+        {
+          "index": 3,
+          "title": "The App Answers",
+          "eventCount": 1,
+          "eventTypes": {
+            "packet": 1
+          },
+          "packetCount": 1
+        },
+        {
+          "index": 4,
+          "title": "Encrypted Again",
+          "eventCount": 2,
+          "eventTypes": {
+            "camera": 1,
+            "packet": 1
+          },
+          "packetCount": 1
+        },
+        {
+          "index": 5,
+          "title": "Three Options",
+          "eventCount": 1,
+          "eventTypes": {
+            "note": 1
+          },
+          "packetCount": 0
+        }
+      ],
+      "packetFields": [
+        "color",
+        "from",
+        "label",
+        "locked",
+        "payload",
+        "quick",
+        "row",
+        "to",
+        "type"
+      ],
+      "rowFields": [
+        "dst",
+        "info",
+        "len",
+        "proto",
+        "src",
+        "time",
+        "wire"
+      ],
+      "wireKeys": [
+        "tcp"
+      ]
+    },
+    {
+      "id": "wireguard",
+      "name": "WireGuard",
+      "group": "security",
+      "layer": 3,
+      "sourceSymbol": "d1",
+      "source": {
+        "line": 4639,
+        "endLine": 4813
+      },
+      "lessonFields": [
+        "id",
+        "name",
+        "title",
+        "layer",
+        "nodes",
+        "latency",
+        "labels",
+        "legend",
+        "overview",
+        "outro",
+        "start",
+        "steps"
+      ],
+      "nodes": [
+        "client",
+        "router",
+        "internet",
+        "relay",
+        "web"
+      ],
+      "start": {
+        "nodes": [
+          "client"
+        ],
+        "frame": "client"
+      },
+      "stepCount": 6,
+      "eventCount": 11,
+      "packetCount": 7,
+      "eventTypes": {
+        "show": 2,
+        "note": 1,
+        "packet": 7,
+        "camera": 1
+      },
+      "packetProtocols": {
+        "WireGuard": 5,
+        "TCP": 2
+      },
+      "packetOptionalFieldPresence": {
+        "locked": 2
+      },
+      "steps": [
+        {
+          "index": 0,
+          "title": "Set Up Once",
+          "eventCount": 2,
+          "eventTypes": {
+            "show": 1,
+            "note": 1
+          },
+          "packetCount": 0
+        },
+        {
+          "index": 1,
+          "title": "Handshake",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 2,
+          "title": "Into the Tunnel",
+          "eventCount": 1,
+          "eventTypes": {
+            "packet": 1
+          },
+          "packetCount": 1
+        },
+        {
+          "index": 3,
+          "title": "Out to the Web",
+          "eventCount": 3,
+          "eventTypes": {
+            "show": 1,
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 4,
+          "title": "The Way Back",
+          "eventCount": 1,
+          "eventTypes": {
+            "packet": 1
+          },
+          "packetCount": 1
+        },
+        {
+          "index": 5,
+          "title": "Keeping It Open",
+          "eventCount": 2,
+          "eventTypes": {
+            "camera": 1,
+            "packet": 1
+          },
+          "packetCount": 1
+        }
+      ],
+      "packetFields": [
+        "color",
+        "from",
+        "label",
+        "locked",
+        "payload",
+        "row",
+        "to",
+        "type"
+      ],
+      "rowFields": [
+        "dst",
+        "info",
+        "len",
+        "proto",
+        "src",
+        "time",
+        "wire"
+      ],
+      "wireKeys": [
+        "alias",
+        "tcp",
+        "ttl",
+        "ttlNote",
+        "udp"
+      ]
+    },
+    {
+      "id": "ipsec",
+      "name": "IPsec",
+      "group": "security",
+      "layer": 3,
+      "sourceSymbol": "h1",
+      "source": {
+        "line": 4851,
+        "endLine": 5056
+      },
+      "lessonFields": [
+        "id",
+        "name",
+        "title",
+        "layer",
+        "nodes",
+        "latency",
+        "labels",
+        "legend",
+        "overview",
+        "outro",
+        "start",
+        "steps"
+      ],
+      "nodes": [
+        "client",
+        "router",
+        "internet",
+        "relay",
+        "web"
+      ],
+      "start": {
+        "nodes": [
+          "client"
+        ],
+        "frame": "client"
+      },
+      "stepCount": 6,
+      "eventCount": 12,
+      "packetCount": 8,
+      "eventTypes": {
+        "show": 2,
+        "packet": 8,
+        "note": 1,
+        "camera": 1
+      },
+      "packetProtocols": {
+        "ISAKMP": 4,
+        "ESP": 2,
+        "TCP": 2
+      },
+      "packetOptionalFieldPresence": {
+        "locked": 4
+      },
+      "steps": [
+        {
+          "index": 0,
+          "title": "IKE_SA_INIT",
+          "eventCount": 3,
+          "eventTypes": {
+            "show": 1,
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 1,
+          "title": "A NAT in the Way",
+          "eventCount": 1,
+          "eventTypes": {
+            "note": 1
+          },
+          "packetCount": 0
+        },
+        {
+          "index": 2,
+          "title": "IKE_AUTH",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 3,
+          "title": "Into the Tunnel",
+          "eventCount": 1,
+          "eventTypes": {
+            "packet": 1
+          },
+          "packetCount": 1
+        },
+        {
+          "index": 4,
+          "title": "Out and Back",
+          "eventCount": 4,
+          "eventTypes": {
+            "show": 1,
+            "packet": 3
+          },
+          "packetCount": 3
+        },
+        {
+          "index": 5,
+          "title": "Which VPN?",
+          "eventCount": 1,
+          "eventTypes": {
+            "camera": 1
+          },
+          "packetCount": 0
+        }
+      ],
+      "packetFields": [
+        "color",
+        "from",
+        "label",
+        "locked",
+        "payload",
+        "row",
+        "to",
+        "type"
+      ],
+      "rowFields": [
+        "dst",
+        "info",
+        "len",
+        "proto",
+        "src",
+        "time",
+        "wire"
+      ],
+      "wireKeys": [
+        "alias",
+        "tcp",
+        "ttl",
+        "ttlNote",
+        "udp"
+      ]
+    },
+    {
+      "id": "modbus",
+      "name": "Modbus",
+      "group": "application",
+      "layer": 7,
+      "sourceSymbol": "J1",
+      "source": {
+        "line": 6714,
+        "endLine": 6890
+      },
+      "lessonFields": [
+        "id",
+        "name",
+        "title",
+        "layer",
+        "nodes",
+        "seenOn",
+        "latency",
+        "labels",
+        "legend",
+        "overview",
+        "outro",
+        "start",
+        "steps"
+      ],
+      "nodes": [
+        "client",
+        "router",
+        "lan"
+      ],
+      "start": {
+        "nodes": [
+          "client"
+        ],
+        "frame": "client"
+      },
+      "stepCount": 6,
+      "eventCount": 14,
+      "packetCount": 11,
+      "eventTypes": {
+        "show": 1,
+        "packet": 11,
+        "note": 2
+      },
+      "packetProtocols": {
+        "TCP": 3,
+        "Modbus/TCP": 8
+      },
+      "packetOptionalFieldPresence": {
+        "quick": 3
+      },
+      "steps": [
+        {
+          "index": 0,
+          "title": "Port 502",
+          "eventCount": 4,
+          "eventTypes": {
+            "show": 1,
+            "packet": 3
+          },
+          "packetCount": 3
+        },
+        {
+          "index": 1,
+          "title": "Read Registers",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 2,
+          "title": "Write a Setpoint",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 3,
+          "title": "Start a Pump",
+          "eventCount": 3,
+          "eventTypes": {
+            "packet": 2,
+            "note": 1
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 4,
+          "title": "An Exception",
+          "eventCount": 2,
+          "eventTypes": {
+            "packet": 2
+          },
+          "packetCount": 2
+        },
+        {
+          "index": 5,
+          "title": "No Security",
+          "eventCount": 1,
+          "eventTypes": {
+            "note": 1
+          },
+          "packetCount": 0
+        }
+      ],
+      "packetFields": [
+        "color",
+        "from",
+        "label",
+        "payload",
+        "quick",
+        "row",
+        "to",
+        "type"
+      ],
+      "rowFields": [
+        "dst",
+        "info",
+        "len",
+        "proto",
+        "src",
+        "time",
+        "wire"
+      ],
+      "wireKeys": [
+        "tcp"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,436 @@
+{
+  "scope": "公开生产 bundle 的静态追踪；非原始源码恢复，所有符号/行号对应 js-beautify 格式化版本 index.pretty.js。浏览器验证由主代理完成。",
+  "conclusions": [
+    {
+      "status": "observed",
+      "claim": "网络拓扑、设备、报文粒子、时序图均由原生 SVG 字符串/DOM API 构建。未发现 Mermaid 或 Canvas 绘制调用；代码中的 canvas 属性是响应式设计基准宽度。",
+      "sources": [
+        {
+          "file": "derived/index.pretty.js",
+          "symbol": "bw",
+          "start_line": 11557,
+          "end_line": 11594
+        },
+        {
+          "file": "derived/index.pretty.js",
+          "symbol": "Mu",
+          "start_line": 11937,
+          "end_line": 11953
+        },
+        {
+          "file": "derived/index.pretty.js",
+          "symbol": "He",
+          "start_line": 15007,
+          "end_line": 15011
+        },
+        {
+          "file": "derived/index.pretty.js",
+          "symbol": "YS",
+          "start_line": 15701,
+          "end_line": 15722
+        }
+      ]
+    },
+    {
+      "status": "observed",
+      "claim": "同一课程的事件队列和播放器状态被网络图、时序图、步骤栏、报文表与检查器共享；两种视图不是独立脚本。",
+      "sources": [
+        {
+          "file": "derived/index.pretty.js",
+          "symbol": "VS",
+          "start_line": 15566,
+          "end_line": 15684
+        },
+        {
+          "file": "derived/index.pretty.js",
+          "symbol": "r0",
+          "start_line": 15796,
+          "end_line": 15800
+        },
+        {
+          "file": "derived/index.pretty.js",
+          "symbol": "a0 and sequence click handler",
+          "start_line": 15783,
+          "end_line": 15789
+        }
+      ]
+    },
+    {
+      "status": "observed",
+      "claim": "动画时间与报文标注时间是两套尺度。网络按图上路程/像素速度播放；时序的绘制动画用固定时长，但时序的几何纵轴按场景时间戳和链路延迟建立。",
+      "sources": [
+        {
+          "file": "derived/index.pretty.js",
+          "symbol": "Rw",
+          "start_line": 11625,
+          "end_line": 11730
+        },
+        {
+          "file": "derived/index.pretty.js",
+          "symbol": "pc",
+          "start_line": 15383,
+          "end_line": 15417
+        },
+        {
+          "file": "derived/index.pretty.js",
+          "symbol": "WS",
+          "start_line": 15562,
+          "end_line": 15564
+        }
+      ]
+    }
+  ],
+  "devices_and_topology": {
+    "projection": {
+      "formula": "screenX = originX + (x-y)*cos(pi/6); screenY = originY + (x+y)*0.5 - z",
+      "purpose": "以可组合的三维盒体参数生成二维等轴设备图标，不依赖三维引擎。",
+      "sources": [
+        {
+          "file": "derived/index.pretty.js",
+          "symbol": "Tn",
+          "start_line": 10905,
+          "end_line": 10907
+        },
+        {
+          "file": "derived/index.pretty.js",
+          "symbol": "Ws",
+          "start_line": 10912,
+          "end_line": 10918
+        },
+        {
+          "file": "derived/index.pretty.js",
+          "symbol": "pt",
+          "start_line": 10930,
+          "end_line": 10939
+        }
+      ]
+    },
+    "primitive_composition": "pt 生成 top/left/right 三个 polygon；V 在面坐标中画矩形，mn 用28点多边形画圆；Jn/Qy/Xy/Zy/eo/Ci/ph/Jy 组合路由器、交换机、摄像头、电视盒、DNS、服务器、笔记本和云。",
+    "route_tables": {
+      "oa": "每个有向边保存 [x1,y1,x2,y2]；qe 以法向偏移构造双向平行线。",
+      "tw": "端点对映射为多个有向边，例 client>web 经 client>router、router>internet、internet>web。",
+      "gh": "逻辑取景框（lookup/path/call/full等）映射节点集合。",
+      "sources": [
+        {
+          "file": "derived/index.pretty.js",
+          "symbol": "qe",
+          "start_line": 11203,
+          "end_line": 11213
+        },
+        {
+          "file": "derived/index.pretty.js",
+          "symbol": "oa",
+          "start_line": 11214,
+          "end_line": 11241
+        },
+        {
+          "file": "derived/index.pretty.js",
+          "symbol": "tw",
+          "start_line": 11242,
+          "end_line": 11306
+        },
+        {
+          "file": "derived/index.pretty.js",
+          "symbol": "gh",
+          "start_line": 11479,
+          "end_line": 11503
+        }
+      ]
+    },
+    "layers": [
+      "defs/grid/vignette",
+      "lanes",
+      "pulse-layer",
+      "nodes with labels",
+      "packet-layer",
+      "note-layer"
+    ],
+    "sources": [
+      {
+        "file": "derived/index.pretty.js",
+        "symbol": "Sw",
+        "start_line": 11507,
+        "end_line": 11540
+      },
+      {
+        "file": "derived/index.pretty.js",
+        "symbol": "bw",
+        "start_line": 11557,
+        "end_line": 11594
+      }
+    ]
+  },
+  "clock_and_player": {
+    "clock": "nt(duration, token, progress) 在 requestAnimationFrame 上累计虚拟 elapsed；未暂停时 elapsed += realDelta * speed；p = clamp(elapsed/duration,0,1)。duration 可为函数以动态调整间隔。token.cancelled 提前结束。",
+    "waapi": "yn.track 把相关 WAAPI Animation 加入 Set；setSpeed/pause/resume 同时更新 playbackRate/playState，finish/cancel 时移除。并非每一个装饰性 fade 都被 track。",
+    "sources": [
+      {
+        "file": "derived/index.pretty.js",
+        "symbol": "hr/yn",
+        "start_line": 11731,
+        "end_line": 11759
+      },
+      {
+        "file": "derived/index.pretty.js",
+        "symbol": "nt/ge",
+        "start_line": 11761,
+        "end_line": 11775
+      }
+    ],
+    "queue": "VS 先插入 focus(start)，再把每个 steps[].events[] 平铺并保留 step。r 是下个事件索引，i 是当前运行索引，c 是播放标志，d 是取消令牌，p 是事件间等待令牌。",
+    "state_contract": [
+      "playing",
+      "running",
+      "started",
+      "done",
+      "activeStep",
+      "event",
+      "steps(active/done/todo)",
+      "packets(current/past/future)",
+      "labels",
+      "notes"
+    ],
+    "state_notifications": "queueMicrotask 合并一次事件循环内的多次状态更新。",
+    "seek": "jump(step) 取消当前动画，重放前序事件的 apply 以恢复持久状态，然后继续播放。reset 恢复 overview；dispose 避免旧课程回调更新。",
+    "mode_switch": "sequence 模式 apply 事件的持久状态并等待 WS 对应时长，网络模式 run 执行动画。网络切到 sequence 且事件正在执行时，取消并标记 finish，以应用事件最终状态。",
+    "pedagogical_gaps_ms": {
+      "network": {
+        "event": 450,
+        "step": 1100,
+        "quick": 120
+      },
+      "sequence": {
+        "event": 260,
+        "step": 650,
+        "quick": 80
+      }
+    },
+    "player_sources": [
+      {
+        "file": "derived/index.pretty.js",
+        "symbol": "GS/WS",
+        "start_line": 15549,
+        "end_line": 15564
+      },
+      {
+        "file": "derived/index.pretty.js",
+        "symbol": "VS",
+        "start_line": 15566,
+        "end_line": 15684
+      }
+    ]
+  },
+  "network_animation": {
+    "packet_creation": "E0 创建报文主圆（halo r13/实体 r6）、label、payload 字段和 locked 锁图标；3个尾随圆的半径为3.6/2.6/1.6、初始透明度0.45/0.33/0.21。标签按 SVG getComputedTextLength 实测宽度，另有 CJK/RTL 回退计算。",
+    "travel": "gr([x1,y1,x2,y2],p) 为线性插值；op 为欧氏长度。pc 按 tw 路线逐段推进；普通速度0.21 SVG单位/ms，quick 为0.504。每段 duration=length*travelFraction/speed。段末让经过的设备轻跳，普通逐跳停140ms（quick 40ms）。",
+    "trail_formula": "tailProgress_j = max(0, p*travelFraction - offset_j/segmentLength)，offset=[10,20,30]。",
+    "lost": "lost 报文在首条含 internet 的路径段走55%即丢失；C0 令粒子下落26*p^3、缩小、褪色并绘叉。",
+    "concurrency": "x0(stream) 每 spacing ms 启动下一包（默认480），Promise.all 等待全流结束。Pn 引用计数用于并发包共用链路时保持高亮，最后一包退出再清除。",
+    "pulse": "Xr 半径=14+46p，透明度=0.6*(1-p)，700ms。",
+    "camera": "按 gh[frame] 计算可见节点 bbox，加14留白，避开视图切换器与底部控件，通过 nt 对 viewBox 四分量插值，1100ms cubic ease-in-out。ResizeObserver 重新取景。",
+    "sources": [
+      {
+        "file": "derived/index.pretty.js",
+        "symbol": "He/gr/op",
+        "start_line": 15007,
+        "end_line": 15016
+      },
+      {
+        "file": "derived/index.pretty.js",
+        "symbol": "lt/ue/H",
+        "start_line": 15099,
+        "end_line": 15158
+      },
+      {
+        "file": "derived/index.pretty.js",
+        "symbol": "A0/hc/Xr",
+        "start_line": 15286,
+        "end_line": 15304
+      },
+      {
+        "file": "derived/index.pretty.js",
+        "symbol": "E0",
+        "start_line": 15306,
+        "end_line": 15381
+      },
+      {
+        "file": "derived/index.pretty.js",
+        "symbol": "pc",
+        "start_line": 15383,
+        "end_line": 15417
+      },
+      {
+        "file": "derived/index.pretty.js",
+        "symbol": "x0/C0",
+        "start_line": 15419,
+        "end_line": 15442
+      }
+    ]
+  },
+  "sequence_layout": {
+    "input": "Rw 平铺 packet 与 stream.packets，记录 step 和连续 packet index；note 独立编号。lifelines 由实际涉及的 from/to 与课程可选 lifelines/全局默认顺序交集得到。",
+    "timestamps": "sent = round(parseFloat(row.time), 6 decimals)；arrived = round(sent+lesson.latency[from-to or to-from],6 decimals)。缺少延迟时显式抛错。notes 时间取前一包 arrival 和同一步下一包 sent 的最大值。",
+    "ordering": "按 time，再按 kind（arrived=0, note=0.5, sent=1），再按稳定序排序。",
+    "vertical_axis": "相邻时点 Δt>0.25 秒时插入58px断轴波纹；0<Δt<=0.25 时增加 max(9,3000*Δt)px；同刻连续 arrival 额外18px。发送事件与前次发送至少30px，和note至少22px，步骤标题30px、note30px等留白另行叠加。故它是带最小间距与断轴的混合时间轴，不是线性比例图。",
+    "horizontal_axis": "svgWidth=max(scroll.clientWidth,78+30+lifelineCount*124)，每条 lifeline 均分余宽并位于单元中心，左侧78px留时间标签。",
+    "arrow_geometry": "qw 以发送/到达纵坐标画斜线，自制箭头polygon；丢包箭头终点取起终点中点并画叉。标签角度归一到[-90,90]以避免倒读。",
+    "label_placement": "Kw 先实测文字宽度，优先安排长标签；在连线的0.5/0.4/0.6/0.3/0.7/0.2/0.8/0.12/0.88位置尝试。Uw 用分离轴定理(SAT)测试旋转标签多边形与已有note/丢包叉/标签是否碰撞；无无碰撞解时选重叠数最少候选。",
+    "sources": [
+      {
+        "file": "derived/index.pretty.js",
+        "symbol": "constants/Ru",
+        "start_line": 11603,
+        "end_line": 11619
+      },
+      {
+        "file": "derived/index.pretty.js",
+        "symbol": "Rw",
+        "start_line": 11625,
+        "end_line": 11730
+      },
+      {
+        "file": "derived/index.pretty.js",
+        "symbol": "qw",
+        "start_line": 11797,
+        "end_line": 11819
+      },
+      {
+        "file": "derived/index.pretty.js",
+        "symbol": "Uw/kh/Kw",
+        "start_line": 11851,
+        "end_line": 11935
+      },
+      {
+        "file": "derived/index.pretty.js",
+        "symbol": "Mu",
+        "start_line": 11937,
+        "end_line": 11953
+      }
+    ],
+    "animation": "Ii 对当前报文用 strokeDasharray/dashoffset 从长度到0绘线（620ms，quick320ms），箭头/标签分别在70%和30%后淡入，stream 相邻箭头错开160ms。全览或历史报文用fade；Ql 按 packets current/past/future 和 notes 状态显隐。",
+    "scroll_and_reflow": "表头为独立HTML层，qu 用 translateX(-scrollLeft) 对齐；ResizeObserver 重建布局并恢复 scrollTop。Ql 将最新可见报文保持在视口约62%高度，向上定位约40%；ho 使用可取消 rAF 平滑滚动，wheel/touchstart 中止。",
+    "interaction": "只响应 .seq-arrow.is-shown 点击，打开与报文表共享的检查器并暂停当前播放器；检查器回调同步 packet index 的表行和时序箭头 is-inspected。",
+    "behavior_sources": [
+      {
+        "file": "derived/index.pretty.js",
+        "symbol": "qu/Hu/Bw",
+        "start_line": 11954,
+        "end_line": 11974
+      },
+      {
+        "file": "derived/index.pretty.js",
+        "symbol": "Ii",
+        "start_line": 11977,
+        "end_line": 12038
+      },
+      {
+        "file": "derived/index.pretty.js",
+        "symbol": "Ql",
+        "start_line": 12054,
+        "end_line": 12092
+      },
+      {
+        "file": "derived/index.pretty.js",
+        "symbol": "ho",
+        "start_line": 9762,
+        "end_line": 9789
+      },
+      {
+        "file": "derived/index.pretty.js",
+        "symbol": "a0 and sequence click",
+        "start_line": 15783,
+        "end_line": 15789
+      }
+    ]
+  },
+  "responsive_accessibility": {
+    "observed": "sc 以 1440/1100/900/640/0 断点选择 wide/medium/tablet/narrow/phone，按canvas基准宽度设CSS zoom；窄屏堆叠面板、侧栏改抽屉。网络图窄宽度会放大标签、为标签加底板，并动态计算 viewBox。时序图保持每生命线124px的最低间隔，允许水平滚动。",
+    "sources": [
+      {
+        "file": "derived/index.pretty.js",
+        "symbol": "YS/sc",
+        "start_line": 15701,
+        "end_line": 15740
+      },
+      {
+        "file": "derived/index.pretty.js",
+        "symbol": "_S label scaling",
+        "start_line": 15041,
+        "end_line": 15065
+      },
+      {
+        "file": "derived/index.pretty.js",
+        "symbol": "Mu",
+        "start_line": 11937,
+        "end_line": 11953
+      }
+    ],
+    "reduced_motion": "Qm/Ne 检查 prefers-reduced-motion；Su/ho/时序淡入与描边部分有即时分支；CSS 全局将animation/transition缩短到0.001ms。但网络图的nt/pc没有Ne分支，不能声称所有 rAF 粒子动画都会关闭。",
+    "reduced_sources": [
+      {
+        "file": "derived/index.pretty.js",
+        "symbol": "Qm/Ne/Su",
+        "start_line": 9675,
+        "end_line": 9693
+      },
+      {
+        "file": "derived/index.pretty.js",
+        "symbol": "ho",
+        "start_line": 9762,
+        "end_line": 9789
+      },
+      {
+        "file": "derived/index.pretty.js",
+        "symbol": "Ii",
+        "start_line": 11977,
+        "end_line": 12038
+      },
+      {
+        "file": "derived/styles.pretty.css",
+        "start_line": 3418,
+        "end_line": 3426
+      }
+    ]
+  },
+  "reusable_recipe": [
+    {
+      "step": 1,
+      "action": "先设计一份课程事件DSL；把拓扑node、按课程step组织的事件、报文列表字段、协议wire规格和时间戳放入同一数据模型。",
+      "basis": "原站结构的抽象，不是原始源码文件名。"
+    },
+    {
+      "step": 2,
+      "action": "建立node ID、双向lane几何表和端点route表；用等轴投影和盒体/面/圆等小原语组合设备，SVG保留多层便于独立清理。"
+    },
+    {
+      "step": 3,
+      "action": "建立共享暂停/倍速状态、计时辅助和取消令牌和取消令牌；让DOM状态恢复apply与动画执行run分离，重置/跳步时先恢复状态，再播放。"
+    },
+    {
+      "step": 4,
+      "action": "沿路段以长度/速度生成粒子时长，用位置插值和固定路程间隔的拖尾；并发stream采用错峰启动和高亮引用计数。"
+    },
+    {
+      "step": 5,
+      "action": "时序图由同一packet数据派生，按发送/到达时间排序，配置最小行距与长等待断轴；明确标注课程模拟时间与教学播放时间的区别。"
+    },
+    {
+      "step": 6,
+      "action": "用getComputedTextLength量测字体，按文字宽度优先布局，并做候选位置+旋转矩形SAT碰撞检测；为多语言重排和resize准备重新布局入口。"
+    },
+    {
+      "step": 7,
+      "action": "用稳定packet index串联图、表和检查器；仅允许已显示报文交互；自动滚动要让用户滚轮/触摸中断。"
+    },
+    {
+      "step": 8,
+      "action": "如果重新制作，应在虚拟时钟或run入口统一处理reduced-motion，而非只缩短CSS transition；这是改进建议，原版未完全实现。",
+      "status": "recommendation"
+    }
+  ],
+  "limits": [
+    "静态代码无法还原作者原始模块/变量名。",
+    "未以第三方复刻站或假设的React/Mermaid架构作依据。",
+    "该文件不包含浏览器实测结论，由主代理合并实际观测。"
+  ]
+}

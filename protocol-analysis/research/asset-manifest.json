@@ -1,0 +1,82 @@
+[
+  {
+    "file": "raw/browser-assets/index-CNPseYOQ.js",
+    "bytes": 506093,
+    "sha256": "19e285d11f5fa0b1411ec94aaea6cd04531872e8322bb8a46c80e4f92e262834"
+  },
+  {
+    "file": "raw/browser-assets/index-CwjpA-vk.css",
+    "bytes": 75991,
+    "sha256": "330dfe72889cf6fc9b048e50bca6a40f2a5858dfcc24fb76f32f67971e88cd3d"
+  },
+  {
+    "file": "raw/browser-assets/iosevka-400-DnzhOSIo.woff2",
+    "bytes": 75928,
+    "sha256": "702dd65ac2b6c475ed3e5dbf9a3db637ba121e18cb36e1c4dc763d849d0fe0a2"
+  },
+  {
+    "file": "raw/browser-assets/iosevka-500-C4FA_zML.woff2",
+    "bytes": 76056,
+    "sha256": "e6ab7223714d87352a3b5601dc6974ef0515c069cb1f1c57f5f3ad7503cee11d"
+  },
+  {
+    "file": "raw/browser-assets/iosevka-600-Dj5n5yBL.woff2",
+    "bytes": 75844,
+    "sha256": "30d93b6c22d1ff507f66738b526c6c8ca5b90bcb997f8943819ee6787ddf99d3"
+  },
+  {
+    "file": "raw/browser-assets/iosevka-700-BxdwZZnN.woff2",
+    "bytes": 75672,
+    "sha256": "0e4f1ad1048d745e2b0d9bddcb71bffc4796923ea2eb70c825cb9ff210e2b155"
+  },
+  {
+    "file": "raw/browser-assets/iosevka-800-Ctjohn3a.woff2",
+    "bytes": 75492,
+    "sha256": "29f9603e5adda955490e9007913dbae76fe8892409ce1e8b460144e3c0d260bc"
+  },
+  {
+    "file": "raw/browser-assets/iosevka-800-italic-D0Mo0HIB.woff2",
+    "bytes": 84244,
+    "sha256": "96c0912e56099dc4889458fd2218ac60ccedc60f98beaf448b47974a44780f30"
+  },
+  {
+    "file": "raw/browser-assets/iosevka-cyrillic-800-D3C0C3o1.woff2",
+    "bytes": 10500,
+    "sha256": "fc6f7cfab3cb61a4cc536e46328704f9935278b9be15dda2c75452e139b086c6"
+  },
+  {
+    "file": "raw/browser-assets/iosevka-greek-800-CVVc1U8B.woff2",
+    "bytes": 10448,
+    "sha256": "f06238ab7d03a867ed53d93013b214e788571b1769904687d3547a9ac969de16"
+  },
+  {
+    "file": "raw/browser-assets/iosevka-vietnamese-800-LtTfXbIA.woff2",
+    "bytes": 5116,
+    "sha256": "d81b07fa77ba57ed4007cd620cdf42da4f4bd0873d3a15e9bf824ec717c7faed"
+  },
+  {
+    "file": "raw/browser-assets/zh-AH-lIMHP.js",
+    "bytes": 357488,
+    "sha256": "c961c224d1a0c4cb838e8b74a1e12eea6ebc02ccd37f37350f1b1dfa1b19801f"
+  },
+  {
+    "file": "raw/index-CNPseYOQ.js",
+    "bytes": 506093,
+    "sha256": "19e285d11f5fa0b1411ec94aaea6cd04531872e8322bb8a46c80e4f92e262834"
+  },
+  {
+    "file": "raw/index-CwjpA-vk.css",
+    "bytes": 75991,
+    "sha256": "330dfe72889cf6fc9b048e50bca6a40f2a5858dfcc24fb76f32f67971e88cd3d"
+  },
+  {
+    "file": "raw/index.html",
+    "bytes": 6249,
+    "sha256": "70603dbf7192ff889e4f5230229bc5d73e4c26c4056b010d3b39a52089b08d72"
+  },
+  {
+    "file": "raw/response-headers.txt",
+    "bytes": 847,
+    "sha256": "8553ad9385d50e630709e6cfd15140998ea44deea3fba7ce8f3ff132650ff8c7"
+  }
+]

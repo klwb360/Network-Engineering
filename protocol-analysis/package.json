@@ -1,0 +1,24 @@
+{
+  "name": "protocol-analysis",
+  "version": "1.0.0",
+  "description": "Source-backed analysis of the original public Protocol Explorer frontend",
+  "scripts": {
+    "analyze:format": "js-beautify raw/index-CNPseYOQ.js -o derived/index.pretty.js",
+    "analyze:unminify": "webcrack raw/index-CNPseYOQ.js --no-deobfuscate --no-unpack > derived/index.webcrack.js",
+    "analyze:courses": "node scripts/extract-courses.mjs",
+    "verify:browser": "node scripts/inspect-original.cjs",
+    "report": "python scripts/build-report.py",
+    "verify:report": "node scripts/verify-report.cjs"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "commonjs",
+  "dependencies": {
+    "@babel/generator": "8.1.2",
+    "@babel/parser": "8.1.2",
+    "@babel/traverse": "8.1.2",
+    "js-beautify": "2.0.3",
+    "webcrack": "2.16.0"
+  },
+  "private": true
+}

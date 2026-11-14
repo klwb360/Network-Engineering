@@ -1,0 +1,1008 @@
+{
+  "origin": "https://protocol-explorer-alpha.vercel.app",
+  "snapshot": {
+    "raw/index.html": "70603dbf7192ff889e4f5230229bc5d73e4c26c4056b010d3b39a52089b08d72",
+    "raw/index-CNPseYOQ.js": "19e285d11f5fa0b1411ec94aaea6cd04531872e8322bb8a46c80e4f92e262834",
+    "raw/index-CwjpA-vk.css": "330dfe72889cf6fc9b048e50bca6a40f2a5858dfcc24fb76f32f67971e88cd3d"
+  },
+  "scope": "Only URLs explicitly referenced by reviewed original HTML, JS imports, Vite preload dependencies, CSS URLs and webmanifest icons. Main JS is excluded; main CSS is copied unchanged from the preserved snapshot.",
+  "complete": true,
+  "languageCodes": [
+    "en",
+    "es",
+    "pt",
+    "fr",
+    "it",
+    "de",
+    "nl",
+    "pl",
+    "tr",
+    "id",
+    "vi",
+    "el",
+    "uk",
+    "ru",
+    "zh",
+    "zh-TW",
+    "ja",
+    "ko",
+    "hi",
+    "ar",
+    "he"
+  ],
+  "localeModuleCount": 20,
+  "fontCount": 24,
+  "fileCount": 54,
+  "files": [
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/apple-touch-icon.png",
+      "publicPath": "/apple-touch-icon.png",
+      "file": "app/public/apple-touch-icon.png",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/",
+          "kind": "html-apple-touch-icon",
+          "reference": "/apple-touch-icon.png"
+        }
+      ],
+      "acquiredFrom": "original-public-https",
+      "bytes": 2873,
+      "sha256": "0977b763a7ecb969bbd23c10b9944feadfb534f327f12cf37387b8049a74ca87"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/ar-MCahGY6d.js",
+      "publicPath": "/assets/ar-MCahGY6d.js",
+      "file": "app/public/assets/ar-MCahGY6d.js",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CNPseYOQ.js",
+          "kind": "vite-explicit-preload-dependency",
+          "reference": "/assets/ar-MCahGY6d.js"
+        },
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CNPseYOQ.js",
+          "kind": "dynamic-module-import",
+          "reference": "./ar-MCahGY6d.js"
+        }
+      ],
+      "acquiredFrom": "original-public-https",
+      "bytes": 437607,
+      "sha256": "5113e9680f32b2271e986ae88358a754e08113382abf406e9468ff9e4bf69a99"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/de-CkTXFfkZ.js",
+      "publicPath": "/assets/de-CkTXFfkZ.js",
+      "file": "app/public/assets/de-CkTXFfkZ.js",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CNPseYOQ.js",
+          "kind": "vite-explicit-preload-dependency",
+          "reference": "/assets/de-CkTXFfkZ.js"
+        },
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CNPseYOQ.js",
+          "kind": "dynamic-module-import",
+          "reference": "./de-CkTXFfkZ.js"
+        }
+      ],
+      "acquiredFrom": "original-public-https",
+      "bytes": 377795,
+      "sha256": "169c1caca0baf845e40f480d0a52427d55bdbbb252c06a3ee1f00c1371f1c49a"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/el-C5kf_mfQ.js",
+      "publicPath": "/assets/el-C5kf_mfQ.js",
+      "file": "app/public/assets/el-C5kf_mfQ.js",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CNPseYOQ.js",
+          "kind": "vite-explicit-preload-dependency",
+          "reference": "/assets/el-C5kf_mfQ.js"
+        },
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CNPseYOQ.js",
+          "kind": "dynamic-module-import",
+          "reference": "./el-C5kf_mfQ.js"
+        }
+      ],
+      "acquiredFrom": "original-public-https",
+      "bytes": 513646,
+      "sha256": "8f49cd67175e093df4bbe65366deca241505142db7e9bfb494b88d9790476e2e"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/es-CWfXW5jh.js",
+      "publicPath": "/assets/es-CWfXW5jh.js",
+      "file": "app/public/assets/es-CWfXW5jh.js",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CNPseYOQ.js",
+          "kind": "vite-explicit-preload-dependency",
+          "reference": "/assets/es-CWfXW5jh.js"
+        },
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CNPseYOQ.js",
+          "kind": "dynamic-module-import",
+          "reference": "./es-CWfXW5jh.js"
+        }
+      ],
+      "acquiredFrom": "original-public-https",
+      "bytes": 377384,
+      "sha256": "ec5ae6c6b3b1ca2a8c678caa773621e1f97ee56aed8b2cfea993e85038bb58cc"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/fr-C5eMvhxr.js",
+      "publicPath": "/assets/fr-C5eMvhxr.js",
+      "file": "app/public/assets/fr-C5eMvhxr.js",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CNPseYOQ.js",
+          "kind": "vite-explicit-preload-dependency",
+          "reference": "/assets/fr-C5eMvhxr.js"
+        },
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CNPseYOQ.js",
+          "kind": "dynamic-module-import",
+          "reference": "./fr-C5eMvhxr.js"
+        }
+      ],
+      "acquiredFrom": "original-public-https",
+      "bytes": 387621,
+      "sha256": "ce5049a843c842c99b51040c3be1af9a9b452ccfc6943a60b6723836ed15375b"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/he-BTJlyhmU.js",
+      "publicPath": "/assets/he-BTJlyhmU.js",
+      "file": "app/public/assets/he-BTJlyhmU.js",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CNPseYOQ.js",
+          "kind": "vite-explicit-preload-dependency",
+          "reference": "/assets/he-BTJlyhmU.js"
+        },
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CNPseYOQ.js",
+          "kind": "dynamic-module-import",
+          "reference": "./he-BTJlyhmU.js"
+        }
+      ],
+      "acquiredFrom": "original-public-https",
+      "bytes": 416751,
+      "sha256": "8cdca6bcded348e5c82be9f64370fa036feb123d5e83fac34c7e9a74e35c0c0c"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/hi-kacvLFRn.js",
+      "publicPath": "/assets/hi-kacvLFRn.js",
+      "file": "app/public/assets/hi-kacvLFRn.js",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CNPseYOQ.js",
+          "kind": "vite-explicit-preload-dependency",
+          "reference": "/assets/hi-kacvLFRn.js"
+        },
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CNPseYOQ.js",
+          "kind": "dynamic-module-import",
+          "reference": "./hi-kacvLFRn.js"
+        }
+      ],
+      "acquiredFrom": "original-public-https",
+      "bytes": 574068,
+      "sha256": "b5a125ceb87c71b6565dcfe97c2f37566a94cf2940c0c4878a4cbf435235a01d"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/id-DSv3w2E0.js",
+      "publicPath": "/assets/id-DSv3w2E0.js",
+      "file": "app/public/assets/id-DSv3w2E0.js",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CNPseYOQ.js",
+          "kind": "vite-explicit-preload-dependency",
+          "reference": "/assets/id-DSv3w2E0.js"
+        },
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CNPseYOQ.js",
+          "kind": "dynamic-module-import",
+          "reference": "./id-DSv3w2E0.js"
+        }
+      ],
+      "acquiredFrom": "original-public-https",
+      "bytes": 365576,
+      "sha256": "f47436fea10511f48aee1035469dab60cb09c6dacbf263a634a007bb5ea0460c"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/index-CwjpA-vk.css",
+      "publicPath": "/assets/index-CwjpA-vk.css",
+      "file": "app/public/assets/index-CwjpA-vk.css",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/",
+          "kind": "html-stylesheet",
+          "reference": "/assets/index-CwjpA-vk.css"
+        }
+      ],
+      "acquiredFrom": "protocol-analysis/raw/index-CwjpA-vk.css",
+      "bytes": 75991,
+      "sha256": "330dfe72889cf6fc9b048e50bca6a40f2a5858dfcc24fb76f32f67971e88cd3d"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/iosevka-400-DnzhOSIo.woff2",
+      "publicPath": "/assets/iosevka-400-DnzhOSIo.woff2",
+      "file": "app/public/assets/iosevka-400-DnzhOSIo.woff2",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CwjpA-vk.css",
+          "kind": "css-url",
+          "reference": "/assets/iosevka-400-DnzhOSIo.woff2"
+        }
+      ],
+      "acquiredFrom": "protocol-analysis/raw/browser-assets/iosevka-400-DnzhOSIo.woff2",
+      "bytes": 75928,
+      "sha256": "702dd65ac2b6c475ed3e5dbf9a3db637ba121e18cb36e1c4dc763d849d0fe0a2"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/iosevka-500-C4FA_zML.woff2",
+      "publicPath": "/assets/iosevka-500-C4FA_zML.woff2",
+      "file": "app/public/assets/iosevka-500-C4FA_zML.woff2",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CwjpA-vk.css",
+          "kind": "css-url",
+          "reference": "/assets/iosevka-500-C4FA_zML.woff2"
+        }
+      ],
+      "acquiredFrom": "protocol-analysis/raw/browser-assets/iosevka-500-C4FA_zML.woff2",
+      "bytes": 76056,
+      "sha256": "e6ab7223714d87352a3b5601dc6974ef0515c069cb1f1c57f5f3ad7503cee11d"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/iosevka-600-Dj5n5yBL.woff2",
+      "publicPath": "/assets/iosevka-600-Dj5n5yBL.woff2",
+      "file": "app/public/assets/iosevka-600-Dj5n5yBL.woff2",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CwjpA-vk.css",
+          "kind": "css-url",
+          "reference": "/assets/iosevka-600-Dj5n5yBL.woff2"
+        }
+      ],
+      "acquiredFrom": "protocol-analysis/raw/browser-assets/iosevka-600-Dj5n5yBL.woff2",
+      "bytes": 75844,
+      "sha256": "30d93b6c22d1ff507f66738b526c6c8ca5b90bcb997f8943819ee6787ddf99d3"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/iosevka-700-BxdwZZnN.woff2",
+      "publicPath": "/assets/iosevka-700-BxdwZZnN.woff2",
+      "file": "app/public/assets/iosevka-700-BxdwZZnN.woff2",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CwjpA-vk.css",
+          "kind": "css-url",
+          "reference": "/assets/iosevka-700-BxdwZZnN.woff2"
+        }
+      ],
+      "acquiredFrom": "protocol-analysis/raw/browser-assets/iosevka-700-BxdwZZnN.woff2",
+      "bytes": 75672,
+      "sha256": "0e4f1ad1048d745e2b0d9bddcb71bffc4796923ea2eb70c825cb9ff210e2b155"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/iosevka-800-Ctjohn3a.woff2",
+      "publicPath": "/assets/iosevka-800-Ctjohn3a.woff2",
+      "file": "app/public/assets/iosevka-800-Ctjohn3a.woff2",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CwjpA-vk.css",
+          "kind": "css-url",
+          "reference": "/assets/iosevka-800-Ctjohn3a.woff2"
+        }
+      ],
+      "acquiredFrom": "protocol-analysis/raw/browser-assets/iosevka-800-Ctjohn3a.woff2",
+      "bytes": 75492,
+      "sha256": "29f9603e5adda955490e9007913dbae76fe8892409ce1e8b460144e3c0d260bc"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/iosevka-800-italic-D0Mo0HIB.woff2",
+      "publicPath": "/assets/iosevka-800-italic-D0Mo0HIB.woff2",
+      "file": "app/public/assets/iosevka-800-italic-D0Mo0HIB.woff2",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CwjpA-vk.css",
+          "kind": "css-url",
+          "reference": "/assets/iosevka-800-italic-D0Mo0HIB.woff2"
+        }
+      ],
+      "acquiredFrom": "protocol-analysis/raw/browser-assets/iosevka-800-italic-D0Mo0HIB.woff2",
+      "bytes": 84244,
+      "sha256": "96c0912e56099dc4889458fd2218ac60ccedc60f98beaf448b47974a44780f30"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/iosevka-cyrillic-400-BRUvrZdD.woff2",
+      "publicPath": "/assets/iosevka-cyrillic-400-BRUvrZdD.woff2",
+      "file": "app/public/assets/iosevka-cyrillic-400-BRUvrZdD.woff2",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CwjpA-vk.css",
+          "kind": "css-url",
+          "reference": "/assets/iosevka-cyrillic-400-BRUvrZdD.woff2"
+        }
+      ],
+      "acquiredFrom": "original-public-https",
+      "bytes": 10376,
+      "sha256": "884f17d0aa30f951f8e8c1e32e40c6cb8c04e81295d3edb3b51b6e858b90488f"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/iosevka-cyrillic-500-k2u6RSy5.woff2",
+      "publicPath": "/assets/iosevka-cyrillic-500-k2u6RSy5.woff2",
+      "file": "app/public/assets/iosevka-cyrillic-500-k2u6RSy5.woff2",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CwjpA-vk.css",
+          "kind": "css-url",
+          "reference": "/assets/iosevka-cyrillic-500-k2u6RSy5.woff2"
+        }
+      ],
+      "acquiredFrom": "original-public-https",
+      "bytes": 10400,
+      "sha256": "8a68157b8e449f0a0c5f4fb977786bc2798c1e24f1e6f24d7aff66353cf6e44f"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/iosevka-cyrillic-600-BhfwcpRd.woff2",
+      "publicPath": "/assets/iosevka-cyrillic-600-BhfwcpRd.woff2",
+      "file": "app/public/assets/iosevka-cyrillic-600-BhfwcpRd.woff2",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CwjpA-vk.css",
+          "kind": "css-url",
+          "reference": "/assets/iosevka-cyrillic-600-BhfwcpRd.woff2"
+        }
+      ],
+      "acquiredFrom": "original-public-https",
+      "bytes": 10292,
+      "sha256": "c2c5691d0b85a34c5f2cd5daa89658652d1d9d412a57ef626192fd1d1f00e4ba"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/iosevka-cyrillic-700-CQSi7oL_.woff2",
+      "publicPath": "/assets/iosevka-cyrillic-700-CQSi7oL_.woff2",
+      "file": "app/public/assets/iosevka-cyrillic-700-CQSi7oL_.woff2",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CwjpA-vk.css",
+          "kind": "css-url",
+          "reference": "/assets/iosevka-cyrillic-700-CQSi7oL_.woff2"
+        }
+      ],
+      "acquiredFrom": "original-public-https",
+      "bytes": 10432,
+      "sha256": "7ef47d4490789d91d570209629c5adde7eea98684f0cbd8de6372898816a28cf"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/iosevka-cyrillic-800-D3C0C3o1.woff2",
+      "publicPath": "/assets/iosevka-cyrillic-800-D3C0C3o1.woff2",
+      "file": "app/public/assets/iosevka-cyrillic-800-D3C0C3o1.woff2",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CwjpA-vk.css",
+          "kind": "css-url",
+          "reference": "/assets/iosevka-cyrillic-800-D3C0C3o1.woff2"
+        }
+      ],
+      "acquiredFrom": "protocol-analysis/raw/browser-assets/iosevka-cyrillic-800-D3C0C3o1.woff2",
+      "bytes": 10500,
+      "sha256": "fc6f7cfab3cb61a4cc536e46328704f9935278b9be15dda2c75452e139b086c6"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/iosevka-cyrillic-800-italic-BEuStPU_.woff2",
+      "publicPath": "/assets/iosevka-cyrillic-800-italic-BEuStPU_.woff2",
+      "file": "app/public/assets/iosevka-cyrillic-800-italic-BEuStPU_.woff2",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CwjpA-vk.css",
+          "kind": "css-url",
+          "reference": "/assets/iosevka-cyrillic-800-italic-BEuStPU_.woff2"
+        }
+      ],
+      "acquiredFrom": "original-public-https",
+      "bytes": 11968,
+      "sha256": "2cb8b5eb1d87d77f18b8d9c71661913d45fbc760f6c9181f14b2513543cc8e0f"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/iosevka-greek-400-DqkqzRzb.woff2",
+      "publicPath": "/assets/iosevka-greek-400-DqkqzRzb.woff2",
+      "file": "app/public/assets/iosevka-greek-400-DqkqzRzb.woff2",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CwjpA-vk.css",
+          "kind": "css-url",
+          "reference": "/assets/iosevka-greek-400-DqkqzRzb.woff2"
+        }
+      ],
+      "acquiredFrom": "original-public-https",
+      "bytes": 10368,
+      "sha256": "afe72d913bb4056e241d07fef980784c6c34b83a24bf745a319f57e64c3fbced"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/iosevka-greek-500-BsCdN7a4.woff2",
+      "publicPath": "/assets/iosevka-greek-500-BsCdN7a4.woff2",
+      "file": "app/public/assets/iosevka-greek-500-BsCdN7a4.woff2",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CwjpA-vk.css",
+          "kind": "css-url",
+          "reference": "/assets/iosevka-greek-500-BsCdN7a4.woff2"
+        }
+      ],
+      "acquiredFrom": "original-public-https",
+      "bytes": 10484,
+      "sha256": "bae880192a4c4f966aa1a92c9ac678a9d05c4ff4fc670a2f92da1cf36c0a9c84"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/iosevka-greek-600-JJohN8BF.woff2",
+      "publicPath": "/assets/iosevka-greek-600-JJohN8BF.woff2",
+      "file": "app/public/assets/iosevka-greek-600-JJohN8BF.woff2",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CwjpA-vk.css",
+          "kind": "css-url",
+          "reference": "/assets/iosevka-greek-600-JJohN8BF.woff2"
+        }
+      ],
+      "acquiredFrom": "original-public-https",
+      "bytes": 10308,
+      "sha256": "bed2dc6a3a37cd103825aab7a4d5a7cabbe9e5ee8cc8c69d36a9b3d6918c017a"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/iosevka-greek-700-BTYyC3CX.woff2",
+      "publicPath": "/assets/iosevka-greek-700-BTYyC3CX.woff2",
+      "file": "app/public/assets/iosevka-greek-700-BTYyC3CX.woff2",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CwjpA-vk.css",
+          "kind": "css-url",
+          "reference": "/assets/iosevka-greek-700-BTYyC3CX.woff2"
+        }
+      ],
+      "acquiredFrom": "original-public-https",
+      "bytes": 10444,
+      "sha256": "251ade888be7c371a2cb4ed83c9ec3c5a9a4d6ca0834fa1a71524144b4a4a359"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/iosevka-greek-800-CVVc1U8B.woff2",
+      "publicPath": "/assets/iosevka-greek-800-CVVc1U8B.woff2",
+      "file": "app/public/assets/iosevka-greek-800-CVVc1U8B.woff2",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CwjpA-vk.css",
+          "kind": "css-url",
+          "reference": "/assets/iosevka-greek-800-CVVc1U8B.woff2"
+        }
+      ],
+      "acquiredFrom": "protocol-analysis/raw/browser-assets/iosevka-greek-800-CVVc1U8B.woff2",
+      "bytes": 10448,
+      "sha256": "f06238ab7d03a867ed53d93013b214e788571b1769904687d3547a9ac969de16"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/iosevka-greek-800-italic-2l6MQ4o6.woff2",
+      "publicPath": "/assets/iosevka-greek-800-italic-2l6MQ4o6.woff2",
+      "file": "app/public/assets/iosevka-greek-800-italic-2l6MQ4o6.woff2",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CwjpA-vk.css",
+          "kind": "css-url",
+          "reference": "/assets/iosevka-greek-800-italic-2l6MQ4o6.woff2"
+        }
+      ],
+      "acquiredFrom": "original-public-https",
+      "bytes": 11528,
+      "sha256": "e475d6f86228e02c43f23795c645c0c5bd0786cd9b4f42688cd84a8e77399fdb"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/iosevka-vietnamese-400-CVp86myN.woff2",
+      "publicPath": "/assets/iosevka-vietnamese-400-CVp86myN.woff2",
+      "file": "app/public/assets/iosevka-vietnamese-400-CVp86myN.woff2",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CwjpA-vk.css",
+          "kind": "css-url",
+          "reference": "/assets/iosevka-vietnamese-400-CVp86myN.woff2"
+        }
+      ],
+      "acquiredFrom": "original-public-https",
+      "bytes": 5096,
+      "sha256": "a0f8ef6909d55052768849d7f6773351d0e0d7543abf54397ddbaf44c50a865b"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/iosevka-vietnamese-500-DlYirsTP.woff2",
+      "publicPath": "/assets/iosevka-vietnamese-500-DlYirsTP.woff2",
+      "file": "app/public/assets/iosevka-vietnamese-500-DlYirsTP.woff2",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CwjpA-vk.css",
+          "kind": "css-url",
+          "reference": "/assets/iosevka-vietnamese-500-DlYirsTP.woff2"
+        }
+      ],
+      "acquiredFrom": "original-public-https",
+      "bytes": 5048,
+      "sha256": "5ac81799ce06c603b5a13e3257216ab4e339d43beab9728a9c5dbe07e1add97e"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/iosevka-vietnamese-600-Krzl70si.woff2",
+      "publicPath": "/assets/iosevka-vietnamese-600-Krzl70si.woff2",
+      "file": "app/public/assets/iosevka-vietnamese-600-Krzl70si.woff2",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CwjpA-vk.css",
+          "kind": "css-url",
+          "reference": "/assets/iosevka-vietnamese-600-Krzl70si.woff2"
+        }
+      ],
+      "acquiredFrom": "original-public-https",
+      "bytes": 5012,
+      "sha256": "c716136eeca52c233c56b82299df68760c1399f1b0539000c82f709592883697"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/iosevka-vietnamese-700-MIuMuZqI.woff2",
+      "publicPath": "/assets/iosevka-vietnamese-700-MIuMuZqI.woff2",
+      "file": "app/public/assets/iosevka-vietnamese-700-MIuMuZqI.woff2",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CwjpA-vk.css",
+          "kind": "css-url",
+          "reference": "/assets/iosevka-vietnamese-700-MIuMuZqI.woff2"
+        }
+      ],
+      "acquiredFrom": "original-public-https",
+      "bytes": 5084,
+      "sha256": "c22b5136b012d7ed52f2d738f85748454ed50e17faacebd4276537075d3a7563"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/iosevka-vietnamese-800-italic-CQxrZRlC.woff2",
+      "publicPath": "/assets/iosevka-vietnamese-800-italic-CQxrZRlC.woff2",
+      "file": "app/public/assets/iosevka-vietnamese-800-italic-CQxrZRlC.woff2",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CwjpA-vk.css",
+          "kind": "css-url",
+          "reference": "/assets/iosevka-vietnamese-800-italic-CQxrZRlC.woff2"
+        }
+      ],
+      "acquiredFrom": "original-public-https",
+      "bytes": 5552,
+      "sha256": "8c7491d91cccbfd60cd8746d5eb817450fc4abb8809abd1d758e221db94ea7ec"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/iosevka-vietnamese-800-LtTfXbIA.woff2",
+      "publicPath": "/assets/iosevka-vietnamese-800-LtTfXbIA.woff2",
+      "file": "app/public/assets/iosevka-vietnamese-800-LtTfXbIA.woff2",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CwjpA-vk.css",
+          "kind": "css-url",
+          "reference": "/assets/iosevka-vietnamese-800-LtTfXbIA.woff2"
+        }
+      ],
+      "acquiredFrom": "protocol-analysis/raw/browser-assets/iosevka-vietnamese-800-LtTfXbIA.woff2",
+      "bytes": 5116,
+      "sha256": "d81b07fa77ba57ed4007cd620cdf42da4f4bd0873d3a15e9bf824ec717c7faed"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/it-C2pCPOTd.js",
+      "publicPath": "/assets/it-C2pCPOTd.js",
+      "file": "app/public/assets/it-C2pCPOTd.js",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CNPseYOQ.js",
+          "kind": "vite-explicit-preload-dependency",
+          "reference": "/assets/it-C2pCPOTd.js"
+        },
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CNPseYOQ.js",
+          "kind": "dynamic-module-import",
+          "reference": "./it-C2pCPOTd.js"
+        }
+      ],
+      "acquiredFrom": "original-public-https",
+      "bytes": 374579,
+      "sha256": "9ec6634ffcd41bf3a7de005c51ddf717f22add8c32e111b8cd22417e05510d24"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/ja-DIYXJF6J.js",
+      "publicPath": "/assets/ja-DIYXJF6J.js",
+      "file": "app/public/assets/ja-DIYXJF6J.js",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CNPseYOQ.js",
+          "kind": "dynamic-module-import",
+          "reference": "./ja-DIYXJF6J.js"
+        }
+      ],
+      "acquiredFrom": "original-public-https",
+      "bytes": 426850,
+      "sha256": "3b7a3b6eb7dcfec67644b1bbd7e5054fd13d01e8d1b130eaffac92550432aeb5"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/ko-DocaHqx7.js",
+      "publicPath": "/assets/ko-DocaHqx7.js",
+      "file": "app/public/assets/ko-DocaHqx7.js",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CNPseYOQ.js",
+          "kind": "dynamic-module-import",
+          "reference": "./ko-DocaHqx7.js"
+        }
+      ],
+      "acquiredFrom": "original-public-https",
+      "bytes": 393240,
+      "sha256": "e28b5c17a9a90bd492f00d099c25a003cb277cc7dc55ea3c4141248aad9a0f2b"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/nl-iZ_6hecB.js",
+      "publicPath": "/assets/nl-iZ_6hecB.js",
+      "file": "app/public/assets/nl-iZ_6hecB.js",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CNPseYOQ.js",
+          "kind": "vite-explicit-preload-dependency",
+          "reference": "/assets/nl-iZ_6hecB.js"
+        },
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CNPseYOQ.js",
+          "kind": "dynamic-module-import",
+          "reference": "./nl-iZ_6hecB.js"
+        }
+      ],
+      "acquiredFrom": "original-public-https",
+      "bytes": 370415,
+      "sha256": "d9e844671a17d945005bc0e2dd4b89f682b741c3372c82ef55552392d8b51a43"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/pl-C7_zAHkL.js",
+      "publicPath": "/assets/pl-C7_zAHkL.js",
+      "file": "app/public/assets/pl-C7_zAHkL.js",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CNPseYOQ.js",
+          "kind": "vite-explicit-preload-dependency",
+          "reference": "/assets/pl-C7_zAHkL.js"
+        },
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CNPseYOQ.js",
+          "kind": "dynamic-module-import",
+          "reference": "./pl-C7_zAHkL.js"
+        }
+      ],
+      "acquiredFrom": "original-public-https",
+      "bytes": 368026,
+      "sha256": "a47db7b33f1e93e0bda5f741f1bda6fcb4ebabac90f023143e6f8809e3279969"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/pt-1gauOvPm.js",
+      "publicPath": "/assets/pt-1gauOvPm.js",
+      "file": "app/public/assets/pt-1gauOvPm.js",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CNPseYOQ.js",
+          "kind": "vite-explicit-preload-dependency",
+          "reference": "/assets/pt-1gauOvPm.js"
+        },
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CNPseYOQ.js",
+          "kind": "dynamic-module-import",
+          "reference": "./pt-1gauOvPm.js"
+        }
+      ],
+      "acquiredFrom": "original-public-https",
+      "bytes": 373481,
+      "sha256": "04686c52509c5d5919426bb65583e4ab997948f7160db387b5127af8406220f9"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/ru-BEX_fK9x.js",
+      "publicPath": "/assets/ru-BEX_fK9x.js",
+      "file": "app/public/assets/ru-BEX_fK9x.js",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CNPseYOQ.js",
+          "kind": "vite-explicit-preload-dependency",
+          "reference": "/assets/ru-BEX_fK9x.js"
+        },
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CNPseYOQ.js",
+          "kind": "dynamic-module-import",
+          "reference": "./ru-BEX_fK9x.js"
+        }
+      ],
+      "acquiredFrom": "original-public-https",
+      "bytes": 482072,
+      "sha256": "85565f146d88b192a94b9b7e7a9f72b3c007f4fd72bfcaed34b52490ead24cb0"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/shared-CAKwAg2C.js",
+      "publicPath": "/assets/shared-CAKwAg2C.js",
+      "file": "app/public/assets/shared-CAKwAg2C.js",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CNPseYOQ.js",
+          "kind": "vite-explicit-preload-dependency",
+          "reference": "/assets/shared-CAKwAg2C.js"
+        },
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/es-CWfXW5jh.js",
+          "kind": "static-module-import",
+          "reference": "./shared-CAKwAg2C.js"
+        },
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/pt-1gauOvPm.js",
+          "kind": "static-module-import",
+          "reference": "./shared-CAKwAg2C.js"
+        },
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/fr-C5eMvhxr.js",
+          "kind": "static-module-import",
+          "reference": "./shared-CAKwAg2C.js"
+        },
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/it-C2pCPOTd.js",
+          "kind": "static-module-import",
+          "reference": "./shared-CAKwAg2C.js"
+        },
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/de-CkTXFfkZ.js",
+          "kind": "static-module-import",
+          "reference": "./shared-CAKwAg2C.js"
+        },
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/nl-iZ_6hecB.js",
+          "kind": "static-module-import",
+          "reference": "./shared-CAKwAg2C.js"
+        },
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/pl-C7_zAHkL.js",
+          "kind": "static-module-import",
+          "reference": "./shared-CAKwAg2C.js"
+        },
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/tr-Bud-ECdT.js",
+          "kind": "static-module-import",
+          "reference": "./shared-CAKwAg2C.js"
+        },
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/id-DSv3w2E0.js",
+          "kind": "static-module-import",
+          "reference": "./shared-CAKwAg2C.js"
+        },
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/vi-BtObyLa_.js",
+          "kind": "static-module-import",
+          "reference": "./shared-CAKwAg2C.js"
+        },
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/el-C5kf_mfQ.js",
+          "kind": "static-module-import",
+          "reference": "./shared-CAKwAg2C.js"
+        },
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/uk-CFZ4hBii.js",
+          "kind": "static-module-import",
+          "reference": "./shared-CAKwAg2C.js"
+        },
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/ru-BEX_fK9x.js",
+          "kind": "static-module-import",
+          "reference": "./shared-CAKwAg2C.js"
+        },
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/hi-kacvLFRn.js",
+          "kind": "static-module-import",
+          "reference": "./shared-CAKwAg2C.js"
+        },
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/ar-MCahGY6d.js",
+          "kind": "static-module-import",
+          "reference": "./shared-CAKwAg2C.js"
+        },
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/he-BTJlyhmU.js",
+          "kind": "static-module-import",
+          "reference": "./shared-CAKwAg2C.js"
+        }
+      ],
+      "acquiredFrom": "original-public-https",
+      "bytes": 1334,
+      "sha256": "13c380637146e9dce77b9c092b62b5f7599e3f334f6fa3a3f6948b6884aca587"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/tr-Bud-ECdT.js",
+      "publicPath": "/assets/tr-Bud-ECdT.js",
+      "file": "app/public/assets/tr-Bud-ECdT.js",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CNPseYOQ.js",
+          "kind": "vite-explicit-preload-dependency",
+          "reference": "/assets/tr-Bud-ECdT.js"
+        },
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CNPseYOQ.js",
+          "kind": "dynamic-module-import",
+          "reference": "./tr-Bud-ECdT.js"
+        }
+      ],
+      "acquiredFrom": "original-public-https",
+      "bytes": 379227,
+      "sha256": "87cf635ff3aa3213c7dee6f4f8291b45d4a7cebcae361670543e807b8fb0d80f"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/uk-CFZ4hBii.js",
+      "publicPath": "/assets/uk-CFZ4hBii.js",
+      "file": "app/public/assets/uk-CFZ4hBii.js",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CNPseYOQ.js",
+          "kind": "vite-explicit-preload-dependency",
+          "reference": "/assets/uk-CFZ4hBii.js"
+        },
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CNPseYOQ.js",
+          "kind": "dynamic-module-import",
+          "reference": "./uk-CFZ4hBii.js"
+        }
+      ],
+      "acquiredFrom": "original-public-https",
+      "bytes": 484631,
+      "sha256": "09a48a7b55ad33c08ffbfba10211bd9c796d070ab658d55b7621a489476d937e"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/vi-BtObyLa_.js",
+      "publicPath": "/assets/vi-BtObyLa_.js",
+      "file": "app/public/assets/vi-BtObyLa_.js",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CNPseYOQ.js",
+          "kind": "vite-explicit-preload-dependency",
+          "reference": "/assets/vi-BtObyLa_.js"
+        },
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CNPseYOQ.js",
+          "kind": "dynamic-module-import",
+          "reference": "./vi-BtObyLa_.js"
+        }
+      ],
+      "acquiredFrom": "original-public-https",
+      "bytes": 393550,
+      "sha256": "2c1292ff0fd48bb0ad7fac121a250e415bcc74c2a6b28a0d884bcf9d5fe4cfb8"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/zh-AH-lIMHP.js",
+      "publicPath": "/assets/zh-AH-lIMHP.js",
+      "file": "app/public/assets/zh-AH-lIMHP.js",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CNPseYOQ.js",
+          "kind": "dynamic-module-import",
+          "reference": "./zh-AH-lIMHP.js"
+        }
+      ],
+      "acquiredFrom": "protocol-analysis/raw/browser-assets/zh-AH-lIMHP.js",
+      "bytes": 357488,
+      "sha256": "c961c224d1a0c4cb838e8b74a1e12eea6ebc02ccd37f37350f1b1dfa1b19801f"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/assets/zh-TW-CtKzzU9L.js",
+      "publicPath": "/assets/zh-TW-CtKzzU9L.js",
+      "file": "app/public/assets/zh-TW-CtKzzU9L.js",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/assets/index-CNPseYOQ.js",
+          "kind": "dynamic-module-import",
+          "reference": "./zh-TW-CtKzzU9L.js"
+        }
+      ],
+      "acquiredFrom": "original-public-https",
+      "bytes": 361583,
+      "sha256": "7748192ee4a0f79d74c381cee9f69a8919af907b816e88f51a2eaa9f4be2df77"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/favicon.ico",
+      "publicPath": "/favicon.ico",
+      "file": "app/public/favicon.ico",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/",
+          "kind": "html-icon",
+          "reference": "/favicon.ico"
+        }
+      ],
+      "acquiredFrom": "original-public-https",
+      "bytes": 4159,
+      "sha256": "e2872e74d90baeae3237a4ea0fd298507ab3b669df6ec8934e7c9e2779ea551e"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/favicon.svg",
+      "publicPath": "/favicon.svg",
+      "file": "app/public/favicon.svg",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/",
+          "kind": "html-icon",
+          "reference": "/favicon.svg"
+        }
+      ],
+      "acquiredFrom": "original-public-https",
+      "bytes": 601,
+      "sha256": "a83a2c063ba4a1f26cdabc96a50074496ab80d77aa1c34fda71d143138f3a705"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/icon-192.png",
+      "publicPath": "/icon-192.png",
+      "file": "app/public/icon-192.png",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/site.webmanifest",
+          "kind": "webmanifest-icon",
+          "reference": "/icon-192.png"
+        }
+      ],
+      "acquiredFrom": "original-public-https",
+      "bytes": 3706,
+      "sha256": "3343f13a51129dd6135bee942625c80e96cef95b9e5fa75f869eb7a00eb04ab5"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/icon-512.png",
+      "publicPath": "/icon-512.png",
+      "file": "app/public/icon-512.png",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/site.webmanifest",
+          "kind": "webmanifest-icon",
+          "reference": "/icon-512.png"
+        }
+      ],
+      "acquiredFrom": "original-public-https",
+      "bytes": 10683,
+      "sha256": "76cbf02f338a8f44c6c5e94d194c2df84bc1fcd353af9fcec667ee95948d5367"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/icon-maskable-512.png",
+      "publicPath": "/icon-maskable-512.png",
+      "file": "app/public/icon-maskable-512.png",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/site.webmanifest",
+          "kind": "webmanifest-icon",
+          "reference": "/icon-maskable-512.png"
+        }
+      ],
+      "acquiredFrom": "original-public-https",
+      "bytes": 11018,
+      "sha256": "1c7a88276e06976c08150e9d9f5cf8fa69bbac90ad382912c9f4169928e5aa5d"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/og.png",
+      "publicPath": "/og.png",
+      "file": "app/public/og.png",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/",
+          "kind": "html-social-image",
+          "reference": "https://protocol-explorer-alpha.vercel.app/og.png"
+        }
+      ],
+      "acquiredFrom": "original-public-https",
+      "bytes": 254238,
+      "sha256": "4ab7c6ccf91759178f947802aa4fe8ffa72dfe9b23ae8499b4976559a87da428"
+    },
+    {
+      "url": "https://protocol-explorer-alpha.vercel.app/site.webmanifest",
+      "publicPath": "/site.webmanifest",
+      "file": "app/public/site.webmanifest",
+      "discoveredFrom": [
+        {
+          "from": "https://protocol-explorer-alpha.vercel.app/",
+          "kind": "html-manifest",
+          "reference": "/site.webmanifest"
+        }
+      ],
+      "acquiredFrom": "original-public-https",
+      "bytes": 563,
+      "sha256": "112c76b55bbce49c756d6812280c72bf0139aaeb0573bf77894b35238c475dca"
+    }
+  ]
+}

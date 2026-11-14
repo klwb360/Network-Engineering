@@ -1,0 +1,49 @@
+{
+  "recordedAt": "2026-11-13T01:33:47.448Z",
+  "node": "v24.22.1",
+  "dependencies": {
+    "@babel/generator": {
+      "version": "8.1.2",
+      "resolved": "https://registry.npmjs.org/@babel/generator/-/generator-8.1.2.tgz",
+      "overridden": false
+    },
+    "@babel/parser": {
+      "version": "8.1.2",
+      "resolved": "https://registry.npmjs.org/@babel/parser/-/parser-8.1.2.tgz",
+      "overridden": false
+    },
+    "@babel/traverse": {
+      "version": "8.1.2",
+      "resolved": "https://registry.npmjs.org/@babel/traverse/-/traverse-8.1.2.tgz",
+      "overridden": false
+    },
+    "js-beautify": {
+      "version": "2.0.3",
+      "resolved": "https://registry.npmjs.org/js-beautify/-/js-beautify-2.0.3.tgz",
+      "overridden": false
+    },
+    "webcrack": {
+      "version": "2.16.0",
+      "resolved": "https://registry.npmjs.org/webcrack/-/webcrack-2.16.0.tgz",
+      "overridden": false
+    }
+  },
+  "playwright": {
+    "version": "1.62.1",
+    "status": "preinstalled environment dependency; exercised in browser verification"
+  },
+  "executed": [
+    {
+      "command": "js-beautify raw/index-CNPseYOQ.js -o derived/index.pretty.js",
+      "result": "15995 lines; original identifiers preserved"
+    },
+    {
+      "command": "webcrack raw/index-CNPseYOQ.js --no-deobfuscate --no-unpack > derived/index.webcrack.js",
+      "result": "completed; prepare 860 changes; transpile/unminify 19316 changes; JSX transforms 0"
+    },
+    {
+      "command": "js-beautify --css raw/index-CwjpA-vk.css -o derived/styles.pretty.css",
+      "result": "completed; 4846 lines"
+    }
+  ]
+}

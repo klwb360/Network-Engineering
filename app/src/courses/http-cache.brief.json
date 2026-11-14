@@ -1,0 +1,63 @@
+{
+  "id": "http-cache",
+  "title": "HTTP 缓存与条件请求",
+  "status": "First project-authored lesson; selected by the user",
+  "audience": "了解基本 GET/200 与 TCP 后，希望看懂浏览器缓存和条件请求的学习者",
+  "whyThisTopic": "原有 39 课没有完整讲解 HTTP 新鲜度、ETag、If-None-Match 与 304；本课能完整复用原有设备、路径、播放器和 HTTP 文本编码器。",
+  "objectives": [
+    "区分本地 fresh 命中与网络 304 验证",
+    "追踪 ETag、If-None-Match 和内容变化后的 200",
+    "通过字段与字节高亮理解 HTTP 头和正文边界",
+    "区分 no-cache/no-store/private/must-revalidate"
+  ],
+  "topology": {
+    "nodes": ["client", "router", "internet", "web"],
+    "lifelines": ["client", "web"],
+    "client": "192.168.1.10:52400",
+    "origin": "203.0.113.10:80",
+    "cache": "Client 内部的浏览器私有缓存",
+    "oneWayLatencySeconds": 0.017
+  },
+  "steps": [
+    { "index": 0, "title": "保存首次响应", "packets": 5, "process": "TCP 三次握手，然后 GET/200；保存 16 字节正文 v1、ETag 和 60 秒新鲜期" },
+    { "index": 1, "title": "新鲜时直接复用", "packets": 0, "process": "模拟 10 秒后本地命中，仅显示注释，不伪造网络报文" },
+    { "index": 2, "title": "过期后进行验证", "packets": 2, "process": "模拟 61 秒时携带 If-None-Match，源站回复无正文的 304" },
+    { "index": 3, "title": "获取变化后的表示", "packets": 2, "process": "模拟 122 秒时再次过期，源站 ETag 已变，返回 200 与正文 v2" },
+    { "index": 4, "title": "读懂缓存指令", "packets": 0, "process": "明确为策略对比，通过解释和注释区分 no-cache/no-store/private/max-age" },
+    { "index": 5, "title": "理解失败边界", "packets": 0, "process": "说明 stale + must-revalidate + 离线时不得直接复用，不凭空绘制源站错误响应" }
+  ],
+  "keyMessages": [
+    "GET /cache-demo.txt HTTP/1.1",
+    "Cache-Control: private, max-age=60, must-revalidate",
+    "ETag: \"lesson-v1\"",
+    "If-None-Match: \"lesson-v1\"",
+    "HTTP/1.1 304 Not Modified",
+    "ETag: \"lesson-v2\""
+  ],
+  "abnormalCases": [
+    "ETag 不匹配：正常返回 200 与新正文，不能回复 304",
+    "必须验证且源站不可达：不能把过期正文当作新鲜响应",
+    "no-cache 不等于禁止保存，no-store 也不等于保证隐私或清空既有缓存",
+    "Vary、Range、Service Worker 和共享缓存不在本课模拟范围内"
+  ],
+  "presentation": {
+    "language": ["en", "zh"],
+    "visualReuse": "原设备、SVG、路径、字体、颜色、面板与检查器，不新增设备或协议编码器",
+    "timeline": "row.time 表示模拟秒数；播放不实际等待 61 秒，长间隔由原时序图断轴表示",
+    "wire": "text 数组逐行追加 CRLF，再把 ASCII body 原样追加；Content-Length 为 16，304 没有 body 字段"
+  },
+  "standards": [
+    "https://www.rfc-editor.org/rfc/rfc9111.html#section-4.2",
+    "https://www.rfc-editor.org/rfc/rfc9111.html#section-4.3.4",
+    "https://www.rfc-editor.org/rfc/rfc9110.html#section-13.1.2",
+    "https://www.rfc-editor.org/rfc/rfc9110.html#section-15.4.5",
+    "https://www.rfc-editor.org/rfc/rfc9111.html#section-5.2.2"
+  ],
+  "acceptance": [
+    "40 课注册后仍保留原有 39 课与原始资源",
+    "新课有 6 步、9 条报文，其中 6 条为 HTTP",
+    "fresh 步骤无 packet/stream",
+    "304 无正文，条件请求验证器与已保存 ETag 一致",
+    "切换、播放、暂停、步进、调速、重播、检查器和中文叙述通过验证"
+  ]
+}

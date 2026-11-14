@@ -1,0 +1,307 @@
+{
+  "checkedAt": "2026-11-13T02:11:08.978322+00:00",
+  "status": "HTTP caching selected by the user; standards review complete; course authored in independent app source files.",
+  "recommended": {
+    "id": "http-cache",
+    "name": "HTTP Cache",
+    "titleZh": "HTTP 缓存与条件请求",
+    "reason": "现有 HTTP 课没有 ETag、If-None-Match 或 304，浏览器缓存是明确的深入主题；复用 HTTP 的设备、路线和文本字节编码即可完成最小课程。",
+    "group": "application",
+    "layer": 7
+  },
+  "coverageAudit": [
+    {
+      "candidate": "HTTP 缓存与条件请求",
+      "existingCoverage": "http 课只有请求准备、DNS、TCP、HTTP交换、渲染；WebSocket/Portal 有零散 Cache-Control 字面量，但没有缓存新鲜度/条件请求流程。",
+      "evidence": [
+        {
+          "path": "derived/index.pretty.js",
+          "line": 245,
+          "symbol": "O0"
+        },
+        {
+          "path": "derived/course-catalog.json",
+          "courseId": "http"
+        }
+      ],
+      "decision": "推荐：新增内容清晰，扩展成本最低。"
+    },
+    {
+      "candidate": "Path MTU Discovery",
+      "existingCoverage": "IP/ICMP 课讲寻址、NAT、TTL、ping/traceroute/unreachable；IPv6 RA 提及 MTU，但没有独立PMTUD流程。",
+      "evidence": [
+        {
+          "path": "derived/index.pretty.js",
+          "line": 1124
+        },
+        {
+          "path": "derived/index.pretty.js",
+          "line": 1850
+        },
+        {
+          "path": "derived/index.pretty.js",
+          "line": 5396
+        }
+      ],
+      "decision": "适合下一课：需补ICMP fragmentation-needed/next-hop MTU及相应wire字段，不是首个最小接入。",
+      "reference": "https://www.rfc-editor.org/rfc/rfc1191.html#section-2"
+    },
+    {
+      "candidate": "DNS 缓存与 TTL",
+      "existingCoverage": "DNS 现有 Answer & Cache 步骤已显示TTL3600、resolver与laptop缓存，outro也解释后续直接从缓存回答。",
+      "evidence": [
+        {
+          "path": "derived/index.pretty.js",
+          "line": 1351
+        },
+        {
+          "path": "derived/index.pretty.js",
+          "line": 1542
+        }
+      ],
+      "decision": "可深入负缓存或TTL过期，但基础缓存选题与现课重复较多。"
+    }
+  ],
+  "learningObjectives": [
+    "区分从浏览器私有缓存本地复用与向源站验证；本地 fresh 命中不产生HTTP网络报文。",
+    "识别 Cache-Control/max-age 与 ETag 的不同职责：新鲜度时间窗口与表示验证器。",
+    "理解 If-None-Match 对条件GET的含义；匹配时304复用已保存正文，不匹配时200传新正文。",
+    "在检查器中找到请求行、响应状态、Date、Cache-Control、ETag、If-None-Match与真实正文偏移。",
+    "识别 no-cache、no-store、must-revalidate 的区别，以及不能验证时的限制。"
+  ],
+  "topology": {
+    "nodes": [
+      "client",
+      "router",
+      "internet",
+      "web"
+    ],
+    "lifelines": [
+      "client",
+      "web"
+    ],
+    "client": "192.168.1.10",
+    "origin": "203.0.113.10",
+    "originHostname": "www.example.com",
+    "originPort": 80,
+    "latencySeconds": {
+      "client-web": 0.017
+    },
+    "cacheLocation": "Client/browser private cache; not a new intermediary device.",
+    "reuse": "Existing laptop/router/cloud/server SVG, routing client>web, HTTP text encoder.",
+    "disclosure": "Plain HTTP/1.1 is used to make bytes visible; HTTP cache semantics also apply to HTTPS. DNS/connection establishment may be summarized; long simulated waits do not imply that real servers keep every TCP connection open."
+  },
+  "suggestedSteps": [
+    {
+      "id": "first-fetch",
+      "title": "Fetch and Store",
+      "goal": "无本地表示，发送GET并接收可存储200。",
+      "eventKinds": [
+        "show",
+        "packet",
+        "packet",
+        "note"
+      ],
+      "keyMessages": [
+        "GET /cache-demo.txt HTTP/1.1",
+        "HTTP/1.1 200 OK; ETag: \"lesson-v1\"; Cache-Control: private, max-age=60, must-revalidate"
+      ],
+      "result": "保存正文v1和元数据；模拟t=0接收。"
+    },
+    {
+      "id": "fresh-hit",
+      "title": "Fresh Cache Hit",
+      "goal": "模拟10秒后再读相同资源，缓存仍fresh。",
+      "eventKinds": [
+        "note"
+      ],
+      "keyMessages": [],
+      "result": "直接使用已存正文，不新增packet/stream。必须在note文本里标明模拟10秒后，因为现有时序器不会使用note.time。"
+    },
+    {
+      "id": "validate",
+      "title": "Ask Only If Changed",
+      "goal": "超过60秒后发带验证器的条件GET。",
+      "eventKinds": [
+        "note",
+        "packet"
+      ],
+      "keyMessages": [
+        "GET /cache-demo.txt HTTP/1.1; If-None-Match: \"lesson-v1\""
+      ],
+      "result": "t=61秒示意过期后验证。"
+    },
+    {
+      "id": "not-modified",
+      "title": "304, Keep the Body",
+      "goal": "源站表示仍匹配，发无正文304。",
+      "eventKinds": [
+        "packet",
+        "note"
+      ],
+      "keyMessages": [
+        "HTTP/1.1 304 Not Modified; Date: ...; ETag: \"lesson-v1\"; Cache-Control: private, max-age=60, must-revalidate"
+      ],
+      "result": "更新响应元数据，继续使用原正文；304不是一次本地命中，也不是重新下载正文。"
+    },
+    {
+      "id": "changed",
+      "title": "Changed Means 200",
+      "goal": "再次超过验证后的新鲜期限，旧ETag不匹配源站v2。",
+      "eventKinds": [
+        "note",
+        "packet",
+        "packet"
+      ],
+      "keyMessages": [
+        "If-None-Match: \"lesson-v1\"",
+        "HTTP/1.1 200 OK; ETag: \"lesson-v2\"; new body"
+      ],
+      "result": "新的200替换已存表示和验证器。第二次过期应在304日期/接收时间之后再超过60秒，不能仍按首次200算。"
+    },
+    {
+      "id": "exceptions",
+      "title": "Cache Rules and Failures",
+      "goal": "说明no-cache/no-store以及must-revalidate在离线时的行为。",
+      "eventKinds": [
+        "note"
+      ],
+      "keyMessages": [],
+      "result": "最小版可用讲解与事实表表达；不要把注释伪装成实际错误响应报文。若绘制504，需要明确是执行验证的缓存生成，不能画源站不可达时从源站凭空返回504。"
+    }
+  ],
+  "exampleFixtures": {
+    "path": "/cache-demo.txt",
+    "bodyV1": "Cache lesson v1\n",
+    "bodyV2": "Cache lesson v2\n",
+    "bodyBytes": 16,
+    "request": [
+      "GET /cache-demo.txt HTTP/1.1",
+      "Host: www.example.com",
+      ""
+    ],
+    "first200": [
+      "HTTP/1.1 200 OK",
+      "Date: Fri, 13 Nov 2026 00:00:00 GMT",
+      "Cache-Control: private, max-age=60, must-revalidate",
+      "ETag: \"lesson-v1\"",
+      "Content-Type: text/plain; charset=utf-8",
+      "Content-Length: 16",
+      ""
+    ],
+    "conditionalRequest": [
+      "GET /cache-demo.txt HTTP/1.1",
+      "Host: www.example.com",
+      "If-None-Match: \"lesson-v1\"",
+      ""
+    ],
+    "notModified304": [
+      "HTTP/1.1 304 Not Modified",
+      "Date: Fri, 13 Nov 2026 00:01:01 GMT",
+      "Cache-Control: private, max-age=60, must-revalidate",
+      "ETag: \"lesson-v1\"",
+      ""
+    ],
+    "changed200": [
+      "HTTP/1.1 200 OK",
+      "Date: Fri, 13 Nov 2026 00:02:03 GMT",
+      "Cache-Control: private, max-age=60, must-revalidate",
+      "ETag: \"lesson-v2\"",
+      "Content-Type: text/plain; charset=utf-8",
+      "Content-Length: 16",
+      ""
+    ],
+    "encoding": "Header lines use CRLF and a final empty line. Existing data.text + data.body can encode known ASCII body bytes; data.http.body generates unknown placeholder bytes. Use text/body when illustrating exact message bytes. No Content-Length is needed on 304; omit it to avoid teaching an incorrect zero length.",
+    "frameSize": "Compute actual Ethernet/IP/TCP plus serialized application bytes via helpers; do not manually copy response message byte count into row.len, which is a frame-level label."
+  },
+  "standards": [
+    {
+      "topic": "Freshness",
+      "url": "https://www.rfc-editor.org/rfc/rfc9111.html#section-4.2",
+      "verified": "Fresh stored responses can satisfy an eligible request without contacting the origin. Freshness compares response age with freshness lifetime."
+    },
+    {
+      "topic": "Response max-age",
+      "url": "https://www.rfc-editor.org/rfc/rfc9111.html#section-5.2.2.1",
+      "verified": "max-age is in seconds; it is not a directive to delete data after that time."
+    },
+    {
+      "topic": "Validation request",
+      "url": "https://www.rfc-editor.org/rfc/rfc9111.html#section-4.3.1",
+      "verified": "A cache validates using stored validators; provided entity tags are sent as preconditions."
+    },
+    {
+      "topic": "ETag",
+      "url": "https://www.rfc-editor.org/rfc/rfc9110.html#section-8.8.3",
+      "verified": "Entity tags are opaque validators assigned by the origin, not necessarily content hashes."
+    },
+    {
+      "topic": "If-None-Match",
+      "url": "https://www.rfc-editor.org/rfc/rfc9110.html#section-13.1.2",
+      "verified": "Uses weak comparison; a false condition on GET/HEAD leads to304, on other methods to412. This lesson uses simple strong-looking tags with a conditionalGET."
+    },
+    {
+      "topic": "304 Not Modified",
+      "url": "https://www.rfc-editor.org/rfc/rfc9110.html#section-15.4.5",
+      "verified": "304 has no content or trailers. Include Date, ETag, Cache-Control and other specified fields that the corresponding200 would send."
+    },
+    {
+      "topic": "Freshening after304",
+      "url": "https://www.rfc-editor.org/rfc/rfc9111.html#section-4.3.4",
+      "verified": "Use the validation response to update applicable stored metadata; preserve the cached body."
+    },
+    {
+      "topic": "must-revalidate",
+      "url": "https://www.rfc-editor.org/rfc/rfc9111.html#section-5.2.2.2",
+      "verified": "After becoming stale, cannot reuse until successful validation; disconnected validation cannot be bypassed."
+    },
+    {
+      "topic": "no-cache",
+      "url": "https://www.rfc-editor.org/rfc/rfc9111.html#section-5.2.2.4",
+      "verified": "Unqualified response no-cache requires validation before reuse; it does not mean storage is prohibited."
+    },
+    {
+      "topic": "no-store",
+      "url": "https://www.rfc-editor.org/rfc/rfc9111.html#section-5.2.2.5",
+      "verified": "Prohibits intentional storage/reuse in the normal case; do not describe it as guaranteed privacy or wiping all previous caches."
+    },
+    {
+      "topic": "private",
+      "url": "https://www.rfc-editor.org/rfc/rfc9111.html#section-5.2.2.7",
+      "verified": "Unqualified private permits eligible private-cache storage and prohibits shared-cache storage."
+    }
+  ],
+  "reviewChecklist": [
+    "Fresh-hit step contains no packet/stream and does not add a fake network200.",
+    "ConditionalGET uses the ETag from the most recently stored selected representation.",
+    "304 data has no body field or trailer; no encoded body bytes exist.",
+    "304 carries the example Date/ETag/Cache-Control that corresponding200 would carry.",
+    "An ETag mismatch yields200 withv2 body and ETag, not304.",
+    "Second stale interval is measured after successful validation, not initial fetch.",
+    "Content-Length equals encoded body byte length, not character count for arbitrary Unicode.",
+    "Cache age calculations in narration account for Date/Age/network delay or explicitly use simplified assumptions away from the expiry boundary.",
+    "Original Rw ignores note.time; simulate passage of time in notes and later packet timestamps, without claiming a timestamped note is laid out at that time.",
+    "Do not imply full browser cache implementation, all Vary variants, ServiceWorker caches, CDN policy, ranges or every validator behavior are simulated."
+  ],
+  "sourceBoundary": "Coverage conclusions derive from the recorded original public bundle; RFC conclusions from official RFC Editor pages. The app course is a deterministic teaching trace, not a live browser cache implementation.",
+  "implementation": {
+    "course": "app/src/courses/http-cache.mjs",
+    "helpers": "app/src/authoring/helpers.mjs",
+    "locale": "app/src/locales/http-cache.zh.mjs",
+    "brief": "app/src/courses/http-cache.brief.json",
+    "stepCount": 6,
+    "packetRows": 9,
+    "httpRows": 6,
+    "freshHitStep": 1,
+    "notModifiedPacketIndex": 6,
+    "steps": [
+      "Store the First Response",
+      "Reuse While Fresh",
+      "Validate After Expiry",
+      "Fetch the Changed Representation",
+      "Read the Cache Directives",
+      "Know the Failure Boundary"
+    ],
+    "localVerification": "Imported course; asserted message lengths, Content-Length=16, body-free304, fresh step without packets,6steps/9rows and narrative translation coverage. Browser integration is verified by parent agent."
+  }
+}

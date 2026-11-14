@@ -1,0 +1,16 @@
+{
+  "raw_vs_browser": [
+    {
+      "asset": "index-CNPseYOQ.js",
+      "sha256": "19e285d11f5fa0b1411ec94aaea6cd04531872e8322bb8a46c80e4f92e262834",
+      "identical": true
+    },
+    {
+      "asset": "index-CwjpA-vk.css",
+      "sha256": "330dfe72889cf6fc9b048e50bca6a40f2a5858dfcc24fb76f32f67971e88cd3d",
+      "identical": true
+    }
+  ],
+  "browser_assertions": 24,
+  "all_browser_assertions_passed": true
+}
