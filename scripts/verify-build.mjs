@@ -6,13 +6,14 @@ import {chromium} from 'playwright';
 import {startServer} from './serve.mjs';
 import descriptor from '../app/src/courses/http-cache.mjs';
 const root=path.resolve(import.meta.dirname,'..');
-const output=path.join(root,'artifacts/build');
+const externalUrl=process.env.PROTOCOL_BASE_URL?.replace(/\/$/,'');
+const output=path.join(root,externalUrl?'artifacts/docker/languages':'artifacts/build');
 fs.mkdirSync(output,{recursive:true});
 const manifest=JSON.parse(fs.readFileSync(path.join(root,'app/vendor-asset-manifest.json'),'utf8'));
 const evidence={recordedAt:new Date().toISOString(),errors:[],failedResponses:[],languages:[],checks:[]};
 const check=(name,value)=>{evidence.checks.push({name,passed:Boolean(value)});assert(value,name);};
 const plainText=text=>text.replace(/[\u200e\u200f\u202a-\u202e\u2066-\u2069]/g,'');
-const running=await startServer({port:0,dist:true});
+const running=externalUrl?{url:externalUrl,close:async()=>{}}:await startServer({port:0,dist:true});
 let browser;
 try {
   browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||'/usr/bin/chromium',args:['--no-sandbox']});

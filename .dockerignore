@@ -1,0 +1,11 @@
+.git
+**/node_modules
+**/.npm-cache
+**/__pycache__
+dist
+artifacts
+app/src/vendor/original-runtime.mjs
+app/runtime-provenance.json
+**/.env
+**/.env.*
+**/*.log

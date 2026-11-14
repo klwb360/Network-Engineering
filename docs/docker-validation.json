@@ -1,0 +1,54 @@
+{
+  "recordedAt": "2026-11-14T05:57:37.810402+00:00",
+  "displayTimezone": "Asia/Shanghai",
+  "image": "sha256:673c56b1b475f0898041951b805d3b1adb3a16a5183458fa89d9bc9c71d8d146",
+  "health": "healthy",
+  "runtimeUser": "nginx",
+  "readOnlyRootFilesystem": true,
+  "hostBinding": "127.0.0.1:4173",
+  "containerPort": 8080,
+  "dockerHttpChecks": [
+    {
+      "name": "Container serves the Course Studio homepage",
+      "passed": true
+    },
+    {
+      "name": "ES modules, locale, CSS and fonts have correct MIME types",
+      "passed": true
+    },
+    {
+      "name": "Missing JavaScript resources return 404 rather than HTML fallback",
+      "passed": true
+    },
+    {
+      "name": "All 54 vendor assets are served with their recorded SHA-256 bytes",
+      "passed": true
+    }
+  ],
+  "courseBrowserAssertions": {
+    "originalPassed": 24,
+    "newCoursePassed": 29,
+    "failed": 0
+  },
+  "languageChoicesVerified": 21,
+  "staticBuildChecks": [
+    {
+      "name": "Static build preserves 40 registered courses",
+      "passed": true
+    },
+    {
+      "name": "Served production stylesheet is byte-identical to the original",
+      "passed": true
+    },
+    {
+      "name": "All 21 original language choices load from the static build",
+      "passed": true
+    },
+    {
+      "name": "Built application has no failed resources or JavaScript errors",
+      "passed": true
+    }
+  ],
+  "evidence": "artifacts/docker/docker-evidence.json",
+  "buildEnvironmentNote": "Managed Cloud HTTPS proxy CA supplied only to npm ci through a session-only adapted Dockerfile and BuildKit secret; TLS verification stayed enabled. The checked-in Dockerfile uses standard npm TLS trust. No session CA is copied into the runtime image."
+}

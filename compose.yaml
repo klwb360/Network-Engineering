@@ -1,0 +1,17 @@
+name: protocol-course-studio
+
+services:
+  web:
+    image: protocol-course-studio:local
+    build:
+      context: .
+    ports:
+      - "127.0.0.1:${PORT:-4173}:8080"
+    restart: unless-stopped
+    read_only: true
+    tmpfs:
+      - /tmp
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true

@@ -4,6 +4,33 @@
 
 首课有 6 步、9 条教学报文，讲解首次 200、本地缓存命中、ETag / If-None-Match、无正文的 304、内容变化后的 200，以及 no-cache、no-store、离线验证的边界。提供英文和简体中文；其他原有语言选项继续保留，新课未翻译内容回退到英文。
 
+## Docker 本地部署
+
+安装并启动 Docker Desktop（Windows 使用 Linux 容器），在包含 `compose.yaml` 的源码仓库目录执行：
+
+```sh
+docker compose up -d --build --wait
+```
+
+打开 [http://127.0.0.1:4173](http://127.0.0.1:4173)，搜索 **HTTP Cache**。构建由 Node 24 容器完成，运行时由 Nginx 提供静态网页，本机无需安装 Node.js 或 Python。首次构建需要联网下载基础镜像和 npm 依赖；原站课程、语言与字体直接使用仓库内保存的资源。
+
+```sh
+docker compose ps           # 查看运行状态
+docker compose logs -f web  # 查看日志，Ctrl+C 退出日志查看
+docker compose stop        # 停止
+docker compose start       # 再次启动
+docker compose down        # 删除本项目容器和网络
+```
+
+更新源码后再次执行 `docker compose up -d --build --wait`。默认端口只绑定本机；如需改为 8080，在 PowerShell 中执行：
+
+```powershell
+$env:PORT = "8080"
+docker compose up -d --build --wait
+```
+
+镜像采用多阶段构建，运行层仅保留生成的网站文件。容器使用非 root 用户、只读文件系统和临时 `/tmp`，包含首页健康检查。缺失模块保持返回 404，`.mjs` 按 JavaScript 类型提供。
+
 ## 开发与验证
 
 使用 Node.js 24.11 及以上版本（低于 25）：
